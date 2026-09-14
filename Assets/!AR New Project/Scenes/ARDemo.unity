@@ -662,17 +662,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145380978}
   m_CullTransparentMesh: 1
---- !u!114 &151853166 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2512387470528047737, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
-  m_PrefabInstance: {fileID: 331264285}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1870067128}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &173779100
 GameObject:
   m_ObjectHideFlags: 0
@@ -1461,17 +1450,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1870067135}
   m_SourcePrefab: {fileID: 100100000, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
---- !u!114 &331264286 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2512387470319625105, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
-  m_PrefabInstance: {fileID: 331264285}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6803edce0201f574f923fd9d10e5b30a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &332374253
 GameObject:
   m_ObjectHideFlags: 0
@@ -1898,7 +1876,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba63293f961b46a1a5b648e4ba02cfb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ARInteractor: {fileID: 331264286}
+  m_ARInteractor: {fileID: 0}
   m_ObjectSpawner: {fileID: 436358033}
   m_RequireHorizontalUpSurface: 0
   m_SpawnTriggerType: 0
@@ -8658,17 +8636,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2001374502 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6402244310720262706, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
-  m_PrefabInstance: {fileID: 331264285}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4a50d88b55b45648927679791f472de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2021867756
 GameObject:
   m_ObjectHideFlags: 0
@@ -9332,10 +9299,10 @@ MonoBehaviour:
   m_ObjectMenuAnimator: {fileID: 1024622698}
   m_ObjectSpawner: {fileID: 436358033}
   m_CancelButton: {fileID: 1785409645}
-  m_InteractionGroup: {fileID: 2001374502}
+  m_InteractionGroup: {fileID: 0}
   m_DebugPlaneSlider: {fileID: 1154765692}
   m_DebugPlane: {fileID: 1585201990951412, guid: 886609fc1566e4c27b399f1095d6de18, type: 3}
-  m_PlaneManager: {fileID: 151853166}
+  m_PlaneManager: {fileID: 0}
   m_DebugMenu: {fileID: 239212526}
   m_DebugMenuSlider: {fileID: 1139628616}
   m_TapStartPositionInput:
@@ -9833,19 +9800,19 @@ PrefabInstance:
     - target: {fileID: 6571917519388530943, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
       propertyPath: moveButton
       value: 
-      objectReference: {fileID: 1165219548}
+      objectReference: {fileID: 0}
     - target: {fileID: 6571917519388530943, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
       propertyPath: zoomButton
       value: 
-      objectReference: {fileID: 377135050}
+      objectReference: {fileID: 0}
     - target: {fileID: 6571917519388530943, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
       propertyPath: resetButton
       value: 
-      objectReference: {fileID: 1752180296}
+      objectReference: {fileID: 0}
     - target: {fileID: 6571917519388530943, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
       propertyPath: rotateButton
       value: 
-      objectReference: {fileID: 1169957541}
+      objectReference: {fileID: 0}
     - target: {fileID: 7553623654631623925, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
       propertyPath: m_Name
       value: ARContentRoot
@@ -10017,11 +9984,11 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1075000276}
-  - {fileID: 702413259}
-  - {fileID: 331264285}
-  - {fileID: 7970589158703615919}
-  - {fileID: 2043256049}
   - {fileID: 436358034}
   - {fileID: 2099970469}
   - {fileID: 601006146}
   - {fileID: 1323550134}
+  - {fileID: 702413259}
+  - {fileID: 331264285}
+  - {fileID: 7970589158703615919}
+  - {fileID: 2043256049}
