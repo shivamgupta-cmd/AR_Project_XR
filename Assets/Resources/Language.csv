@@ -1,0 +1,105 @@
+﻿Key,English,Hindi,Gujarati
+BTN_SCAN,Scan Marker,ekdZj LdSu djsa,માર્કર સ્કેન કરો
+BTN_HOME,Home,gkse,હોમ
+BTN_SETTINGS,Settings,lsfVaXl,સેટિંગ્સ
+BTN_START,Start,'kq: djsa,શરૂ કરો
+BTN_NEXT,Next,vxyk,આગળ
+BTN_PREVIOUS,Previous,fiNyk,પાછળ
+BTN_BACK,Back,okil,પાછા
+BTN_EXIT,Exit,ckgj fudysa,બહાર નીકળો
+BTN_PLAY,Play,"pyk,a",ચાલુ કરો
+BTN_PAUSE,Pause,jksdsa,થોભાવો
+BTN_RETRY,Retry,iqu% ç;kl djsa,ફરી પ્રયાસ કરો
+BTN_SUBMIT,Submit,tek djsa,સબમિટ કરો
+BTN_CONTINUE,Continue,tkjh j[ksa,આગળ વધો
+WELCOME,Welcome to AR Experience,",vkj vuqHko esa vkidk Lokxr gS",એઆર અનુભવમાં આપનું સ્વાગત છે
+SCAN_INSTRUCTION,Point the camera at the marker,dSejs dks ekdZj dh vksj djsa,કેમેરાને માર્કર તરફ રાખો
+MARKER_FOUND,Marker Detected,ekdZj fey x;k,માર્કર મળી ગયો
+LOADING_MODEL,Loading 3D Model...,3D e‚My yksM gks jgk gS---,3D મોડલ લોડ થઈ રહ્યું છે...
+LESSON_START,Start Learning,lh[kuk 'kq: djsa,શીખવાનું શરૂ કરો
+QUIZ_START,Start Quiz,ç'uksÙkjh 'kq: djsa,ક્વિઝ શરૂ કરો
+CORRECT,Correct!,lgh!,સાચું!
+WRONG,Wrong!,xyr!,ખોટું!
+SCORE,Score,vad,સ્કોર
+COMPLETED,Completed,iw.kZ,પૂર્ણ
+LANGUAGE,Language,"Hkk""kk",ભાષા
+ENGLISH,English,vaxzsth,અંગ્રેજી
+HINDI,Hindi,fganh,હિન્દી
+GUJARATI,Gujarati,xqtjkrh,ગુજરાતી
+Subject_1,Biology,tho foKku,જીવવિજ્ઞાન
+HEADER_TITLE,AR LEARN,AR LEARN,AR LEARN
+HEADER_SUBTITLE,Learn • Explore • Understand,lh[ksa • [kkstsa • le>sa,શીખો • શોધો • સમજો
+RECENTLY_VIEWED,Recently Viewed,gky esa ns[kk,તાજેતરમાં જોયેલું
+HUMAN_HEART,Human Heart,ekuo ân;,માનવ હૃદય
+TITLE_HUMAN_HEART,THE HUMAN HEART,ekuo ân;,માનવ હૃદય
+SCAN_HINT,Align the page inside\nthe frame to scan.,dSejs dks ekdZj dh vksj djsa,સ્કેન કરવા પેજને\nફ્રેમમાં રાખો.
+SUB_ANATOMY,⚕  ANATOMY\nHuman Body,⚕  'kjhjjpuk\nekuo 'kjhj,⚕  શરીરરચના\nમાનવ શરીર
+SUB_BIOLOGY,⚛  BIOLOGY\nBeautiful,⚛  tho foKku\nlqanj,⚛  જીવવિજ્ઞાન\nસુંદર
+SUB_CHEMISTRY,⚗  CHEMISTRY\nExperiment,⚗  jlk;u foKku\nç;ksx,⚗  રસાયણશાસ્ત્ર\nપ્રયોગ
+SUB_PHYSICS,✹  PHYSICS\nWonders,✹  HkkSfrdh\nvewY;,✹  ભૌતિકશાસ્ત્ર\nઅદભૂત
+SUB_HISTORY,▥  HISTORY\nCivilization,▥  bfrgkl\nlH;rk,▥  ઇતિહાસ\nસંસ્કૃતિ
+SUB_CIVICS,♧  CIVICS\nCommunity,♧  ukxfjd 'kkL=k\nlekt,♧  નાગરિકશાસ્ત્ર\nસમાજ
+SUB_GEOGRAPHY,◎  GEOGRAPHY\nOur World,◎  Hkwxksy\ngekjh nqfu;k,◎  ભૂગોળ\nઆપણું વિશ્વ
+SUB_EVS,◒  EVS\nNature,◒  i;kZoj.k\nçd`fr,◒  પર્યાવરણ\nકુદરત
+RECENT_HEART,♥\nHuman Heart,♥\nekuo ân;,♥\nમાનવ હૃદય
+RECENT_SOLAR,☀\nThe Solar System,☀\nlkSjeaMy,☀\nસૂર્યમંડળ
+RECENT_TAJ,♜\nTaj Mahal,♜\nrktegy,♜\nતાજમહેલ
+TOOL_3D_VIEW,◇\n3D View,◇\n3D n`';,◇\n3D દૃશ્ય
+TOOL_AUDIO,🔊\nAudio,🔊\nvkWfM;ks,🔊\nઑડિયો
+TOOL_RESET,↻\nReset,↻\nçkjafHkd,↻\nરીસેટ
+CTRL_MOVE,✥\nMove,✥\nfgyk,a,✥\nખસેડો
+CTRL_ROTATE,↻\nRotate,↻\n?kqek,a,↻\nફેરવો
+CTRL_ZOOM,⊕\nZoom,⊕\ntwe,⊕\nઝૂમ
+CTRL_EXPLORE,◉\nExplore,◉\nvUos""k.k,◉\nશોધો
+EXP_HEADER,◉  Explore,◉  vUos""k.k,◉  શોધો
+EXP_XRAY,X-Ray\nSee inside,X-Ray\nvUnj ns[ksa,એક્સ-રે\nઅંદર જુઓ
+EXP_INFO,Info\nLearn more,tkudkjh\nvf/d tkusa,માહિતી\nવધુ જાણો
+EXP_PARTS,Parts\nView all parts,Hkkx\nlHkh Hkkx ns[ksa,ભાગો\nબધા ભાગો જુઓ
+EXP_QUIZ,Quiz\nTest yourself,ç'uksÙkjh\nLo;a dks ijs[ksa,ક્વિઝ\nજાતે ચકાસો
+PART_AORTA,Aorta,egk/euh,મહાધમની
+PART_PULMONARY,Pulmonary Artery,iqQIqQlh; /euh,ફેફસાની ધમની
+PART_LEFT_ATRIUM,Left Atrium,ck;ka vkfyan,ડાબું કર્ણક
+PART_LEFT_VENTRICLE,Left Ventricle,ck;ka fuy;,ડાબું ક્ષેપક
+INFO_TITLE,About Human Heart,ekuo ân; ds ckjs esa,માનવ હૃદય વિશે
+INFO_DESC,The heart is a muscular organ that pumps blood throughout the body.\n\nIt has 4 chambers — 2 atria and 2 ventricles. It works continuously to supply oxygen and nutrients.,ân; ,d ekalisf'k;ksa okyk vax gS tks 'kjhj esa jDr iai djrk gSA\n\nblesa 4 d{k gksrs gSa & 2 vkfyan vkSj 2 fuy;A ;g fujarj vkWDlhtu vkSj iks""kd rRo igqapkrk gSA,હૃદય એક સ્નાયુબદ્ધ અંગ છે જે સમગ્ર શરીરમાં લોહી પંપ કરે છે.\n\nતેમાં 4 ખંડો છે - 2 કર્ણકો અને 2 ક્ષેપકો. તે ઓક્સિજન અને પોષક તત્વો પહોંચાડવા માટે સતત કાર્ય કરે છે.
+QUIZ_Q_PROGRESS,Question 2 of 5,ç'u 2 @ 5,પ્રશ્ન 2 / 5
+QUIZ_Q2,Which part of the heart\npumps oxygen-rich\nblood to the body?,ân; dk dkSu lk Hkkx\n'kjhj dks vkWDlhtu ;qDr\njDr iai djrk gS\,હૃદયનો કયો ભાગ\nશરીરને ઓક્સિજનયુક્ત\nલોહી પંપ કરે છે?
+QUIZ_A1,A) Right Atrium,A) nk;ka vkfyan,A) જમણું કર્ણક
+QUIZ_A2,B) Right Ventricle,B) nk;ka fuy;,B) જમણું ક્ષેપક
+QUIZ_A3,C) Left Ventricle     ✓,C) ck;ka fuy;     ✓,C) ડાબું ક્ષેપક     ✓
+QUIZ_A4,D) Left Atrium,D) ck;ka vkfyan,D) ડાબું કર્ણક
+QUIZ_EXPLANATION,Left Ventricle pumps oxygen-rich blood.,ck;ka fuy; vkWDlhtukbTM jDr iai djrk gSA,ડાબું ક્ષેપક ઓક્સિજનયુક્ત લોહી પંપ કરે છે.
+AUDIO_SUBTITLE,▶  The heart pumps blood\n     throughout the body...,▶  ân; 'kjhj esa\n     jDr iai djrk gS---,▶  હૃદય સમગ્ર શરીરમાં\n     લોહી પંપ કરે છે...
+RESET_TOAST,↻  Model reset to default,↻  e‚My iwoZor fLFkfr esa,↻  મોડેલ રીસેટ થયું
+HEADER_LIBRARY,My Library,esjh ykbczsjh,મારી લાઇબ્રેરી
+TAB_MODELS,Models,e‚MYl,મોડેલ્સ
+TAB_BOOKMARKS,Bookmarks,cqdekDlZ,બુકમાર્ક્સ
+TAB_HISTORY,History,bfrgkl,ઇતિહાસ
+LIB_HEART,♥   Human Heart\n      Biology  •  12 May 2024,♥   ekuo ân;\n      tho foKku  •  12 ebZ 2024,♥   માનવ હૃદય\n      જીવવિજ્ઞાન  •  12 મે 2024
+LIB_PLANT,◉   Plant Cell\n      Biology  •  10 May 2024,◉   ikni dksf'kdk\n      tho foKku  •  10 ebZ 2024,◉   વનસ્પતિ કોષ\n      જીવવિજ્ઞાન  •  10 મે 2024
+LIB_SOLAR,☀   The Solar System\n      Physics  •  08 May 2024,☀   lkSjeaMy\n      HkkSfrdh  •  08 ebZ 2024,☀   સૂર્યમંડળ\n      ભૌતિકશાસ્ત્ર  •  08 મે 2024
+LIB_TAJ,♜   Taj Mahal\n      History  •  05 May 2024,♜   rktegy\n      bfrgkl  •  05 ebZ 2024,♜   તાજમહેલ\n      ઇતિહાસ  •  05 મે 2024
+SETTING_LANG,◎  Language                         English  ›,◎  Hkk""kk                         fganh  ›,◎  ભાષા                         ગુજરાતી  ›
+SETTING_AUDIO,🔊  Audio                                  ●  ›,🔊  vkWfM;ks                                  ●  ›,🔊  ઑડિયો                                  ●  ›
+SETTING_BGM,♫  Background Music               ●  ›,♫  ik'oZ laxhr               ●  ›,♫  બેકગ્રાઉન્ડ મ્યુઝિક               ●  ›
+SETTING_CACHE,▣  Clear Cache                     45.2 MB  ›,▣  dS'k lkiQ djsa                     45.2 MB  ›,▣  કૅશ સાફ કરો                     45.2 MB  ›
+SETTING_RATE,☆  Rate Us                                      ›,☆  jsfVax nsa                                      ›,☆  રેટ કરો                                      ›
+SETTING_SHARE,⌯  Share App                                  ›,⌯  ,si 'ks;j djsa                                  ›,⌯  ઍપ શેર કરો                                  ›
+SETTING_PRIVACY,▢  Privacy Policy                            ›,▢  xksiuh;rk uhfr                            ›,▢  ગોપનીયતા નીતિ                            ›
+SETTING_ABOUT,ⓘ  About Us                                    ›,ⓘ  gekjs ckjs esa                                    ›,ⓘ  અમારા વિશે                                    ›
+NAV_HOME,⌂\nHome,⌂\ngkse,⌂\nહોમ
+NAV_LIBRARY,▤\nLibrary,▤\nykbczsjh,▤\nલાઇબ્રેરી
+NAV_BOOKMARKS,☆\nBookmarks,☆\ncqdekDlZ,☆\nબુકમાર્ક્સ
+NAV_PROFILE,♙\nProfile,♙\nçksI+Qkby,♙\nપ્રોફાઇલ
+TAB_HOME,Home,gkse,હોમ
+TAB_SCAN,Scan,LdSu,સ્કેન
+TAB_MODEL,Model,e‚My,મોડેલ
+TAB_EXPLORE,Explore,vUos""k.k,શોધો
+TAB_XRAY,X-Ray,X-Ray,એક્સ-રે
+TAB_PARTS,Parts,Hkkx,ભાગો
+TAB_INFO,Info,tkudkjh,માહિતી
+TAB_QUIZ,Quiz,ç'uksÙkjh,ક્વિઝ
+TAB_AUDIO,Audio,vkWfM;ks,ઑડિયો
+TAB_RESET,Reset,çkjafHkd,રીસેટ
+TAB_LIBRARY,Library,ykbczsjh,લાઇબ્રેરી
+TAB_SETTINGS,Settings,lsfVaXl,સેટિંગ્સ

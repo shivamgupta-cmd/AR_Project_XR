@@ -1,0 +1,53 @@
+{
+  "info": "A displacement reaction occurs when a more reactive element replaces a less reactive element from its compound. When iron is placed in copper sulfate solution, iron displaces copper and forms iron sulfate while copper is deposited on the iron surface. The reaction is Fe + CuSO4 → FeSO4 + Cu. This happens because iron is more reactive than copper.",
+  "questions": [
+    {
+      "questionText": "What happens in a displacement reaction?",
+      "options": [
+        "A more reactive element replaces a less reactive element from its compound",
+        "One compound breaks into simpler substances",
+        "Two compounds combine to form one substance",
+        "A substance changes only its physical state"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What happens when an iron nail is placed in copper sulfate solution?",
+      "options": [
+        "Iron displaces copper from copper sulfate",
+        "Copper displaces iron from the nail",
+        "No reaction occurs",
+        "Iron changes into copper"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What substance is deposited on the iron nail during the reaction?",
+      "options": [
+        "Copper",
+        "Iron sulfate",
+        "Sulfur",
+        "Oxygen"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "Which products are formed when iron reacts with copper sulfate?",
+      "options": [
+        "Iron sulfate and copper",
+        "Iron oxide and copper",
+        "Copper sulfate and iron oxide",
+        "Iron and sulfur dioxide"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    }
+  ]
+}

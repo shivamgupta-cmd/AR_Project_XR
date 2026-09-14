@@ -1,0 +1,62 @@
+﻿================================================================================
+SOLAR SYSTEM - PLANET VOICE-OVER TRANSCRIPTS
+================================================================================
+
+--- PLANETS ---
+
+1. Mercury (Mercury.mp3)
+   "Mercury follows the innermost orbit and has the shortest year of all the planets."
+
+2. Venus (Venus.mp3)
+   "Venus follows the second orbit and takes longer to complete one revolution around the sun."
+
+3. Earth (Earth.mp3)
+   "Earth follows the third orbit and completes one revolution around the sun in about 1 year."
+
+4. Mars (Mars.mp3)
+   "Mars follows the fourth orbit and takes about 687 Earth days to complete one revolution."
+
+5. Jupiter (Jupiter.mp3)
+   "Jupiter follows the fifth orbit and has the longest orbital period of the inner five planets."
+
+6. Saturn (Saturn.mp3)
+   "Saturn follows the sixth orbit and is famous for its extensive ring system."
+
+7. Uranus (Uranus.mp3)
+   "Uranus follows the seventh orbit and takes about 84 Earth years to complete one revolution."
+
+8. Neptune (Neptune.mp3)
+   "Neptune follows the eighth and outermost planetary orbit and takes about 165 Earth years to orbit the sun."
+
+
+--- ADDITIONAL SOLAR SYSTEM AUDIO ---
+
+Sun (Sun.mp3)
+   "The sun is the central star of our solar system. Its enormous gravity keeps the planets and other objects in orbit around it."
+
+Intro Solar System (Intro Solar system.mp3)
+   "Welcome to the solar system. At its center is the sun, a star that provides the light and heat that make life on Earth possible. Eight planets travel around the sun along their own orbits."
+
+Ending (Ending.mp3)
+   "Each planet follows its own orbit around the sun. The planets are at different distances from the sun, so their orbital periods are different. The farther a planet is from the sun, the longer it generally takes to complete one revolution."
+
+Quiz Ending (Quiz Ending.mp3)
+   "Excellent! You correctly identified the sun, Earth's position, and the planet with the longest orbital period. You now understand the basic arrangement and orbits of our solar system."
+
+Question 1 (Q1.mp3)
+   "Which object provides the gravitational force that keeps the planets in orbit around the solar system?"
+
+Question 1 Correct (Q1 Correct.mp3)
+   "Correct. The sun provides the gravitational force that keeps the planets in orbit around it."
+
+Question 2 (Q2.mp3)
+   "Which planet follows the third planetary orbit outward from the sun?"
+
+Question 2 Correct (Q2 Correct.mp3)
+   "Correct. Earth is the third planet from the sun after Mercury and Venus."
+
+Question 3 (Q3.mp3)
+   "Which planet has the longest orbital period around the sun among the eight planets?"
+
+Question 3 Correct (Q3 Correct.mp3)
+   "Correct. Neptune has the longest orbital period of all eight planets, taking about 165 Earth years to complete one revolution."

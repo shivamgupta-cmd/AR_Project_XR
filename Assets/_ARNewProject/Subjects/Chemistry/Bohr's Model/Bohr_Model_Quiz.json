@@ -1,0 +1,53 @@
+{
+  "info": "Bohr's atomic model explains that an atom has a small, positively charged nucleus at its center, with negatively charged electrons moving around it in fixed energy levels or shells. Each shell has a specific energy, and electrons can move from one level to another by absorbing or releasing energy. The model helped explain atomic stability and the emission of light during electron transitions.",
+  "questions": [
+    {
+      "questionText": "According to Bohr's model, where do electrons move around the nucleus?",
+      "options": [
+        "In fixed energy levels or shells",
+        "Randomly throughout the atom",
+        "Inside the nucleus",
+        "Only on the surface of the atom"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What happens when an electron absorbs energy in the Bohr model?",
+      "options": [
+        "It moves to a higher energy level",
+        "It enters the nucleus",
+        "It loses its negative charge",
+        "It becomes a proton"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What happens when an excited electron returns to a lower energy level?",
+      "options": [
+        "It releases energy as light",
+        "It absorbs more energy",
+        "The nucleus breaks apart",
+        "The electron disappears"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What is located at the center of the Bohr atomic model?",
+      "options": [
+        "A small positively charged nucleus",
+        "A negatively charged sphere",
+        "Only electrons",
+        "An empty region"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    }
+  ]
+}

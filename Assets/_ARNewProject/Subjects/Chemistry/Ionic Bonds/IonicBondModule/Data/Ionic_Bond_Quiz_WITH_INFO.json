@@ -1,0 +1,33 @@
+{
+  "info": "An ionic bond forms when electrons are transferred from one atom to another, producing oppositely charged ions. In sodium chloride formation, a sodium atom transfers one electron to a chlorine atom. Sodium becomes a positively charged sodium ion (Na+), while chlorine becomes a negatively charged chloride ion (Cl-). The oppositely charged ions attract each other strongly through electrostatic forces and form a repeating crystal lattice structure, producing sodium chloride (NaCl).",
+  "questions": [
+    {
+      "questionText": "What happens to an electron when sodium forms an ionic bond with chlorine?",
+      "options": ["It is transferred from sodium to chlorine", "It is transferred from chlorine to sodium", "It remains shared equally", "It enters the sodium nucleus"],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What charge does sodium have after losing one electron?",
+      "options": ["Negative", "Positive", "Neutral", "No electric charge"],
+      "correctAnswerIndex": 1,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "Why do sodium and chloride ions attract each other?",
+      "options": ["They have the same charge", "They share a nucleus", "They have opposite charges", "They have no electrons"],
+      "correctAnswerIndex": 2,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What structure is formed by many sodium and chloride ions?",
+      "options": ["A single atom", "A covalent molecule", "A gas cloud", "A repeating crystal lattice"],
+      "correctAnswerIndex": 3,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    }
+  ]
+}

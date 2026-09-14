@@ -1,0 +1,1 @@
+using UnityEngine; public class LiquidRingRotator:MonoBehaviour{[SerializeField]float rotationSpeed=16f;void Update(){transform.Rotate(0,0,rotationSpeed*Time.deltaTime,Space.Self);}}

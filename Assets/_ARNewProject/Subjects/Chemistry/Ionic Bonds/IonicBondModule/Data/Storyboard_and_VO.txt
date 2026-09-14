@@ -1,0 +1,39 @@
+IONIC BOND — NaCl MODULE FLOW
+
+1. INTRO / SHOW ATOMS
+Visual: Sodium atom and chlorine atom appear side by side and rotate slowly.
+VO: "An ionic bond forms when one atom transfers an electron to another atom. Let us see how sodium and chlorine form sodium chloride."
+Method: ShowAtoms()
+
+2. HIGHLIGHT OUTER ELECTRON
+Visual: Sodium's outer electron glows and pulses.
+VO: "Sodium has one electron in its outermost shell, while chlorine needs one electron to complete its outer shell."
+Method: HighlightElectron()
+
+3. ELECTRON TRANSFER
+Visual: Glowing electron travels from sodium to chlorine with a yellow-orange trail.
+VO: "Sodium transfers its outer electron to chlorine."
+Method: TransferElectron()
+
+4. FORM IONS
+Visual: Atom models switch to Na+ and Cl- with 3D charge symbols and a brief flash.
+VO: "After losing an electron, sodium becomes a positively charged ion, Na plus. Chlorine gains the electron and becomes a negatively charged chloride ion, Cl minus."
+Method: FormIons()
+
+5. ELECTROSTATIC ATTRACTION
+Visual: Na+ and Cl- move toward each other; glowing attraction line appears.
+VO: "Because opposite charges attract, the sodium and chloride ions are pulled strongly toward each other by electrostatic attraction."
+Method: StartAttraction()
+
+6. CRYSTAL LATTICE
+Visual: Many lattice parts build one by one into a 3D crystal structure.
+VO: "Many sodium and chloride ions arrange themselves in a repeating three-dimensional crystal lattice."
+Method: BuildCrystalLattice()
+
+7. FINAL MODEL
+Visual: Complete NaCl lattice rotates slowly.
+VO: "This strong attraction between oppositely charged ions forms an ionic bond and produces sodium chloride, commonly known as table salt."
+Method: ShowFinalLattice()
+
+TIMELINE ORDER
+ResetModule -> ShowAtoms -> HighlightElectron -> TransferElectron -> FormIons -> StartAttraction -> BuildCrystalLattice -> ShowFinalLattice

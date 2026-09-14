@@ -1,0 +1,53 @@
+{
+  "info": "Matter commonly exists as solids, liquids, and gases. Solids have a definite shape and volume because their particles are closely packed and vibrate in fixed positions. Liquids have a definite volume but no fixed shape because their particles can move past one another. Gases have no fixed shape or volume because their particles are far apart and move freely in all directions.",
+  "questions": [
+    {
+      "questionText": "Which state of matter has a definite shape and a definite volume?",
+      "options": [
+        "Solid",
+        "Liquid",
+        "Gas",
+        "Vapor only"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "Which state of matter has a definite volume but takes the shape of its container?",
+      "options": [
+        "Liquid",
+        "Solid",
+        "Gas",
+        "All states"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "How are particles generally arranged in a gas?",
+      "options": [
+        "Far apart and randomly arranged",
+        "Very close and fixed in place",
+        "Close together in an orderly pattern",
+        "Packed tightly without movement"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "Which statement best describes particle movement in a solid?",
+      "options": [
+        "Particles vibrate around fixed positions",
+        "Particles move freely in all directions",
+        "Particles flow past each other throughout the container",
+        "Particles do not move at all"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    }
+  ]
+}

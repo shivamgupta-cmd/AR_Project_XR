@@ -1,0 +1,53 @@
+{
+  "info": "A decomposition reaction is a chemical reaction in which one compound breaks down into two or more simpler substances. In the thermal decomposition of calcium carbonate, heating causes calcium carbonate to form calcium oxide and carbon dioxide gas. The reaction is represented as CaCO3 → CaO + CO2. This is an example of decomposition caused by heat.",
+  "questions": [
+    {
+      "questionText": "What happens during a decomposition reaction?",
+      "options": [
+        "One compound breaks down into two or more simpler substances",
+        "Two elements always form one compound",
+        "One element replaces another element",
+        "Two compounds exchange their ions"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What happens to calcium carbonate when it is strongly heated?",
+      "options": [
+        "It decomposes into calcium oxide and carbon dioxide",
+        "It forms calcium carbonate and oxygen",
+        "It changes only into carbon dioxide",
+        "It does not undergo a chemical change"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "Which gas is released when calcium carbonate decomposes on heating?",
+      "options": [
+        "Carbon dioxide",
+        "Oxygen",
+        "Hydrogen",
+        "Nitrogen"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What solid remains after the thermal decomposition of calcium carbonate?",
+      "options": [
+        "Calcium oxide",
+        "Calcium chloride",
+        "Calcium sulfate",
+        "Calcium hydroxide"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    }
+  ]
+}

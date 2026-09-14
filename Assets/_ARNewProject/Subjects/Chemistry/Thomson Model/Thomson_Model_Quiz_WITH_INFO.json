@@ -1,0 +1,53 @@
+{
+  "info": "J. J. Thomson proposed an early atomic model known as the Thomson Model or Plum Pudding Model. In this model, the atom was described as a sphere of positive charge spread uniformly throughout its volume, with negatively charged electrons embedded within it. The model did not include a central nucleus. The total positive charge balanced the total negative charge of the electrons, making the atom electrically neutral.",
+  "questions": [
+    {
+      "questionText": "How was positive charge distributed in Thomson's atomic model?",
+      "options": [
+        "Uniformly throughout the atom",
+        "Only inside a central nucleus",
+        "Only around the outer surface",
+        "In fixed energy levels"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "Where were electrons located in Thomson's atomic model?",
+      "options": [
+        "Inside a central nucleus",
+        "Embedded within the positive sphere",
+        "Moving in fixed energy levels",
+        "Outside the atom"
+      ],
+      "correctAnswerIndex": 1,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What was absent from Thomson's atomic model?",
+      "options": [
+        "Positive charge",
+        "Electrons",
+        "A central nucleus",
+        "Negative charge"
+      ],
+      "correctAnswerIndex": 2,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "Why was the atom electrically neutral in Thomson's model?",
+      "options": [
+        "The atom contained no charges",
+        "Only positive charges were present",
+        "Electrons had no electric charge",
+        "The total positive and negative charges balanced each other"
+      ],
+      "correctAnswerIndex": 3,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    }
+  ]
+}
