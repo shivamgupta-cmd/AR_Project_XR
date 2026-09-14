@@ -798,16 +798,48 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 150
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_LocalPosition.z
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3308231594632836744, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_Name
       value: 'BG Image '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3308231594632836744, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4019398577971330679, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_Pivot.x
@@ -851,7 +883,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4019398577971330679, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1310
       objectReference: {fileID: 0}
     - target: {fileID: 4019398577971330679, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -871,11 +903,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4019398577971330679, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 540
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4019398577971330679, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 960
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4019398577971330679, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -909,6 +941,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7396428813678820027, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2129108395}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5628,6 +5664,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2512387469002778331, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+      propertyPath: far clip plane
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: 2512387470319625105, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
       propertyPath: m_OccludeARHitsWith2DObjects
       value: 1
