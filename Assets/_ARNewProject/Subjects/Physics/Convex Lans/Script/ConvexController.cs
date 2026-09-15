@@ -8,22 +8,22 @@ public class ConvexController : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
 
     [Header("Intro Audio")]
-    [SerializeField] private AudioClip introConvexLens;
+    [SerializeField] private AudioClip introVO;
+    [SerializeField] private AudioClip lensVO;
 
     [Header("Setup Intro")]
     [SerializeField] private AudioClip setupAudio;
 
     [Header("Image Formation Case")]
-    [SerializeField] private AudioClip betweenF1And2F1Audio;
+    [SerializeField] private AudioClip lensAnimationVO;
+    [SerializeField] private AudioClip lensAnimationEndVO;
 
     [Header("Parts Audio")]
-    [SerializeField] private AudioClip candleAudio;
+    [SerializeField] private AudioClip emitterAudio;
     [SerializeField] private AudioClip convexLensAudio;
-    [SerializeField] private AudioClip imageAudio;
 
     [Header("Intro Objects")]
     [SerializeField] private Transform introObj;
-    [SerializeField] private Transform introCandle;
     [SerializeField] private Transform introLens;
 
     [Header("Intro Animation Settings")]
@@ -34,19 +34,16 @@ public class ConvexController : MonoBehaviour
     [SerializeField] private Transform convexLensAnimObj;
     [SerializeField] private float convexScaleDuration = 0.7f;
 
-    [Header("Animation")]
-    [SerializeField] private Animator animator;
-    [SerializeField] private string animationStateName = "convex lans-anim";
+    [Header("Lens Rays")]
+    [SerializeField] private GameObject m_lensRays;
 
     [Header("Labels")]
-    [SerializeField] private GameObject candleLabel;
+    [SerializeField] private GameObject emitterLabel;
     [SerializeField] private GameObject convexLensLabel;
-    [SerializeField] private GameObject imageLabel;
 
     [Header("Label Buttons")]
-    [SerializeField] private Button candleButton;
+    [SerializeField] private Button emitterButton;
     [SerializeField] private Button convexLensButton;
-    [SerializeField] private Button imageButton;
 
     [Header("Settings")]
     [SerializeField] private bool playIntroOnStart = true;
@@ -57,7 +54,6 @@ public class ConvexController : MonoBehaviour
     private bool isActivityPaused;
 
     private bool audioWasPlayingBeforePause;
-    private float animatorSpeedBeforePause;
 
     private void Start()
     {
@@ -75,21 +71,16 @@ public class ConvexController : MonoBehaviour
             convexLensAnimObj.gameObject.SetActive(false);
         }
 
-        if (animator != null)
+        if (m_lensRays != null)
         {
-            animator.Play(animationStateName, 0, 0f);
-            animator.speed = 0f;
-            animator.Update(0f);
+            m_lensRays.SetActive(false);
         }
 
-        if (candleButton != null)
-            candleButton.onClick.AddListener(PlayCandle);
+        if (emitterButton != null)
+            emitterButton.onClick.AddListener(PlayEmitter);
 
         if (convexLensButton != null)
             convexLensButton.onClick.AddListener(PlayConvexLens);
-
-        if (imageButton != null)
-            imageButton.onClick.AddListener(PlayImage);
 
         if (playIntroOnStart)
             StartMainFlow();
@@ -103,22 +94,9 @@ public class ConvexController : MonoBehaviour
         if (!rotateIntroObjects)
             return;
 
-        if (introCandle != null)
-        {
-            introCandle.Rotate(
-                Vector3.up,
-                introRotationSpeed * Time.deltaTime,
-                Space.Self
-            );
-        }
-
         if (introLens != null)
         {
-            introLens.Rotate(
-                Vector3.up,
-                introRotationSpeed * Time.deltaTime,
-                Space.Self
-            );
+            introLens.Rotate(Vector3.up, introRotationSpeed * Time.deltaTime, Space.Self);
         }
     }
 
@@ -138,38 +116,24 @@ public class ConvexController : MonoBehaviour
             introObj.localScale = Vector3.zero;
         }
 
-        PlayAudio(introConvexLens);
+        PlayAudio(introVO);
 
         rotateIntroObjects = true;
 
         if (introObj != null)
         {
-            yield return StartCoroutine(
-                ScaleObject(
-                    introObj,
-                    Vector3.zero,
-                    Vector3.one,
-                    introScaleDuration
-                )
-            );
+            yield return StartCoroutine(ScaleObject(introObj, Vector3.zero, Vector3.one, introScaleDuration));
         }
 
-        yield return StartCoroutine(
-            WaitForAudioToFinish(introConvexLens)
-        );
+        yield return StartCoroutine(WaitForAudioToFinish(introVO));
+        PlayAudio(lensVO);
+        yield return StartCoroutine(WaitForAudioToFinish(lensVO));
 
         rotateIntroObjects = false;
 
         if (introObj != null)
         {
-            yield return StartCoroutine(
-                ScaleObject(
-                    introObj,
-                    introObj.localScale,
-                    Vector3.zero,
-                    introScaleDuration
-                )
-            );
+            yield return StartCoroutine(ScaleObject(introObj,introObj.localScale,Vector3.zero, introScaleDuration));
 
             introObj.gameObject.SetActive(false);
         }
@@ -182,45 +146,28 @@ public class ConvexController : MonoBehaviour
             convexLensAnimObj.gameObject.SetActive(true);
             convexLensAnimObj.localScale = Vector3.zero;
 
-            yield return StartCoroutine(
-                ScaleObject(
-                    convexLensAnimObj,
-                    Vector3.zero,
-                    Vector3.one,
-                    convexScaleDuration
-                )
-            );
+            yield return StartCoroutine(ScaleObject(convexLensAnimObj, Vector3.zero, Vector3.one,convexScaleDuration));
         }
 
-        yield return StartCoroutine(
-            PlayAudioAndWait(setupAudio)
-        );
+        yield return StartCoroutine(PlayAudioAndWait(setupAudio));
 
         while (isActivityPaused)
             yield return null;
 
         PlayAnimation();
 
-        yield return StartCoroutine(
-            PlayAudioAndWait(
-                betweenF1And2F1Audio
-            )
-        );
+        yield return StartCoroutine(PlayAudioAndWait(lensAnimationVO));
 
         while (isActivityPaused)
             yield return null;
 
         SetLabels(true);
+        yield return StartCoroutine(PlayAudioAndWait(lensAnimationEndVO));
 
         mainFlowCoroutine = null;
     }
 
-    private IEnumerator ScaleObject(
-        Transform target,
-        Vector3 startScale,
-        Vector3 endScale,
-        float duration
-    )
+    private IEnumerator ScaleObject(Transform target, Vector3 startScale, Vector3 endScale, float duration)
     {
         if (target == null)
             yield break;
@@ -245,21 +192,11 @@ public class ConvexController : MonoBehaviour
 
             time += Time.deltaTime;
 
-            float t = Mathf.Clamp01(
-                time / duration
-            );
+            float t = Mathf.Clamp01(time / duration);
 
-            t = Mathf.SmoothStep(
-                0f,
-                1f,
-                t
-            );
+            t = Mathf.SmoothStep(0f,1f, t);
 
-            target.localScale = Vector3.Lerp(
-                startScale,
-                endScale,
-                t
-            );
+            target.localScale = Vector3.Lerp(startScale, endScale, t);
 
             yield return null;
         }
@@ -269,16 +206,13 @@ public class ConvexController : MonoBehaviour
 
     private void PlayAnimation()
     {
-        if (animator == null)
+        if (m_lensRays == null)
             return;
 
-        animator.Play(
-            animationStateName,
-            0,
-            0f
-        );
-
-        animator.speed = 1f;
+        if (m_lensRays != null)
+        {
+            m_lensRays.SetActive(true);
+        }
     }
 
     private IEnumerator PlayAudioAndWait(AudioClip clip)
@@ -296,9 +230,7 @@ public class ConvexController : MonoBehaviour
         audioSource.clip = clip;
         audioSource.Play();
 
-        yield return StartCoroutine(
-            WaitForAudioToFinish(clip)
-        );
+        yield return StartCoroutine(WaitForAudioToFinish(clip));
     }
 
     private IEnumerator WaitForAudioToFinish(AudioClip clip)
@@ -323,31 +255,27 @@ public class ConvexController : MonoBehaviour
 
     private void SetLabels(bool value)
     {
-        if (candleLabel != null)
-            candleLabel.SetActive(value);
+        if (emitterLabel != null)
+            emitterLabel.SetActive(value);
 
         if (convexLensLabel != null)
             convexLensLabel.SetActive(value);
-
-        if (imageLabel != null)
-            imageLabel.SetActive(value);
     }
 
-    public void PlayCandle()
+    public void PlayEmitter()
     {
         if (isActivityPaused)
             return;
 
-        if (candleLabel != null)
+        if (emitterLabel != null)
         {
-            UIFadeIn fade =
-                candleLabel.GetComponent<UIFadeIn>();
+            UIFadeIn fade = emitterLabel.GetComponent<UIFadeIn>();
 
             if (fade != null)
                 fade.FadeOut();
         }
 
-        PlayAudio(candleAudio);
+        PlayAudio(emitterAudio);
     }
 
     public void PlayConvexLens()
@@ -357,8 +285,7 @@ public class ConvexController : MonoBehaviour
 
         if (convexLensLabel != null)
         {
-            UIFadeIn fade =
-                convexLensLabel.GetComponent<UIFadeIn>();
+            UIFadeIn fade = convexLensLabel.GetComponent<UIFadeIn>();
 
             if (fade != null)
                 fade.FadeOut();
@@ -367,29 +294,12 @@ public class ConvexController : MonoBehaviour
         PlayAudio(convexLensAudio);
     }
 
-    public void PlayImage()
-    {
-        if (isActivityPaused)
-            return;
-
-        if (imageLabel != null)
-        {
-            UIFadeIn fade =
-                imageLabel.GetComponent<UIFadeIn>();
-
-            if (fade != null)
-                fade.FadeOut();
-        }
-
-        PlayAudio(imageAudio);
-    }
-
     public void PlayIntro()
     {
         if (isActivityPaused)
             return;
 
-        PlayAudio(introConvexLens);
+        PlayAudio(introVO);
     }
 
     public void PlayImageFormationIntro()
@@ -405,7 +315,7 @@ public class ConvexController : MonoBehaviour
         if (isActivityPaused)
             return;
 
-        PlayAudio(betweenF1And2F1Audio);
+        PlayAudio(lensAnimationVO);
     }
 
     private void PlayAudio(AudioClip clip)
@@ -433,20 +343,11 @@ public class ConvexController : MonoBehaviour
 
         if (audioSource != null)
         {
-            audioWasPlayingBeforePause =
-                audioSource.isPlaying;
+            audioWasPlayingBeforePause = audioSource.isPlaying;
 
             if (audioWasPlayingBeforePause)
                 audioSource.Pause();
-        }
-
-        if (animator != null)
-        {
-            animatorSpeedBeforePause =
-                animator.speed;
-
-            animator.speed = 0f;
-        }
+        }        
     }
 
     public void ActivityResume()
@@ -456,16 +357,9 @@ public class ConvexController : MonoBehaviour
 
         isActivityPaused = false;
 
-        if (audioSource != null &&
-            audioWasPlayingBeforePause)
+        if (audioSource != null && audioWasPlayingBeforePause)
         {
             audioSource.UnPause();
-        }
-
-        if (animator != null)
-        {
-            animator.speed =
-                animatorSpeedBeforePause;
         }
 
         audioWasPlayingBeforePause = false;
@@ -503,23 +397,9 @@ public class ConvexController : MonoBehaviour
 
         if (convexLensAnimObj != null)
         {
-            convexLensAnimObj.localScale =
-                Vector3.zero;
+            convexLensAnimObj.localScale = Vector3.zero;
 
             convexLensAnimObj.gameObject.SetActive(false);
-        }
-
-        if (animator != null)
-        {
-            animator.speed = 0f;
-
-            animator.Play(
-                animationStateName,
-                0,
-                0f
-            );
-
-            animator.Update(0f);
         }
     }
 
@@ -531,13 +411,10 @@ public class ConvexController : MonoBehaviour
 
     private void OnDestroy()
     {
-        if (candleButton != null)
-            candleButton.onClick.RemoveListener(PlayCandle);
+        if (emitterButton != null)
+            emitterButton.onClick.RemoveListener(PlayEmitter);
 
         if (convexLensButton != null)
             convexLensButton.onClick.RemoveListener(PlayConvexLens);
-
-        if (imageButton != null)
-            imageButton.onClick.RemoveListener(PlayImage);
     }
 }
