@@ -1,0 +1,633 @@
+fileFormatVersion: 2
+guid: 58212c2de170c7b4fb4189193c234128
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Label_Blue_Long_WithPointer
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 880
+        width: 450
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 5, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0cc133cf5347d500800000000000000
+      internalID: 420879168758205450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Blue_Medium_WithPointer
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 801
+        width: 342
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 304805255095e9210800000000000000
+      internalID: 1341607618393703427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Orange_Medium_WithPointer
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 801
+        width: 358
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07248badb33ffa330800000000000000
+      internalID: 3724462855256818288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Blue_Medium2_WithPointer
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 801
+        width: 375
+        height: 205
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10e590ab365d19e60800000000000000
+      internalID: 7967383840094772737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_LightBlue_Arrow
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 659
+        width: 420
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6ee5b59144236870800000000000000
+      internalID: 8674817171348909676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Gold_Arrow
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 659
+        width: 410
+        height: 155
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1ef86f95b60f6ed0800000000000000
+      internalID: -2418707097741361637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_DarkBlue_RoundIcon
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 669
+        width: 350
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f847dc1e65a9303c0800000000000000
+      internalID: -4394499113437268849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_DarkOrange_RoundIcon
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 669
+        width: 350
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 216096b4d6ddf9590800000000000000
+      internalID: -7665164579274947054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_DarkBlue_Block
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 514
+        width: 382
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4097ccfc68da2810800000000000000
+      internalID: 1741442168541122639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_DarkOrange_Block
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 514
+        width: 375
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4183fe978f8790a70800000000000000
+      internalID: 8793692756010547220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_LightBlue_Snowflake
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 514
+        width: 395
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dcf9042c32c68920800000000000000
+      internalID: 2992292565992733907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_RedOrange_Flame
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 514
+        width: 405
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec184ad08f80e960800000000000000
+      internalID: 7629255552346365152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_LightBlue_Flask
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 379
+        width: 405
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f79ae049ca168c9e0800000000000000
+      internalID: -1600922273683953281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Gold_Heat
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 379
+        width: 380
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869b28e9069d98fc0800000000000000
+      internalID: -3492021027049653912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Blue_LeftChevrons
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 379
+        width: 390
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e7f1e0576c2cbef0800000000000000
+      internalID: -91149070204012571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Orange_LeftChevrons
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 379
+        width: 385
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bac048a642564dba0800000000000000
+      internalID: -6065111591080948565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Blue_Molecule_WithPointer
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 204
+        width: 385
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac3b71bf0ed59b010800000000000000
+      internalID: 1205097596165010378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_LightBlue_Water_WithPointer
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 204
+        width: 405
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee3f1ebc2ab945b00800000000000000
+      internalID: 816448555968492526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Blue_RightArrow
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 244
+        width: 390
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45079b39138885e80800000000000000
+      internalID: -8189646175860068268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Gold_RightArrow
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 244
+        width: 385
+        height: 150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c534e34eb2aa4a20800000000000000
+      internalID: 3047427035936077251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_LightBlue_Search
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 44
+        width: 500
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bb73bbd9572b99e0800000000000000
+      internalID: -1613652774590645323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Red_Warning
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 44
+        width: 485
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c667810801f969e0800000000000000
+      internalID: -1627504773630040375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Label_Green_Check
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 44
+        width: 490
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0efe116684a270390800000000000000
+      internalID: -7852260934858706976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a5efac58528c8c14cab7cfeb44cd7ac8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Label_Blue_LeftChevrons: -91149070204012571
+      Label_Blue_Long_WithPointer: 420879168758205450
+      Label_Blue_Medium2_WithPointer: 7967383840094772737
+      Label_Blue_Medium_WithPointer: 1341607618393703427
+      Label_Blue_Molecule_WithPointer: 1205097596165010378
+      Label_Blue_RightArrow: -8189646175860068268
+      Label_DarkBlue_Block: 1741442168541122639
+      Label_DarkBlue_RoundIcon: -4394499113437268849
+      Label_DarkOrange_Block: 8793692756010547220
+      Label_DarkOrange_RoundIcon: -7665164579274947054
+      Label_Gold_Arrow: -2418707097741361637
+      Label_Gold_Heat: -3492021027049653912
+      Label_Gold_RightArrow: 3047427035936077251
+      Label_Green_Check: -7852260934858706976
+      Label_LightBlue_Arrow: 8674817171348909676
+      Label_LightBlue_Flask: -1600922273683953281
+      Label_LightBlue_Search: -1613652774590645323
+      Label_LightBlue_Snowflake: 2992292565992733907
+      Label_LightBlue_Water_WithPointer: 816448555968492526
+      Label_Orange_LeftChevrons: -6065111591080948565
+      Label_Orange_Medium_WithPointer: 3724462855256818288
+      Label_RedOrange_Flame: 7629255552346365152
+      Label_Red_Warning: -1627504773630040375
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
