@@ -462,6 +462,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97280941}
   m_CullTransparentMesh: 1
+--- !u!1 &111444242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 111444244}
+  - component: {fileID: 111444243}
+  m_Layer: 0
+  m_Name: Taj Hamal Timeline
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!320 &111444243
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111444242}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 43bfd07a6069f804ead2f1d0facadb95, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 2315044490080018966, guid: 43bfd07a6069f804ead2f1d0facadb95, type: 2}
+    value: {fileID: 2129108407}
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &111444244
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111444242}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 43.069275, y: 1.6828418, z: -187.99782}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &113615997 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4142321577294900010, guid: 7f00c53b4b392a542bc2bc4e93968c5a, type: 3}
@@ -1095,71 +1146,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &437006460
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 437006462}
-  - component: {fileID: 437006461}
-  m_Layer: 0
-  m_Name: Royal Symbols Timeline
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!320 &437006461
-PlayableDirector:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 437006460}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: afc112546e6ac1c45a4232a1ef9f81fc, type: 2}
-  m_InitialState: 1
-  m_WrapMode: 2
-  m_DirectorUpdateMode: 1
-  m_InitialTime: 0
-  m_SceneBindings:
-  - key: {fileID: -5979530551110301335, guid: afc112546e6ac1c45a4232a1ef9f81fc, type: 2}
-    value: {fileID: 1009929220}
-  - key: {fileID: 3677009882764414442, guid: afc112546e6ac1c45a4232a1ef9f81fc, type: 2}
-    value: {fileID: 1829031572}
-  - key: {fileID: 7330689178970348385, guid: afc112546e6ac1c45a4232a1ef9f81fc, type: 2}
-    value: {fileID: 1103406639}
-  - key: {fileID: -3598723545249742139, guid: afc112546e6ac1c45a4232a1ef9f81fc, type: 2}
-    value: {fileID: 427993012}
-  - key: {fileID: -1212507636180645374, guid: afc112546e6ac1c45a4232a1ef9f81fc, type: 2}
-    value: {fileID: 2126885279}
-  - key: {fileID: 7379574692641580450, guid: afc112546e6ac1c45a4232a1ef9f81fc, type: 2}
-    value: {fileID: 867437010}
-  - key: {fileID: 2748539580145272047, guid: afc112546e6ac1c45a4232a1ef9f81fc, type: 2}
-    value: {fileID: 2113344491}
-  - key: {fileID: 1699864246589111532, guid: afc112546e6ac1c45a4232a1ef9f81fc, type: 2}
-    value: {fileID: 0}
-  m_ExposedReferences:
-    m_References: []
---- !u!4 &437006462
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 437006460}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.2982495, y: 0.45848003, z: -1.8662459}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &455997718
 GameObject:
   m_ObjectHideFlags: 0
@@ -2741,6 +2727,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7235573282010468999, guid: e120c84975df5f54ab98827dd38c5057, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -2100430326338091681, guid: e120c84975df5f54ab98827dd38c5057, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -2749,6 +2739,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Taj Mahal
       objectReference: {fileID: 0}
+    - target: {fileID: 3807643781063449856, guid: e120c84975df5f54ab98827dd38c5057, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: be1fe4359ed6fd7478804c01d68ba0c3, type: 2}
     - target: {fileID: 4214017711627489075, guid: e120c84975df5f54ab98827dd38c5057, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -3456,140 +3450,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 985468541}
   m_CullTransparentMesh: 1
---- !u!1 &1009929219
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1009929221}
-  - component: {fileID: 1009929220}
-  m_Layer: 0
-  m_Name: TimeLine Pause Signal
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1009929220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1009929219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Events:
-    m_Signals:
-    - {fileID: 11400000, guid: c210d7f63299d3d43b236bbfd2f8da54, type: 2}
-    m_Events:
-    - m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 437006461}
-          m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
-          m_MethodName: Pause
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1631025669}
-          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 308192438}
-          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1555013509}
-          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1831653237}
-          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 239436227}
-          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
-        - m_Target: {fileID: 1133144112}
-          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-          m_MethodName: set_enabled
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 1
-          m_CallState: 2
---- !u!4 &1009929221
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1009929219}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.2982495, y: 0.45848003, z: -1.8662459}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1051631100
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7012,44 +6872,34 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Royal Symbols are objects, signs, and emblems that represent power, authority,
-    leadership, courage, protection, and royal heritage. Throughout history, rulers
-    used these symbols to show their position and connection with the kingdom.
+  m_text: 'The Taj Mahal was commissioned by Mughal emperor Shah Jahan in memory
+    of his beloved wife Mumtaz Mahal. Construction began around 1632 in Agra, India,
+    and the main mausoleum was completed during the following years, with the larger
+    complex taking longer to finish. The monument is primarily built from beautiful
+    white marble brought from Makrana, along with red sandstone and other decorative
+    materials. The Taj Mahal is famous for its remarkable symmetry, large central
+    dome, four minarets, detailed carvings, and delicate inlay work using precious
+    and semi-precious stones.
 
-    The
-    Crown is one of the most recognizable symbols of royalty. It represents authority,
-    dignity, leadership, and the position of a king or queen. Crowns are often decorated
-    with precious stones and elaborate designs to express wealth and importance.
 
-    The
-    Royal Throne represents the seat of power. Kings and queens traditionally sat
-    on thrones during important ceremonies and official occasions. The throne symbolizes
-    authority, leadership, and responsibility toward the kingdom and its people.
+    The monument stands at the northern end of a
+    formal Charbagh garden, a traditional four-part garden design. Long pathways
+    and water channels create a strong central axis leading the viewer toward the
+    mausoleum. The reflection of the Taj Mahal in the water adds to its visual beauty
+    and symmetry.
 
-    The
-    Scepter is a ceremonial staff carried by rulers. It represents royal authority
-    and the power to govern. Its detailed design often reflects the wealth, traditions,
-    and identity of a royal kingdom.
 
-    The Royal Orb represents the world and
-    the ruler''s responsibility over the kingdom. Together with the crown and scepter,
-    it has traditionally been used as an important symbol of royal authority.
+    The main structure contains the cenotaphs associated with
+    Mumtaz Mahal and Shah Jahan, while their actual graves are located in a lower
+    chamber. The interior is decorated with intricate marble screens, floral patterns,
+    calligraphy, and stone inlay.
 
-    The
-    Shield represents protection, strength, and courage. Shields were historically
-    associated with warriors and were often decorated with symbols representing a
-    family, kingdom, or royal house.
 
-    The Lion is a powerful symbol of bravery,
-    strength, courage, and leadership. Because of its strength and majestic appearance,
-    the lion has been associated with rulers and royal families in many cultures.
-
-    In
-    this 3D learning experience, students can explore each royal symbol from different
-    angles. They can rotate and zoom in on the models to observe their shapes, decorations,
-    and details. The Info section provides additional knowledge about the meaning
-    and significance of each symbol, while the Quiz section allows students to test
-    what they have learned.'
+    The Taj Mahal is also recognized as an outstanding
+    achievement of Mughal architecture, combining influences from Indian, Persian,
+    Islamic, and other architectural traditions. Today, it is one of India''s most
+    famous cultural landmarks and a major symbol of architectural beauty, love, craftsmanship,
+    and history.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 956b217cc7cf8c3428c64cf5f91c13b5, type: 2}
   m_sharedMaterial: {fileID: -7116138974986501691, guid: 956b217cc7cf8c3428c64cf5f91c13b5, type: 2}
@@ -7865,6 +7715,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2512387470528047719, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2129108396}
+    - targetCorrespondingSourceObject: {fileID: 2512387470528047719, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2129108407}
   m_SourcePrefab: {fileID: 100100000, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
 --- !u!1 &2129108394 stripped
 GameObject:
@@ -7925,6 +7778,27 @@ MonoBehaviour:
   m_SerializedLibrary: {fileID: 11400000, guid: 5afe7cebeb99b98418e5630ea720430b, type: 2}
   m_MaxNumberOfMovingImages: 1
   m_TrackedImagePrefab: {fileID: 0}
+--- !u!95 &2129108407
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2129108394}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2137073921
 GameObject:
   m_ObjectHideFlags: 0
@@ -7970,7 +7844,7 @@ MonoBehaviour:
   on3DMode:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 437006460}
+      - m_Target: {fileID: 111444242}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -7988,7 +7862,7 @@ MonoBehaviour:
   onARMode:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 437006460}
+      - m_Target: {fileID: 111444242}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -10623,34 +10497,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modelModeManager: {fileID: 2137073922}
   questions:
-  - questionText: Which royal symbol represents authority, dignity, and the position
-      of a king or queen?
+  - questionText: 'Who commissioned the Taj Mahal as a memorial for Mumtaz Mahal? '
     options:
-    - Orb
-    - Crown
-    - Shield
-    - Lion
-    correctAnswerIndex: 1
-    questionVoice: {fileID: 8300000, guid: f596f1a43babe3c45b18be6d8fcf7006, type: 3}
-    correctAnswerVoice: {fileID: 8300000, guid: 27590e431280f1a4087079e8f6b3b73f, type: 3}
-  - questionText: What is special about the path of the infinity symbol?
+    - Shah Jahan
+    - Akbar
+    - Aurangzeb
+    - Babur
+    correctAnswerIndex: 0
+    questionVoice: {fileID: 8300000, guid: 06e10c6d18192004e91b9f1c4d41e7b3, type: 3}
+    correctAnswerVoice: {fileID: 8300000, guid: 5840135865f6f904f89f11e49b7694cf, type: 3}
+  - questionText: 'What is the formal four-part garden design surrounding the Taj
+      Mahal commonly called? '
     options:
-    - Crown
-    - Scepter
-    - 'Royal Throne '
-    - Shield
-    correctAnswerIndex: 3
-    questionVoice: {fileID: 8300000, guid: 4eba5af25e4f95344ba89ad62b313cc4, type: 3}
-    correctAnswerVoice: {fileID: 8300000, guid: 3e6516715e828b546ac92bbe1817362b, type: 3}
-  - questionText: What does the central intersection represent?
+    - Charbagh
+    - Stupa
+    - Torana
+    - Mandapa
+    correctAnswerIndex: 0
+    questionVoice: {fileID: 8300000, guid: 8bb1b9dff6a5b46438cb53a20da2c720, type: 3}
+    correctAnswerVoice: {fileID: 8300000, guid: c5a684ff5864ee54695edac254fc8680, type: 3}
+  - questionText: Which material is most strongly associated with the main structure
+      of the Taj Mahal?
     options:
-    - The world
-    - Royal authority
-    - Bravery
-    - Protection
-    correctAnswerIndex: 1
-    questionVoice: {fileID: 8300000, guid: e4a460ac1e0923444b1bb12e7f9fc600, type: 3}
-    correctAnswerVoice: {fileID: 8300000, guid: 298effc21d49c3345aaa2817690012c9, type: 3}
+    - Timber
+    - Unfired clay
+    - White marble
+    - Black basalt
+    correctAnswerIndex: 2
+    questionVoice: {fileID: 8300000, guid: 84c0de4f21eaaf64d870216cd8c1a190, type: 3}
+    correctAnswerVoice: {fileID: 8300000, guid: 207199bb9dbcea4498a4fc02741352ba, type: 3}
   m_quizPanel: {fileID: 7019613817051215216}
   m_gameOverPanel: {fileID: 4707464959079549715}
   questionText: {fileID: 6369457900495591985}
@@ -10665,7 +10540,7 @@ MonoBehaviour:
   m_default: {fileID: 21300000, guid: f307faa5c5168774cbc5ba5e237c139f, type: 3}
   audioSource: {fileID: 1582698851164859230}
   wrongAnswerVoice: {fileID: 8300000, guid: 808e757e66741e948bfd9ae620b37f6b, type: 3}
-  assessmentCompleteVoice: {fileID: 8300000, guid: bf3799df3ef467d4f8f92b7d38229488, type: 3}
+  assessmentCompleteVoice: {fileID: 8300000, guid: f50ba72460529574ca38f656acf76b1c, type: 3}
   m_quitButton: {fileID: 6619774112123484004}
   m_playAgainButton: {fileID: 535800231000430830}
 --- !u!222 &6285249749389356047
@@ -11763,5 +11638,4 @@ SceneRoots:
   - {fileID: 1518343950}
   - {fileID: 1331109554}
   - {fileID: 457679331}
-  - {fileID: 437006462}
-  - {fileID: 1009929221}
+  - {fileID: 111444244}
