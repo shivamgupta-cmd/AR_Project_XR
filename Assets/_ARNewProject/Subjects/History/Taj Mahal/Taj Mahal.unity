@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 37ca449d9fc675b41995a4b48d941d10, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 6394facb02d7137418212e18638171aa, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -2703,31 +2703,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e120c84975df5f54ab98827dd38c5057, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 202
+      value: 36.678776
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e120c84975df5f54ab98827dd38c5057, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4
+      value: -4.0000014
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e120c84975df5f54ab98827dd38c5057, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -28
+      value: -192.31294
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e120c84975df5f54ab98827dd38c5057, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.70901483
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e120c84975df5f54ab98827dd38c5057, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e120c84975df5f54ab98827dd38c5057, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.7051935
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e120c84975df5f54ab98827dd38c5057, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e120c84975df5f54ab98827dd38c5057, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2735,15 +2735,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e120c84975df5f54ab98827dd38c5057, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 89.69
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e120c84975df5f54ab98827dd38c5057, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2100430326338091681, guid: e120c84975df5f54ab98827dd38c5057, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e120c84975df5f54ab98827dd38c5057, type: 3}
       propertyPath: m_Name
       value: Taj Mahal
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214017711627489075, guid: e120c84975df5f54ab98827dd38c5057, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7773,6 +7781,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2512387469002778331, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2512387469002778331, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
       propertyPath: far clip plane
       value: 2000
       objectReference: {fileID: 0}
@@ -7802,15 +7814,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 33.07
       objectReference: {fileID: 0}
     - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 20.3
       objectReference: {fileID: 0}
     - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 17.76
       objectReference: {fileID: 0}
     - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7942,7 +7954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fff7d43bd606a1b40907d60aeba0840b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelSkybox: {fileID: 2100000, guid: 162cccfa73b6b5949a545cadbbdff887, type: 2}
+  modelSkybox: {fileID: 2100000, guid: 6394facb02d7137418212e18638171aa, type: 2}
   xRayController: {fileID: 0}
   m_modeText: {fileID: 1805355780}
   mode3DButton: {fileID: 1954225428}

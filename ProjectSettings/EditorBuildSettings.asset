@@ -62,6 +62,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_ARNewProject/Subjects/History/Ashoka Pillar/Ashoka Pillar.unity
     guid: 69e85041e4c4108488bac51b024ef927
+  - enabled: 1
+    path: Assets/_ARNewProject/Subjects/History/Taj Mahal/Taj Mahal.unity
+    guid: fd90d850ae4079349904fd584283a168
   m_configObjects:
     : {fileID: 0}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af, type: 2}
