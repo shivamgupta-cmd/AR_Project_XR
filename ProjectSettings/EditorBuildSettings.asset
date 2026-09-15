@@ -5,27 +5,63 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/!AR New Project/Scenes/AR Loading.unity
     guid: f135f33dc6eb02e4fbfa577b077641c9
-  - enabled: 0
+  - enabled: 1
     path: Assets/!AR New Project/Scenes/Main Menu AR_New.unity
     guid: 9216b439d7c105d4ca9d6421acf17c43
   - enabled: 0
     path: Assets/!AR New Project/Scenes/ARDemo.unity
     guid: 4755b35b590504809a7525fd2109c2e2
-  - enabled: 0
+  - enabled: 1
     path: Assets/_ARNewProject/Subjects/Physics/Circular Motion/Circular motion.unity
     guid: 95e675b66610bcf44a31bba0f37dc9fb
-  - enabled: 0
+  - enabled: 1
     path: Assets/_ARNewProject/Subjects/Physics/Solar System/Solar_System.unity
     guid: 5193858a045220b4e928efcf2da7cf75
-  - enabled: 0
+  - enabled: 1
     path: Assets/_ARNewProject/Subjects/Physics/Electromagnet/Electromagnet.unity
     guid: ef823c79150808242846a9f9b8273664
   - enabled: 1
     path: Assets/_ARNewProject/Subjects/History/Royal Symbols/Royal Symbols.unity
     guid: 8c8ee7eb93fb39c4383c44ec0c09cac3
+  - enabled: 1
+    path: Assets/_ARNewProject/Subjects/Chemistry/Bohr's Model/Bohr's Model.unity
+    guid: dfb1f55a9232e184db4bfcee0138bd2b
+  - enabled: 1
+    path: Assets/_ARNewProject/Subjects/Chemistry/Combination Reaction/Combination
+      Reaction.unity
+    guid: d6a67a98fd452274db59fb9c83e72e47
+  - enabled: 1
+    path: Assets/_ARNewProject/Subjects/Chemistry/Decomposition Reaction/Decomposition
+      Reaction.unity
+    guid: 6dc293ba194537a46a51e14ecc334e1c
+  - enabled: 1
+    path: Assets/_ARNewProject/Subjects/Chemistry/Displacement Reaction/Displacement
+      Reaction.unity
+    guid: 18742db1bc985914f820ed04459ea2b2
+  - enabled: 1
+    path: Assets/_ARNewProject/Subjects/Chemistry/Ionic Bonds/Ionic Bond.unity
+    guid: 331b733cf844fc44d8107c11f4374330
+  - enabled: 1
+    path: Assets/_ARNewProject/Subjects/Chemistry/Redox Reaction/Redox Reaction.unity
+    guid: b56e605d207424a46898c8487f9eeaa0
+  - enabled: 1
+    path: Assets/_ARNewProject/Subjects/Chemistry/States of Matter/State of Matter.unity
+    guid: 7aa7b40e29fed58419950b757b29d6b9
+  - enabled: 1
+    path: Assets/_ARNewProject/Subjects/Chemistry/Thomson Model/Thomson Model.unity
+    guid: e6edd47e71e2e0044a90111e2382b777
+  - enabled: 1
+    path: Assets/_ARNewProject/Subjects/Physics/Convex Lans/convex lans.unity
+    guid: 29356165b2661734b8dd3333dc3f4b67
+  - enabled: 1
+    path: Assets/_ARNewProject/Subjects/History/Eternity symbol/Eternity Symbol.unity
+    guid: 20f954e04241f83488a35a39edc96210
+  - enabled: 1
+    path: Assets/_ARNewProject/Subjects/History/Ashoka Pillar/Ashoka Pillar.unity
+    guid: 69e85041e4c4108488bac51b024ef927
   m_configObjects:
     : {fileID: 0}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af, type: 2}
