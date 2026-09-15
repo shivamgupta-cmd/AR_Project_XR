@@ -4,26 +4,31 @@ using UnityEngine.UI;
 
 public class RoyalSymbolsManager : MonoBehaviour
 {
-    [Header("Royal Symbol Buttons")]
+    [Header("Buttons")]
     public Button[] symbolButtons;
-    // 0 = Throne
-    // 1 = Scepter
-    // 2 = Royal Orb
-    // 3 = Shield
-    // 4 = Lion
-    // 5 = Crown
+
+    /*
+        0 = Royal Throne
+        1 = Scepter
+        2 = Royal Orb
+        3 = Shield
+        4 = Lion
+        5 = Crown
+    */
+
+    [Header("Object Highlighters")]
+    public RoyalSymbolHighlighter[] highlighters;
 
     [Header("Symbol Voiceovers")]
     public AudioClip[] symbolVoiceovers;
-    // Same order as buttons
 
-    [Header("Audio")]
+    [Header("Audio Source")]
     public AudioSource audioSource;
 
     [Header("Conclusion Voiceover")]
     public AudioClip conclusionVoiceover;
 
-    private bool[] symbolCompleted;
+    private bool[] completed;
 
     private bool isPlayingVO = false;
     private bool conclusionPlayed = false;
@@ -31,76 +36,186 @@ public class RoyalSymbolsManager : MonoBehaviour
 
     private void Start()
     {
-        // Create completion status for 6 symbols
-        symbolCompleted = new bool[symbolButtons.Length];
+        completed = new bool[symbolButtons.Length];
 
-        // Initially all buttons are enabled
+        // Make sure all models start with their normal emission
+        RestoreAllEmissions();
+
+        // Add button listeners
         for (int i = 0; i < symbolButtons.Length; i++)
         {
             int index = i;
 
             symbolButtons[i].interactable = true;
 
-            symbolButtons[i].onClick.AddListener(() =>
-            {
-                OnSymbolClicked(index);
-            });
+            symbolButtons[i].onClick.AddListener(
+                () => OnSymbolClicked(index)
+            );
         }
     }
 
 
     public void OnSymbolClicked(int index)
     {
-        // Safety checks
         if (isPlayingVO)
             return;
 
-        if (symbolCompleted[index])
+        if (completed[index])
             return;
 
-        if (index < 0 || index >= symbolVoiceovers.Length)
+        if (index < 0 ||
+            index >= symbolVoiceovers.Length)
             return;
 
-        // Mark this symbol as completed
-        symbolCompleted[index] = true;
 
-        // Disable all buttons while VO is playing
+        // Mark as completed
+        completed[index] = true;
+
+
+        // Disable all buttons during VO
         DisableAllButtons();
 
-        // Play selected symbol VO
-        StartCoroutine(PlaySymbolVoiceover(index));
+
+        // --------------------------------
+        // STOP ALL PREVIOUS HIGHLIGHTS
+        // --------------------------------
+
+        StopAllHighlights();
+
+
+        // --------------------------------
+        // TURN OFF EMISSION OF ALL MODELS
+        // --------------------------------
+
+        DisableAllEmissions();
+
+
+        // --------------------------------
+        // SELECTED MODEL
+        // EMISSION ON
+        // HIGHLIGHT ON
+        // --------------------------------
+
+        if (highlighters[index] != null)
+        {
+            highlighters[index].EnableEmission();
+            highlighters[index].StartHighlight();
+        }
+
+
+        // Play VO
+        StartCoroutine(
+            PlaySymbolVO(index)
+        );
     }
 
 
-    private IEnumerator PlaySymbolVoiceover(int index)
+    private IEnumerator PlaySymbolVO(int index)
     {
         isPlayingVO = true;
 
-        AudioClip clip = symbolVoiceovers[index];
+        AudioClip clip =
+            symbolVoiceovers[index];
 
         if (clip != null)
         {
             audioSource.clip = clip;
+
             audioSource.Play();
 
-            // Wait until VO finishes
-            yield return new WaitForSeconds(clip.length);
+            yield return new WaitForSeconds(
+                clip.length
+            );
         }
+
+
+        // --------------------------------
+        // VO COMPLETE
+        // --------------------------------
+
+        // Stop selected highlight
+        StopAllHighlights();
+
+
+        // --------------------------------
+        // RESTORE ALL MODEL EMISSIONS
+        // --------------------------------
+
+        RestoreAllEmissions();
+
 
         isPlayingVO = false;
 
-        // Check whether all 6 symbols are completed
+
+        // --------------------------------
+        // CHECK ALL 6 COMPLETED
+        // --------------------------------
+
         if (AllSymbolsCompleted())
         {
-            StartCoroutine(PlayConclusionVoiceover());
+            StartCoroutine(
+                PlayConclusionVO()
+            );
         }
         else
         {
-            // Enable only symbols which are not completed
+            // Enable remaining buttons
             EnableRemainingButtons();
         }
     }
 
+
+    // =====================================
+    // DISABLE ALL EMISSIONS
+    // =====================================
+
+    private void DisableAllEmissions()
+    {
+        for (int i = 0; i < highlighters.Length; i++)
+        {
+            if (highlighters[i] != null)
+            {
+                highlighters[i].DisableEmission();
+            }
+        }
+    }
+
+
+    // =====================================
+    // RESTORE ALL EMISSIONS
+    // =====================================
+
+    private void RestoreAllEmissions()
+    {
+        for (int i = 0; i < highlighters.Length; i++)
+        {
+            if (highlighters[i] != null)
+            {
+                highlighters[i].RestoreOriginalEmission();
+            }
+        }
+    }
+
+
+    // =====================================
+    // STOP ALL HIGHLIGHTS
+    // =====================================
+
+    private void StopAllHighlights()
+    {
+        for (int i = 0; i < highlighters.Length; i++)
+        {
+            if (highlighters[i] != null)
+            {
+                highlighters[i].StopHighlight();
+            }
+        }
+    }
+
+
+    // =====================================
+    // DISABLE ALL BUTTONS
+    // =====================================
 
     private void DisableAllButtons()
     {
@@ -111,11 +226,15 @@ public class RoyalSymbolsManager : MonoBehaviour
     }
 
 
+    // =====================================
+    // ENABLE REMAINING BUTTONS
+    // =====================================
+
     private void EnableRemainingButtons()
     {
         for (int i = 0; i < symbolButtons.Length; i++)
         {
-            if (!symbolCompleted[i])
+            if (!completed[i])
             {
                 symbolButtons[i].interactable = true;
             }
@@ -123,11 +242,15 @@ public class RoyalSymbolsManager : MonoBehaviour
     }
 
 
+    // =====================================
+    // CHECK ALL SYMBOLS
+    // =====================================
+
     private bool AllSymbolsCompleted()
     {
-        for (int i = 0; i < symbolCompleted.Length; i++)
+        for (int i = 0; i < completed.Length; i++)
         {
-            if (!symbolCompleted[i])
+            if (!completed[i])
             {
                 return false;
             }
@@ -137,25 +260,38 @@ public class RoyalSymbolsManager : MonoBehaviour
     }
 
 
-    private IEnumerator PlayConclusionVoiceover()
+    // =====================================
+    // CONCLUSION VO
+    // =====================================
+
+    private IEnumerator PlayConclusionVO()
     {
-        // Prevent conclusion from playing again
         if (conclusionPlayed)
             yield break;
 
         conclusionPlayed = true;
 
-        // Keep all buttons disabled
+        // All buttons disabled
         DisableAllButtons();
+
+        // No highlight
+        StopAllHighlights();
+
+        // All model emissions ON
+        RestoreAllEmissions();
 
         isPlayingVO = true;
 
         if (conclusionVoiceover != null)
         {
-            audioSource.clip = conclusionVoiceover;
+            audioSource.clip =
+                conclusionVoiceover;
+
             audioSource.Play();
 
-            yield return new WaitForSeconds(conclusionVoiceover.length);
+            yield return new WaitForSeconds(
+                conclusionVoiceover.length
+            );
         }
 
         isPlayingVO = false;
