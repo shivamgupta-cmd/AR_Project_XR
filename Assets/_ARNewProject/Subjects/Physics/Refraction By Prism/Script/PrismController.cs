@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class PrismController : MonoBehaviour
 {
+
+    public PrismTravelLightFX prismTravelLightFX;
     [Header("PRISM OBJECTS")]
     [SerializeField] private Transform introPrism;
     [SerializeField] private Transform animatedPrism;
@@ -14,9 +16,6 @@ public class PrismController : MonoBehaviour
     [Header("INTRO PRISM ROTATION")]
     [SerializeField] private Vector3 introRotationAxis = Vector3.up;
     [SerializeField] private float introRotationSpeed = 35f;
-
-    [Header("ANIMATOR")]
-    [SerializeField] private Animator prismAnimator;
 
     [Header("TORCH")]
     [SerializeField] private Light torchLight;
@@ -85,12 +84,6 @@ public class PrismController : MonoBehaviour
         {
             animatedPrism.localScale = Vector3.zero;
             animatedPrism.gameObject.SetActive(false);
-        }
-
-        if (prismAnimator != null)
-        {
-            prismAnimator.enabled = false;
-            prismAnimator.speed = 1f;
         }
 
         if (torchLight != null)
@@ -184,8 +177,6 @@ public class PrismController : MonoBehaviour
 
         TurnTorchOn();
 
-        StartPrismAnimation();
-
         if (delayBeforeFinalVO > 0f)
         {
             yield return StartCoroutine(
@@ -197,12 +188,14 @@ public class PrismController : MonoBehaviour
         {
             PlayAudio(finalVO);
 
-            yield return StartCoroutine(
-                WaitForActivitySeconds(finalVO.length)
-            );
-        }
+            prismTravelLightFX.PlayRefractionSequence();
 
-        ShowLabels();
+            yield return new WaitUntil(() => prismTravelLightFX.spectrumProgress >= 0.9f);
+
+            ShowLabels();
+
+            yield return StartCoroutine(WaitForActivitySeconds(finalVO.length));
+        }
 
         mainSequenceCoroutine = null;
     }
@@ -252,18 +245,9 @@ public class PrismController : MonoBehaviour
 
                 float t = Mathf.Clamp01(time / duration);
 
-                t = Mathf.SmoothStep(
-                    0f,
-                    1f,
-                    t
-                );
+                t = Mathf.SmoothStep(0f, 1f, t);
 
-                target.localScale =
-                    Vector3.LerpUnclamped(
-                        from,
-                        to,
-                        t
-                    );
+                target.localScale = Vector3.LerpUnclamped(from, to, t);
             }
 
             yield return null;
@@ -290,8 +274,7 @@ public class PrismController : MonoBehaviour
         if (formulaCoroutine != null)
             StopCoroutine(formulaCoroutine);
 
-        formulaCoroutine =
-            StartCoroutine(ShowFormulaAndLabelsRoutine());
+        formulaCoroutine = StartCoroutine(ShowFormulaAndLabelsRoutine());
     }
 
     private IEnumerator ShowFormulaAndLabelsRoutine()
@@ -412,6 +395,8 @@ public class PrismController : MonoBehaviour
             if (label != null)
                 label.SetActive(true);
         }
+
+        ShowFormulaAndLabels();
     }
 
     public void HideLabels()
@@ -438,15 +423,6 @@ public class PrismController : MonoBehaviour
             torchLight.enabled = false;
     }
 
-    public void StartPrismAnimation()
-    {
-        if (prismAnimator == null)
-            return;
-
-        prismAnimator.enabled = true;
-        prismAnimator.speed = 1f;
-    }
-
     private void PlayAudio(AudioClip clip)
     {
         if (audioSource == null || clip == null)
@@ -466,12 +442,6 @@ public class PrismController : MonoBehaviour
 
         if (audioSource != null)
             audioSource.Pause();
-
-        if (prismAnimator != null &&
-            prismAnimator.enabled)
-        {
-            prismAnimator.speed = 0f;
-        }
     }
 
     public void ResumeActivity()
@@ -483,11 +453,5 @@ public class PrismController : MonoBehaviour
 
         if (audioSource != null)
             audioSource.UnPause();
-
-        if (prismAnimator != null &&
-            prismAnimator.enabled)
-        {
-            prismAnimator.speed = 1f;
-        }
     }
 }
