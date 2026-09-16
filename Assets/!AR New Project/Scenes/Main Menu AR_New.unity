@@ -1223,6 +1223,8 @@ MonoBehaviour:
       topicLogo: {fileID: 0}
     - topicName: Royal Symbols
       topicLogo: {fileID: 0}
+    - topicName: Taj Mahal
+      topicLogo: {fileID: 0}
   - subjectName: Civics
     topics: []
   - subjectName: Geography
