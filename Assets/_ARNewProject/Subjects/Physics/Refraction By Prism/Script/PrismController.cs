@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class PrismController : MonoBehaviour
 {
+
+    public PrismTravelLightFX prismTravelLightFX;
     [Header("PRISM OBJECTS")]
     [SerializeField] private Transform introPrism;
     [SerializeField] private Transform animatedPrism;
@@ -197,12 +199,14 @@ public class PrismController : MonoBehaviour
         {
             PlayAudio(finalVO);
 
-            yield return StartCoroutine(
-                WaitForActivitySeconds(finalVO.length)
-            );
-        }
+            prismTravelLightFX.PlayRefractionSequence();
 
-        ShowLabels();
+            yield return new WaitUntil(() => prismTravelLightFX.spectrumProgress >= 0.9f);
+
+            ShowLabels();
+
+            yield return StartCoroutine(WaitForActivitySeconds(finalVO.length));
+        }
 
         mainSequenceCoroutine = null;
     }
