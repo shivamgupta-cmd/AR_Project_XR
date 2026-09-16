@@ -7966,7 +7966,7 @@ MonoBehaviour:
   introRotationSpeed: 35
   torchLight: {fileID: 320882573}
   formulaPanelCanvasGroup: {fileID: 1911971718}
-  formulaFadeDuration: 0.6
+  formulaFadeDuration: 2
   labels:
   - {fileID: 1788448860}
   - {fileID: 1884526319}
@@ -28111,6 +28111,39 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5219748589707307799, guid: 1371848cd5ff167408a06d4347991ad4, type: 3}
   m_PrefabInstance: {fileID: 34017356}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1771923782 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2512387469002778311, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+  m_PrefabInstance: {fileID: 331264285}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2fadf230d1919748a9aa21d40f74619, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1771923783 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2512387469002778310, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+  m_PrefabInstance: {fileID: 331264285}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 816b289ef451e094f9ae174fb4cf8db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1771923784 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2512387469002778329, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+  m_PrefabInstance: {fileID: 331264285}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4966719baa26e4b0e8231a24d9bd491a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1785951081
 GameObject:
   m_ObjectHideFlags: 0
@@ -28975,7 +29008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dea56a9eaadd1c439095de4f9a371cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SerializedLibrary: {fileID: 11400000, guid: 4b2596c1773b20549839695161c5b905, type: 2}
+  m_SerializedLibrary: {fileID: 11400000, guid: 3fdc1ed6954b22d4fa9d2be100e22d09, type: 2}
   m_MaxNumberOfMovingImages: 1
   m_TrackedImagePrefab: {fileID: 0}
 --- !u!114 &1870067135
@@ -30227,7 +30260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackedImageManager: {fileID: 1870067134}
-  sceneImageLibrary: {fileID: 11400000, guid: 80747cb21d21d1e4e912974c082567e2, type: 2}
+  sceneImageLibrary: {fileID: 11400000, guid: 3fdc1ed6954b22d4fa9d2be100e22d09, type: 2}
   initializationTimeout: 10
 --- !u!1 &2052683400
 GameObject:
@@ -30657,10 +30690,22 @@ MonoBehaviour:
   onARMode:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ElectromagnetController, Assembly-CSharp
+      - m_Target: {fileID: 745791332}
+        m_TargetAssemblyTypeName: PrismController, Assembly-CSharp
         m_MethodName: PauseActivity
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1911971714}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -30672,8 +30717,8 @@ MonoBehaviour:
   onInfoMode:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ElectromagnetController, Assembly-CSharp
+      - m_Target: {fileID: 745791332}
+        m_TargetAssemblyTypeName: PrismController, Assembly-CSharp
         m_MethodName: PauseActivity
         m_Mode: 1
         m_Arguments:
@@ -30687,8 +30732,8 @@ MonoBehaviour:
   onQuizMode:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ElectromagnetController, Assembly-CSharp
+      - m_Target: {fileID: 745791332}
+        m_TargetAssemblyTypeName: PrismController, Assembly-CSharp
         m_MethodName: PauseActivity
         m_Mode: 1
         m_Arguments:
@@ -30702,8 +30747,8 @@ MonoBehaviour:
   onInfoCancel:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ElectromagnetController, Assembly-CSharp
+      - m_Target: {fileID: 745791332}
+        m_TargetAssemblyTypeName: PrismController, Assembly-CSharp
         m_MethodName: ResumeActivity
         m_Mode: 1
         m_Arguments:
@@ -30717,8 +30762,8 @@ MonoBehaviour:
   onQuizCancel:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ElectromagnetController, Assembly-CSharp
+      - m_Target: {fileID: 745791332}
+        m_TargetAssemblyTypeName: PrismController, Assembly-CSharp
         m_MethodName: ResumeActivity
         m_Mode: 1
         m_Arguments:
@@ -30739,11 +30784,11 @@ MonoBehaviour:
   infoVoiceClip: {fileID: 0}
   animationSlider: {fileID: 0}
   model3DObject: {fileID: 1493905483}
-  arSession: {fileID: 0}
-  arCamera: {fileID: 0}
-  arCameraManager: {fileID: 0}
-  arCameraBackground: {fileID: 0}
-  trackedPoseDriver: {fileID: 0}
+  arSession: {fileID: 702413258}
+  arCamera: {fileID: 563042378}
+  arCameraManager: {fileID: 1771923784}
+  arCameraBackground: {fileID: 1771923783}
+  trackedPoseDriver: {fileID: 1771923782}
 --- !u!4 &2137073923
 Transform:
   m_ObjectHideFlags: 0
@@ -33958,32 +34003,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modelModeManager: {fileID: 2137073922}
   questions:
-  - questionText: What happens when electric current flows through the copper coil?
+  - questionText: What is the process called when white light splits into different
+      colours after passing through a prism?
     options:
-    - The battery becomes magnetic
-    - A magnetic field is created
-    - The switch stops working
-    - The iron core melts
+    - Reflection
+    - Dispersion
+    - Absorption
+    - Diffraction
     correctAnswerIndex: 1
-    questionVoice: {fileID: 8300000, guid: 4c04a6e8c45b2ae49a26340f50f76251, type: 3}
+    questionVoice: {fileID: 8300000, guid: 3117e5330ea191f4c8857241166f083e, type: 3}
     correctAnswerVoice: {fileID: 8300000, guid: cd01db94c85f0eb409db86289b23b4ae, type: 3}
-  - questionText: What is the purpose of the iron core in an electromagnet?
+  - questionText: Which colour of visible light bends the least when passing through
+      a glass prism?
     options:
-    - To stop the current
-    - To reduce the magnetic field
-    - To strengthen the magnetic field
-    - To disconnect the battery
+    - Violet
+    - Blue
+    - Red
+    - Green
     correctAnswerIndex: 2
-    questionVoice: {fileID: 8300000, guid: 913656d71b5795c4cacf694c01cd2815, type: 3}
+    questionVoice: {fileID: 8300000, guid: 5fd1c7b91651cd340978e24ffe9a0bbd, type: 3}
     correctAnswerVoice: {fileID: 8300000, guid: cd01db94c85f0eb409db86289b23b4ae, type: 3}
-  - questionText: What happens when the switch is turned off?
+  - questionText: Which formula represents the refractive index of a material?
     options:
-    - The magnetic field becomes stronger
-    - The current increases
-    - The magnetic effect disappears
-    - The battery becomes an electromagnet
-    correctAnswerIndex: 2
-    questionVoice: {fileID: 8300000, guid: 3dc6a4c14b99b6f4dbca683cc201d3ca, type: 3}
+    - n = c / v
+    - n = v / c
+    - "n = c \xD7 v"
+    - n = c + v
+    correctAnswerIndex: 0
+    questionVoice: {fileID: 8300000, guid: 62e87554281b34d47b4b444ff2d69536, type: 3}
     correctAnswerVoice: {fileID: 8300000, guid: cd01db94c85f0eb409db86289b23b4ae, type: 3}
   m_quizPanel: {fileID: 7019613817051215216}
   m_gameOverPanel: {fileID: 4707464959079549715}
@@ -34571,19 +34618,19 @@ PrefabInstance:
     - target: {fileID: 6571917519388530943, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
       propertyPath: moveButton
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2061566127}
     - target: {fileID: 6571917519388530943, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
       propertyPath: zoomButton
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1411322781}
     - target: {fileID: 6571917519388530943, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
       propertyPath: resetButton
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1721704955}
     - target: {fileID: 6571917519388530943, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
       propertyPath: rotateButton
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1133721840}
     - target: {fileID: 7553623654631623925, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
       propertyPath: m_Name
       value: ARContentRoot
