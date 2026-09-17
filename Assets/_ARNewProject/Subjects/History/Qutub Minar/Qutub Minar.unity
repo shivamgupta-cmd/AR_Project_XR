@@ -133,73 +133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &50500622
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 50500623}
-  - component: {fileID: 50500624}
-  m_Layer: 0
-  m_Name: RoyalSymbolsManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &50500623
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 50500622}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1986013252947662776}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &50500624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 50500622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8efab807bc18276459358d7bed3a2ec9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  symbolButtons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  highlighters:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  symbolVoiceovers:
-  - {fileID: 8300000, guid: 6a506185986b4ad46af5742c7c7e6001, type: 3}
-  - {fileID: 8300000, guid: 52f730f7fa681c444b5528e754c26212, type: 3}
-  - {fileID: 8300000, guid: 7d3171f3c6ad69a4ea9bf472aa33bc79, type: 3}
-  - {fileID: 8300000, guid: dc6727d70098e5549b3b25e616497473, type: 3}
-  - {fileID: 8300000, guid: ded642e60184b3247b94c9543fbc1d3c, type: 3}
-  - {fileID: 8300000, guid: 26d7834c1ddaf60458b0012d2b7847c9, type: 3}
-  audioSource: {fileID: 1582698851164859230}
-  conclusionVoiceover: {fileID: 8300000, guid: c22539688a109dc44bd9a617ac5d16e1, type: 3}
 --- !u!1 &111444242
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,7 +664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackedImageManager: {fileID: 2129108398}
-  sceneImageLibrary: {fileID: 11400000, guid: cba29dda0d03cbb488e8fea4f15096f1, type: 2}
+  sceneImageLibrary: {fileID: 11400000, guid: 6e8a9cf4e160c6d48bf1dbd2d94e3c6f, type: 2}
   initializationTimeout: 10
 --- !u!1001 &457679331
 PrefabInstance:
@@ -743,47 +676,51 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.5
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 245
+      value: -75
       objectReference: {fileID: 0}
     - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -41
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 874
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -795,7 +732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3308231594632836744, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4019398577971330679, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_Pivot.x
@@ -839,7 +776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4019398577971330679, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1310
+      value: 218
       objectReference: {fileID: 0}
     - target: {fileID: 4019398577971330679, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -863,7 +800,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4019398577971330679, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -18
       objectReference: {fileID: 0}
     - target: {fileID: 4019398577971330679, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -880,7 +817,7 @@ PrefabInstance:
     - target: {fileID: 4381817914513172938, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 62461449da38d1f4788bfd315922fa06, type: 3}
+      objectReference: {fileID: 21300000, guid: ec3fd48d2b5b5394887218f6a10640be, type: 3}
     - target: {fileID: 4381817914513172938, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -2361,39 +2298,39 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e77b4bf46ea950f48960dc501a008363, type: 3}
       propertyPath: m_LocalScale.x
-      value: 200
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e77b4bf46ea950f48960dc501a008363, type: 3}
       propertyPath: m_LocalScale.y
-      value: 200
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e77b4bf46ea950f48960dc501a008363, type: 3}
       propertyPath: m_LocalScale.z
-      value: 200
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e77b4bf46ea950f48960dc501a008363, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0.002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e77b4bf46ea950f48960dc501a008363, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.37
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e77b4bf46ea950f48960dc501a008363, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.34
+      value: 3.62
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e77b4bf46ea950f48960dc501a008363, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.99895847
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e77b4bf46ea950f48960dc501a008363, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00000003774895
+      value: 0.045630615
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e77b4bf46ea950f48960dc501a008363, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e77b4bf46ea950f48960dc501a008363, type: 3}
       propertyPath: m_LocalRotation.z
@@ -2401,7 +2338,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e77b4bf46ea950f48960dc501a008363, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 5.231
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e77b4bf46ea950f48960dc501a008363, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
@@ -2418,6 +2355,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e77b4bf46ea950f48960dc501a008363, type: 3}
       propertyPath: m_Name
       value: QUTUB MINAR
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e77b4bf46ea950f48960dc501a008363, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3616,6 +3557,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0eb00d64045e61946b79818c48a7db7a, type: 3}
       propertyPath: m_Name
       value: Taj Mahal Only
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0eb00d64045e61946b79818c48a7db7a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5074,34 +5019,40 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The Taj Mahal was commissioned by Mughal emperor Shah Jahan in memory
-    of his beloved wife Mumtaz Mahal. Construction began around 1632 in Agra, India,
-    and the main mausoleum was completed during the following years, with the larger
-    complex taking longer to finish. The monument is primarily built from beautiful
-    white marble brought from Makrana, along with red sandstone and other decorative
-    materials. The Taj Mahal is famous for its remarkable symmetry, large central
-    dome, four minarets, detailed carvings, and delicate inlay work using precious
-    and semi-precious stones.
+  m_text: 'Qutub Minar is one of the most famous historical monuments in Delhi and
+    an important example of early Indo-Islamic architecture. Located in the Qutb
+    complex at Mehrauli, the monument is known for its impressive height, detailed
+    stone carvings, inscriptions, and distinctive architectural design.
 
+    The
+    construction of Qutub Minar began in 1199 CE under Qutb-ud-din Aibak. Later,
+    Shamsuddin Iltutmish added more storeys to the tower. Some portions were damaged
+    over time, and repairs and additions were carried out by later rulers, including
+    Firuz Shah Tughlaq.
 
-    The monument stands at the northern end of a
-    formal Charbagh garden, a traditional four-part garden design. Long pathways
-    and water channels create a strong central axis leading the viewer toward the
-    mausoleum. The reflection of the Taj Mahal in the water adds to its visual beauty
-    and symmetry.
+    The tower is approximately 72.5 metres high. It has
+    five storeys, and each storey is separated by a projecting balcony. The balconies
+    are supported by beautifully carved brackets and create strong horizontal divisions
+    across the tall, tapering structure.
 
+    The lower part of the tower is wider,
+    while the diameter gradually decreases as it rises. This gives Qutub Minar its
+    elegant and distinctive shape. Its outer surface features different types of
+    fluting, including rounded and angular patterns. These grooves create interesting
+    patterns of light and shadow across the sandstone.
 
-    The main structure contains the cenotaphs associated with
-    Mumtaz Mahal and Shah Jahan, while their actual graves are located in a lower
-    chamber. The interior is decorated with intricate marble screens, floral patterns,
-    calligraphy, and stone inlay.
+    Another important feature
+    is the series of carved inscription bands found on the tower. The inscriptions
+    provide valuable information about the monument''s historical and cultural context.
 
+    Qutub
+    Minar is part of the larger Qutb complex, which also contains several other important
+    historical structures, including the Quwwat-ul-Islam Mosque, Alai Darwaza, and
+    the Iron Pillar.
 
-    The Taj Mahal is also recognized as an outstanding
-    achievement of Mughal architecture, combining influences from Indian, Persian,
-    Islamic, and other architectural traditions. Today, it is one of India''s most
-    famous cultural landmarks and a major symbol of architectural beauty, love, craftsmanship,
-    and history.'
+    In 1993, the Qutb Minar and its Monuments were inscribed
+    on the UNESCO World Heritage List. Today, Qutub Minar remains an important symbol
+    of India''s architectural heritage and attracts visitors from around the world.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 956b217cc7cf8c3428c64cf5f91c13b5, type: 2}
   m_sharedMaterial: {fileID: -7116138974986501691, guid: 956b217cc7cf8c3428c64cf5f91c13b5, type: 2}
@@ -5796,15 +5747,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.22
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.24
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.412
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5891,7 +5842,7 @@ MonoBehaviour:
   positionOffset: {x: 0, y: 0, z: 0}
   rotationOffset: {x: 0, y: 0, z: 0}
   voiceSource: {fileID: 1582698851164859230}
-  modelActiveVO: {fileID: 8300000, guid: d5aa338997927194ebc7c9017825cfd9, type: 3}
+  modelActiveVO: {fileID: 8300000, guid: 1b4ec520102ff4041b333ec944edda58, type: 3}
   onModelActivated:
     m_PersistentCalls:
       m_Calls: []
@@ -5907,7 +5858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dea56a9eaadd1c439095de4f9a371cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SerializedLibrary: {fileID: 11400000, guid: cba29dda0d03cbb488e8fea4f15096f1, type: 2}
+  m_SerializedLibrary: {fileID: 11400000, guid: 6e8a9cf4e160c6d48bf1dbd2d94e3c6f, type: 2}
   m_MaxNumberOfMovingImages: 1
   m_TrackedImagePrefab: {fileID: 0}
 --- !u!95 &2129108407
@@ -13749,7 +13700,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6922843616988040817}
-  - {fileID: 50500623}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &2007240047153446224
@@ -31072,35 +31022,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modelModeManager: {fileID: 2137073922}
   questions:
-  - questionText: 'Who commissioned the Taj Mahal as a memorial for Mumtaz Mahal? '
+  - questionText: 'Approximately how tall is Qutub Minar? '
     options:
-    - Shah Jahan
+    - 72.5 metres
+    - 52.5 metres
+    - 62.5 metres
+    - '82.5 metres '
+    correctAnswerIndex: 0
+    questionVoice: {fileID: 8300000, guid: 65e9dae61a4cce843bd61bc97c3b0e25, type: 3}
+    correctAnswerVoice: {fileID: 8300000, guid: 7c02fdd64660aa74f8cf12ec48802930, type: 3}
+  - questionText: 'How many storeys does the present Qutub Minar have? '
+    options:
+    - 'Four storeys '
+    - 'Three storeys '
+    - Six storeys
+    - Five storeys
+    correctAnswerIndex: 3
+    questionVoice: {fileID: 8300000, guid: 01ae0b2a4fc732847b81f12220e0976d, type: 3}
+    correctAnswerVoice: {fileID: 8300000, guid: d10eabbe39cfb924694319c10ead6c2b, type: 3}
+  - questionText: 'Under whose rule did construction of Qutub Minar begin in 1199
+      CE? '
+    options:
     - Akbar
+    - Qutb-ud-din Aibak
+    - Shah Jahan
     - Aurangzeb
-    - Babur
-    correctAnswerIndex: 0
-    questionVoice: {fileID: 8300000, guid: 06e10c6d18192004e91b9f1c4d41e7b3, type: 3}
-    correctAnswerVoice: {fileID: 8300000, guid: 5840135865f6f904f89f11e49b7694cf, type: 3}
-  - questionText: 'What is the formal four-part garden design surrounding the Taj
-      Mahal commonly called? '
+    correctAnswerIndex: 1
+    questionVoice: {fileID: 8300000, guid: 70a1aebe8498b7f46aca313764f8af18, type: 3}
+    correctAnswerVoice: {fileID: 8300000, guid: cd28e348501b96241958273fda3264e7, type: 3}
+  - questionText: What architectural feature separates the major storeys of Qutub
+      Minar?
     options:
-    - Charbagh
-    - Stupa
-    - Torana
-    - Mandapa
-    correctAnswerIndex: 0
-    questionVoice: {fileID: 8300000, guid: 8bb1b9dff6a5b46438cb53a20da2c720, type: 3}
-    correctAnswerVoice: {fileID: 8300000, guid: c5a684ff5864ee54695edac254fc8680, type: 3}
-  - questionText: Which material is most strongly associated with the main structure
-      of the Taj Mahal?
-    options:
-    - Timber
-    - Unfired clay
-    - White marble
-    - Black basalt
+    - Wooden bridges
+    - Stone domes
+    - Projecting balconies
+    - Large glass windows
     correctAnswerIndex: 2
-    questionVoice: {fileID: 8300000, guid: 84c0de4f21eaaf64d870216cd8c1a190, type: 3}
-    correctAnswerVoice: {fileID: 8300000, guid: 207199bb9dbcea4498a4fc02741352ba, type: 3}
+    questionVoice: {fileID: 8300000, guid: 1c1979d9dbcdf9648ad732858972ec68, type: 3}
+    correctAnswerVoice: {fileID: 8300000, guid: 0ed31f4fdb47c2648b594b19451f9720, type: 3}
   m_quizPanel: {fileID: 7019613817051215216}
   m_gameOverPanel: {fileID: 4707464959079549715}
   questionText: {fileID: 6369457900495591985}
@@ -31115,7 +31074,7 @@ MonoBehaviour:
   m_default: {fileID: 21300000, guid: f307faa5c5168774cbc5ba5e237c139f, type: 3}
   audioSource: {fileID: 1582698851164859230}
   wrongAnswerVoice: {fileID: 8300000, guid: 808e757e66741e948bfd9ae620b37f6b, type: 3}
-  assessmentCompleteVoice: {fileID: 8300000, guid: f50ba72460529574ca38f656acf76b1c, type: 3}
+  assessmentCompleteVoice: {fileID: 8300000, guid: acd8a8d915c5b8a49b8b27b6da0eaaf3, type: 3}
   m_quitButton: {fileID: 6619774112123484004}
   m_playAgainButton: {fileID: 535800231000430830}
 --- !u!33 &6203801155265645669
