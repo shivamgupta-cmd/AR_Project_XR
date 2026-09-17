@@ -5812,7 +5812,7 @@ MonoBehaviour:
   positionOffset: {x: 0, y: 0, z: 0}
   rotationOffset: {x: 0, y: 0, z: 0}
   voiceSource: {fileID: 1582698851164859230}
-  modelActiveVO: {fileID: 8300000, guid: d5aa338997927194ebc7c9017825cfd9, type: 3}
+  modelActiveVO: {fileID: 8300000, guid: e15ec334c9fba264e88165f377472897, type: 3}
   onModelActivated:
     m_PersistentCalls:
       m_Calls: []

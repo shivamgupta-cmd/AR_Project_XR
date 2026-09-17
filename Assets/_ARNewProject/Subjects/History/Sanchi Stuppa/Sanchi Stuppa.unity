@@ -133,73 +133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &50500622
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 50500623}
-  - component: {fileID: 50500624}
-  m_Layer: 0
-  m_Name: RoyalSymbolsManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &50500623
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 50500622}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1986013252947662776}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &50500624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 50500622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8efab807bc18276459358d7bed3a2ec9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  symbolButtons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  highlighters:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  symbolVoiceovers:
-  - {fileID: 8300000, guid: 6a506185986b4ad46af5742c7c7e6001, type: 3}
-  - {fileID: 8300000, guid: 52f730f7fa681c444b5528e754c26212, type: 3}
-  - {fileID: 8300000, guid: 7d3171f3c6ad69a4ea9bf472aa33bc79, type: 3}
-  - {fileID: 8300000, guid: dc6727d70098e5549b3b25e616497473, type: 3}
-  - {fileID: 8300000, guid: ded642e60184b3247b94c9543fbc1d3c, type: 3}
-  - {fileID: 8300000, guid: 26d7834c1ddaf60458b0012d2b7847c9, type: 3}
-  audioSource: {fileID: 1582698851164859230}
-  conclusionVoiceover: {fileID: 8300000, guid: c22539688a109dc44bd9a617ac5d16e1, type: 3}
 --- !u!1 &111444242
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,11 +692,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: -33.97013
       objectReference: {fileID: 0}
     - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 129.14993
       objectReference: {fileID: 0}
     - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_LocalScale.x
@@ -775,15 +708,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 245
+      value: 67.3
       objectReference: {fileID: 0}
     - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -41
+      value: -16.884933
       objectReference: {fileID: 0}
     - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 874
+      value: 66.92497
       objectReference: {fileID: 0}
     - target: {fileID: 517018082912922626, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -795,7 +728,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3308231594632836744, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4019398577971330679, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_Pivot.x
@@ -823,11 +756,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4019398577971330679, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1080
+      value: 941
       objectReference: {fileID: 0}
     - target: {fileID: 4019398577971330679, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1920
+      value: 1672
       objectReference: {fileID: 0}
     - target: {fileID: 4019398577971330679, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -863,7 +796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4019398577971330679, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 752
       objectReference: {fileID: 0}
     - target: {fileID: 4019398577971330679, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -877,10 +810,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4126678009677356445, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4381817914513172938, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 62461449da38d1f4788bfd315922fa06, type: 3}
+      objectReference: {fileID: 21300000, guid: 273fb07bcc072144b8adf1f1724381d8, type: 3}
     - target: {fileID: 4381817914513172938, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -897,10 +834,66 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4828512308456357263, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584110772516061154, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584110772516061154, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584110772516061154, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584110772516061154, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584110772516061154, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584110772516061154, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584110772516061154, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -92
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584110772516061154, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -37
+      objectReference: {fileID: 0}
+    - target: {fileID: 6584110772516061154, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -816
+      objectReference: {fileID: 0}
     - target: {fileID: 7396428813678820027, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2129108395}
+    - target: {fileID: 8427620815113143913, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 273fb07bcc072144b8adf1f1724381d8, type: 3}
+    - target: {fileID: 8427620815113143913, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8427620815113143913, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8427620815113143913, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3716,44 +3709,60 @@ PrefabInstance:
     m_TransformParent: {fileID: 1493905484}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.42
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.28
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.6823065
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7310662
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.71
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9925462
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.12186928
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 93.952
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: c2193240e9ca0104585ed4a8d120624d, type: 3}
       propertyPath: m_Name
@@ -5058,34 +5067,33 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'The Taj Mahal was commissioned by Mughal emperor Shah Jahan in memory
-    of his beloved wife Mumtaz Mahal. Construction began around 1632 in Agra, India,
-    and the main mausoleum was completed during the following years, with the larger
-    complex taking longer to finish. The monument is primarily built from beautiful
-    white marble brought from Makrana, along with red sandstone and other decorative
-    materials. The Taj Mahal is famous for its remarkable symmetry, large central
-    dome, four minarets, detailed carvings, and delicate inlay work using precious
-    and semi-precious stones.
-
-
-    The monument stands at the northern end of a
-    formal Charbagh garden, a traditional four-part garden design. Long pathways
-    and water channels create a strong central axis leading the viewer toward the
-    mausoleum. The reflection of the Taj Mahal in the water adds to its visual beauty
-    and symmetry.
-
-
-    The main structure contains the cenotaphs associated with
-    Mumtaz Mahal and Shah Jahan, while their actual graves are located in a lower
-    chamber. The interior is decorated with intricate marble screens, floral patterns,
-    calligraphy, and stone inlay.
-
-
-    The Taj Mahal is also recognized as an outstanding
-    achievement of Mughal architecture, combining influences from Indian, Persian,
-    Islamic, and other architectural traditions. Today, it is one of India''s most
-    famous cultural landmarks and a major symbol of architectural beauty, love, craftsmanship,
-    and history.'
+  m_text: "The Sanchi Stupa is one of India\u2019s most important ancient Buddhist
+    monuments and a remarkable example of early Buddhist architecture, sculpture,
+    and symbolism. Located in Madhya Pradesh, the Great Stupa at Sanchi was originally
+    commissioned by Emperor Ashoka in the 3rd century BCE. Over later centuries,
+    the monument was enlarged and decorated, especially during the Shunga and Satavahana
+    periods.\nThe main structure of the Stupa is the large hemispherical Anda, or
+    dome. It represents the central form of the monument and traditionally contains
+    sacred relics. Surrounding the dome is the Vedika, a stone railing that marks
+    the sacred area. Visitors traditionally move around the Stupa in a clockwise
+    direction as part of a practice known as circumambulation.\nAbove the dome is
+    the Harmika, a small square enclosure. Rising above it is the Chhatra, an umbrella-like
+    structure consisting of multiple circular elements. The Chhatra is associated
+    with honour and spiritual significance.\nOne of the most distinctive features
+    of Sanchi is its four beautifully decorated Toranas, or gateways. They face the
+    four cardinal directions. Their carved panels contain scenes, symbols, animals,
+    plants, and stories connected with Buddhist traditions. The artwork includes
+    representations associated with the Jataka stories, which describe events connected
+    with the Buddha\u2019s previous lives.\nThe Dharma Wheel is another important
+    Buddhist symbol seen in the artistic decoration. At Sanchi, the Buddha is often
+    represented through symbols rather than a direct human figure, including the
+    wheel, Bodhi tree, footprints, and empty throne.\nThe Sanchi monuments form an
+    important archaeological and cultural site and were designated a UNESCO World
+    Heritage Site in 1989. Today, Sanchi provides an opportunity to understand ancient
+    Indian architecture, Buddhist traditions, stone craftsmanship, and symbolic storytelling.\nFor
+    the 3D experience, learners can rotate and zoom the complete model, explore the
+    Anda, Vedika, Torana, Harmika, and Chhatra, and use an exploded view to understand
+    how these architectural elements form the complete monument."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 956b217cc7cf8c3428c64cf5f91c13b5, type: 2}
   m_sharedMaterial: {fileID: -7116138974986501691, guid: 956b217cc7cf8c3428c64cf5f91c13b5, type: 2}
@@ -5780,15 +5788,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.129
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.476
+      value: 0.19
       objectReference: {fileID: 0}
     - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.564
+      value: -0.11
       objectReference: {fileID: 0}
     - target: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5875,7 +5883,7 @@ MonoBehaviour:
   positionOffset: {x: 0, y: 0, z: 0}
   rotationOffset: {x: 0, y: 0, z: 0}
   voiceSource: {fileID: 1582698851164859230}
-  modelActiveVO: {fileID: 8300000, guid: d5aa338997927194ebc7c9017825cfd9, type: 3}
+  modelActiveVO: {fileID: 8300000, guid: c2e17bc40c2b07b4dba9d5aaad84fe0c, type: 3}
   onModelActivated:
     m_PersistentCalls:
       m_Calls: []
@@ -13733,7 +13741,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6922843616988040817}
-  - {fileID: 50500623}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &2007240047153446224
@@ -31056,35 +31063,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modelModeManager: {fileID: 2137073922}
   questions:
-  - questionText: 'Who commissioned the Taj Mahal as a memorial for Mumtaz Mahal? '
+  - questionText: Who originally commissioned the Great Stupa at Sanchi in the 3rd
+      century BCE?
     options:
-    - Shah Jahan
-    - Akbar
-    - Aurangzeb
-    - Babur
+    - Emperor Ashoka
+    - Emperor Akbar
+    - Chandragupta II
+    - Emperor Shah Jahan
     correctAnswerIndex: 0
-    questionVoice: {fileID: 8300000, guid: 06e10c6d18192004e91b9f1c4d41e7b3, type: 3}
-    correctAnswerVoice: {fileID: 8300000, guid: 5840135865f6f904f89f11e49b7694cf, type: 3}
-  - questionText: 'What is the formal four-part garden design surrounding the Taj
-      Mahal commonly called? '
+    questionVoice: {fileID: 8300000, guid: d3eb05502b2a1c248ae038ed3d7c6cdf, type: 3}
+    correctAnswerVoice: {fileID: 8300000, guid: 051ca1fdccacbf849948ceff0b34dd7b, type: 3}
+  - questionText: What is the large hemispherical dome of the Sanchi Stupa called?
     options:
-    - Charbagh
-    - Stupa
+    - Anda
+    - Harmika
+    - Vedika
     - Torana
-    - Mandapa
     correctAnswerIndex: 0
-    questionVoice: {fileID: 8300000, guid: 8bb1b9dff6a5b46438cb53a20da2c720, type: 3}
-    correctAnswerVoice: {fileID: 8300000, guid: c5a684ff5864ee54695edac254fc8680, type: 3}
-  - questionText: Which material is most strongly associated with the main structure
-      of the Taj Mahal?
+    questionVoice: {fileID: 8300000, guid: 153b05ebacfb9df45b7e32df7d559a81, type: 3}
+    correctAnswerVoice: {fileID: 8300000, guid: 585b06aac6e6f6849aefb4cd4cfa8242, type: 3}
+  - questionText: How many major Toranas, or gateways, surround the Great Stupa at
+      Sanchi?
     options:
-    - Timber
-    - Unfired clay
-    - White marble
-    - Black basalt
+    - Three gateways
+    - Four gateways
+    - Six gateways
+    - Two gateways
+    correctAnswerIndex: 1
+    questionVoice: {fileID: 8300000, guid: e45baf683e388c046abd1550a2dff927, type: 3}
+    correctAnswerVoice: {fileID: 8300000, guid: c9d7fbda4f0afa64f9120774d41b74ad, type: 3}
+  - questionText: Which feature is the small square enclosure located above the Anda?
+    options:
+    - Anda
+    - Torana
+    - Harmika
+    - Vedika
     correctAnswerIndex: 2
-    questionVoice: {fileID: 8300000, guid: 84c0de4f21eaaf64d870216cd8c1a190, type: 3}
-    correctAnswerVoice: {fileID: 8300000, guid: 207199bb9dbcea4498a4fc02741352ba, type: 3}
+    questionVoice: {fileID: 8300000, guid: d552325e36fa7dd4299db92e4fa5d8c7, type: 3}
+    correctAnswerVoice: {fileID: 8300000, guid: c1d421827c61eea41a1d998ea62d8265, type: 3}
   m_quizPanel: {fileID: 7019613817051215216}
   m_gameOverPanel: {fileID: 4707464959079549715}
   questionText: {fileID: 6369457900495591985}
@@ -31099,7 +31115,7 @@ MonoBehaviour:
   m_default: {fileID: 21300000, guid: f307faa5c5168774cbc5ba5e237c139f, type: 3}
   audioSource: {fileID: 1582698851164859230}
   wrongAnswerVoice: {fileID: 8300000, guid: 808e757e66741e948bfd9ae620b37f6b, type: 3}
-  assessmentCompleteVoice: {fileID: 8300000, guid: f50ba72460529574ca38f656acf76b1c, type: 3}
+  assessmentCompleteVoice: {fileID: 8300000, guid: 00f4ae5920f56a941b8f8e1485dd89b2, type: 3}
   m_quitButton: {fileID: 6619774112123484004}
   m_playAgainButton: {fileID: 535800231000430830}
 --- !u!33 &6203801155265645669
