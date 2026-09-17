@@ -123,11 +123,7 @@ public class PrismController : MonoBehaviour
         {
             PlayAudio(introVO);
 
-            yield return StartCoroutine(
-                WaitForActivitySeconds(
-                    introVO.length
-                )
-            );
+            yield return StartCoroutine(WaitForActivitySeconds(introVO.length));
         }
 
         if (delayAfterIntro > 0f)
