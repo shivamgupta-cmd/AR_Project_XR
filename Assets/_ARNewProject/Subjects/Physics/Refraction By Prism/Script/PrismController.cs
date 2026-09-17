@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class PrismController : MonoBehaviour
 {
-
     public PrismTravelLightFX prismTravelLightFX;
+
     [Header("PRISM OBJECTS")]
     [SerializeField] private Transform introPrism;
     [SerializeField] private Transform animatedPrism;
@@ -19,6 +19,8 @@ public class PrismController : MonoBehaviour
 
     [Header("TORCH")]
     [SerializeField] private Light torchLight;
+    [SerializeField] private Light directionalLight;
+
 
     [Header("FORMULA PANEL")]
     [SerializeField] private CanvasGroup formulaPanelCanvasGroup;
@@ -31,6 +33,7 @@ public class PrismController : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip introVO;
     [SerializeField] private AudioClip finalVO;
+    [SerializeField] private AudioClip clickLabels;
 
     [Header("TIMING")]
     [SerializeField] private float delayAfterIntro = 0.3f;
@@ -42,6 +45,7 @@ public class PrismController : MonoBehaviour
     private Coroutine mainSequenceCoroutine;
     private Coroutine formulaCoroutine;
     private Coroutine introRotationCoroutine;
+    private Coroutine spectrumWaitCoroutine;
 
     private bool rotateIntroPrism;
     private bool isPaused;
@@ -52,26 +56,22 @@ public class PrismController : MonoBehaviour
             animatedPrismOriginalScale = animatedPrism.localScale;
 
         if (introPrism != null)
-        {
             introPrismOriginalRotation = introPrism.localRotation;
-            introPrism.localScale = Vector3.zero;
-        }
-
-        if (animatedPrism != null)
-            animatedPrism.localScale = Vector3.zero;
     }
 
     private void Start()
     {
         PrepareModule();
+        mainSequenceCoroutine = StartCoroutine(ModuleSequence());
 
-        mainSequenceCoroutine =
-            StartCoroutine(ModuleSequence());
+        if (directionalLight != null)
+            directionalLight.enabled = false;
     }
 
     private void PrepareModule()
     {
         isPaused = false;
+        rotateIntroPrism = false;
 
         if (introPrism != null)
         {
@@ -86,8 +86,7 @@ public class PrismController : MonoBehaviour
             animatedPrism.gameObject.SetActive(false);
         }
 
-        if (torchLight != null)
-            torchLight.enabled = false;
+        TurnTorchOff();
 
         if (formulaPanelCanvasGroup != null)
         {
@@ -108,9 +107,7 @@ public class PrismController : MonoBehaviour
             introPrism.localScale = Vector3.zero;
 
             rotateIntroPrism = true;
-
-            introRotationCoroutine =
-                StartCoroutine(RotateIntroPrism());
+            introRotationCoroutine = StartCoroutine(RotateIntroPrism());
 
             yield return StartCoroutine(
                 ScaleObject(
@@ -127,14 +124,18 @@ public class PrismController : MonoBehaviour
             PlayAudio(introVO);
 
             yield return StartCoroutine(
-                WaitForActivitySeconds(introVO.length)
+                WaitForActivitySeconds(
+                    introVO.length
+                )
             );
         }
 
         if (delayAfterIntro > 0f)
         {
             yield return StartCoroutine(
-                WaitForActivitySeconds(delayAfterIntro)
+                WaitForActivitySeconds(
+                    delayAfterIntro
+                )
             );
         }
 
@@ -180,24 +181,63 @@ public class PrismController : MonoBehaviour
         if (delayBeforeFinalVO > 0f)
         {
             yield return StartCoroutine(
-                WaitForActivitySeconds(delayBeforeFinalVO)
+                WaitForActivitySeconds(
+                    delayBeforeFinalVO
+                )
             );
         }
 
         if (finalVO != null)
         {
+            if (directionalLight != null)
+                directionalLight.enabled = true;
+
             PlayAudio(finalVO);
 
-            prismTravelLightFX.PlayRefractionSequence();
+            if (prismTravelLightFX != null)
+            {
+                prismTravelLightFX.PlayRefractionSequence();
 
-            yield return new WaitUntil(() => prismTravelLightFX.spectrumProgress >= 0.9f);
+                spectrumWaitCoroutine =
+                    StartCoroutine(
+                        WaitForSpectrumAndShowUI()
+                    );
+            }
+            else
+            {
+                ShowFormulaAndLabels();
+            }
 
-            ShowLabels();
-
-            yield return StartCoroutine(WaitForActivitySeconds(finalVO.length));
+            yield return StartCoroutine(
+                WaitForActivitySeconds(
+                    finalVO.length
+                )
+            );
+            PlayAudio(clickLabels);
         }
 
         mainSequenceCoroutine = null;
+    }
+
+    private IEnumerator WaitForSpectrumAndShowUI()
+    {
+        if (prismTravelLightFX == null)
+            yield break;
+
+        while (prismTravelLightFX.spectrumProgress < 0.9f)
+        {
+            if (isPaused)
+            {
+                yield return null;
+                continue;
+            }
+
+            yield return null;
+        }
+
+        ShowFormulaAndLabels();
+
+        spectrumWaitCoroutine = null;
     }
 
     private IEnumerator RotateIntroPrism()
@@ -235,20 +275,34 @@ public class PrismController : MonoBehaviour
             yield break;
         }
 
-        float time = 0f;
+        float timer = 0f;
 
-        while (time < duration)
+        while (timer < duration)
         {
-            if (!isPaused)
+            if (isPaused)
             {
-                time += Time.deltaTime;
-
-                float t = Mathf.Clamp01(time / duration);
-
-                t = Mathf.SmoothStep(0f, 1f, t);
-
-                target.localScale = Vector3.LerpUnclamped(from, to, t);
+                yield return null;
+                continue;
             }
+
+            timer += Time.deltaTime;
+
+            float t = Mathf.Clamp01(
+                timer / duration
+            );
+
+            t = Mathf.SmoothStep(
+                0f,
+                1f,
+                t
+            );
+
+            target.localScale =
+                Vector3.LerpUnclamped(
+                    from,
+                    to,
+                    t
+                );
 
             yield return null;
         }
@@ -258,12 +312,17 @@ public class PrismController : MonoBehaviour
 
     private IEnumerator WaitForActivitySeconds(float duration)
     {
-        float time = 0f;
+        float timer = 0f;
 
-        while (time < duration)
+        while (timer < duration)
         {
-            if (!isPaused)
-                time += Time.deltaTime;
+            if (isPaused)
+            {
+                yield return null;
+                continue;
+            }
+
+            timer += Time.deltaTime;
 
             yield return null;
         }
@@ -271,68 +330,79 @@ public class PrismController : MonoBehaviour
 
     public void ShowFormulaAndLabels()
     {
+        ShowLabels();
+
         if (formulaCoroutine != null)
             StopCoroutine(formulaCoroutine);
 
-        formulaCoroutine = StartCoroutine(ShowFormulaAndLabelsRoutine());
+        formulaCoroutine =
+            StartCoroutine(
+                ShowFormulaRoutine()
+            );
     }
 
-    private IEnumerator ShowFormulaAndLabelsRoutine()
+    private IEnumerator ShowFormulaRoutine()
     {
-        ShowLabels();
-
-        if (formulaPanelCanvasGroup != null)
+        if (formulaPanelCanvasGroup == null)
         {
-            formulaPanelCanvasGroup.gameObject.SetActive(true);
-
-            formulaPanelCanvasGroup.interactable = false;
-            formulaPanelCanvasGroup.blocksRaycasts = false;
-
-            yield return StartCoroutine(
-                FadeCanvasGroup(
-                    formulaPanelCanvasGroup,
-                    formulaPanelCanvasGroup.alpha,
-                    1f,
-                    formulaFadeDuration
-                )
-            );
-
-            formulaPanelCanvasGroup.interactable = true;
-            formulaPanelCanvasGroup.blocksRaycasts = true;
+            formulaCoroutine = null;
+            yield break;
         }
+
+        formulaPanelCanvasGroup.gameObject.SetActive(true);
+
+        formulaPanelCanvasGroup.interactable = false;
+        formulaPanelCanvasGroup.blocksRaycasts = false;
+
+        yield return StartCoroutine(
+            FadeCanvasGroup(
+                formulaPanelCanvasGroup,
+                formulaPanelCanvasGroup.alpha,
+                1f,
+                formulaFadeDuration
+            )
+        );
+
+        formulaPanelCanvasGroup.interactable = true;
+        formulaPanelCanvasGroup.blocksRaycasts = true;
 
         formulaCoroutine = null;
     }
 
     public void HideFormulaAndLabels()
     {
+        HideLabels();
+
         if (formulaCoroutine != null)
             StopCoroutine(formulaCoroutine);
 
         formulaCoroutine =
-            StartCoroutine(HideFormulaAndLabelsRoutine());
+            StartCoroutine(
+                HideFormulaRoutine()
+            );
     }
 
-    private IEnumerator HideFormulaAndLabelsRoutine()
+    private IEnumerator HideFormulaRoutine()
     {
-        HideLabels();
-
-        if (formulaPanelCanvasGroup != null)
+        if (formulaPanelCanvasGroup == null)
         {
-            formulaPanelCanvasGroup.interactable = false;
-            formulaPanelCanvasGroup.blocksRaycasts = false;
-
-            yield return StartCoroutine(
-                FadeCanvasGroup(
-                    formulaPanelCanvasGroup,
-                    formulaPanelCanvasGroup.alpha,
-                    0f,
-                    formulaFadeDuration
-                )
-            );
-
-            formulaPanelCanvasGroup.gameObject.SetActive(false);
+            formulaCoroutine = null;
+            yield break;
         }
+
+        formulaPanelCanvasGroup.interactable = false;
+        formulaPanelCanvasGroup.blocksRaycasts = false;
+
+        yield return StartCoroutine(
+            FadeCanvasGroup(
+                formulaPanelCanvasGroup,
+                formulaPanelCanvasGroup.alpha,
+                0f,
+                formulaFadeDuration
+            )
+        );
+
+        formulaPanelCanvasGroup.gameObject.SetActive(false);
 
         formulaCoroutine = null;
     }
@@ -355,29 +425,34 @@ public class PrismController : MonoBehaviour
             yield break;
         }
 
-        float time = 0f;
+        float timer = 0f;
 
-        while (time < duration)
+        while (timer < duration)
         {
-            if (!isPaused)
+            if (isPaused)
             {
-                time += Time.deltaTime;
+                yield return null;
+                continue;
+            }
 
-                float t = Mathf.Clamp01(time / duration);
+            timer += Time.deltaTime;
 
-                t = Mathf.SmoothStep(
-                    0f,
-                    1f,
+            float t = Mathf.Clamp01(
+                timer / duration
+            );
+
+            t = Mathf.SmoothStep(
+                0f,
+                1f,
+                t
+            );
+
+            canvasGroup.alpha =
+                Mathf.Lerp(
+                    from,
+                    to,
                     t
                 );
-
-                canvasGroup.alpha =
-                    Mathf.Lerp(
-                        from,
-                        to,
-                        t
-                    );
-            }
 
             yield return null;
         }
@@ -395,8 +470,6 @@ public class PrismController : MonoBehaviour
             if (label != null)
                 label.SetActive(true);
         }
-
-        ShowFormulaAndLabels();
     }
 
     public void HideLabels()
@@ -442,6 +515,9 @@ public class PrismController : MonoBehaviour
 
         if (audioSource != null)
             audioSource.Pause();
+
+        //if (prismTravelLightFX != null)
+        //    prismTravelLightFX.PauseEffect();
     }
 
     public void ResumeActivity()
@@ -453,5 +529,13 @@ public class PrismController : MonoBehaviour
 
         if (audioSource != null)
             audioSource.UnPause();
+
+        //if (prismTravelLightFX != null)
+        //    prismTravelLightFX.ResumeEffect();
+    }
+
+    public bool IsPaused()
+    {
+        return isPaused;
     }
 }

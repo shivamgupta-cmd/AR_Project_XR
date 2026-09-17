@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/_ARNewProject/Subjects/Chemistry/Effects Of Temperature On States Of Matter/SF.meta
 guid: b17acded8312df142b0b36803b6bf66b
+========
+guid: 1634dc741c9099549bc43e0f4fbb1095
+>>>>>>>> 6318c62a3cdc48f217dc02be2a36d75f6eaeda23:Assets/_ARNewProject/Subjects/History/Qutub Minar.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
