@@ -65,9 +65,13 @@ public class PrismTravelLightFX : MonoBehaviour
 
     void OnEnable()
     {
-        BuildIfNeeded();
-        ApplyProgress();
-        UpdateGeometry();
+        if (Application.isPlaying)
+        {
+            DestroyExistingFX();
+        }
+        //BuildIfNeeded();
+        //ApplyProgress();
+        //UpdateGeometry();
 
         if (Application.isPlaying)
         {
@@ -76,20 +80,69 @@ public class PrismTravelLightFX : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        if (!Application.isPlaying)
-        {
-            BuildIfNeeded();
-            ApplyProgress();
-            UpdateGeometry();
-        }
-    }
+    //void Update()
+    //{
+    //    if (!Application.isPlaying)
+    //    {
+    //        BuildIfNeeded();
+    //        ApplyProgress();
+    //        UpdateGeometry();
+    //    }
+    //}
 
     void LateUpdate()
     {
         if (Application.isPlaying)
             UpdateGeometry();
+    }
+
+    private void DestroyExistingFX()
+    {
+        for (int i = transform.childCount - 1; i >= 0; i--)
+        {
+            Transform child = transform.GetChild(i);
+
+            if (child.name == "Incoming_White_Beam_Travel" ||
+                child.name == "Spectrum_Travel")
+            {
+                Destroy(child.gameObject);
+            }
+        }
+
+        incomingGO = null;
+        incomingMF = null;
+        incomingMR = null;
+        spectrumRoot = null;
+
+        if (whiteMat != null)
+        {
+            Destroy(whiteMat);
+            whiteMat = null;
+        }
+
+        if (bandMats != null)
+        {
+            for (int i = 0; i < bandMats.Length; i++)
+            {
+                if (bandMats[i] != null)
+                {
+                    Destroy(bandMats[i]);
+                    bandMats[i] = null;
+                }
+            }
+        }
+
+        if (bandMF != null)
+        {
+            for (int i = 0; i < bandMF.Length; i++)
+                bandMF[i] = null;
+        }
+
+        if (bandMR != null)
+        {
+            for (int i = 0; i < bandMR.Length; i++)
+                bandMR[i] = null;
+        }
     }
 
     void BuildIfNeeded()

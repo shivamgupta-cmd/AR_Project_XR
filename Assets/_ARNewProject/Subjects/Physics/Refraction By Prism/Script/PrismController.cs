@@ -19,6 +19,8 @@ public class PrismController : MonoBehaviour
 
     [Header("TORCH")]
     [SerializeField] private Light torchLight;
+    [SerializeField] private Light directionalLight;
+
 
     [Header("FORMULA PANEL")]
     [SerializeField] private CanvasGroup formulaPanelCanvasGroup;
@@ -31,6 +33,7 @@ public class PrismController : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip introVO;
     [SerializeField] private AudioClip finalVO;
+    [SerializeField] private AudioClip clickLabels;
 
     [Header("TIMING")]
     [SerializeField] private float delayAfterIntro = 0.3f;
@@ -60,6 +63,9 @@ public class PrismController : MonoBehaviour
     {
         PrepareModule();
         mainSequenceCoroutine = StartCoroutine(ModuleSequence());
+
+        if (directionalLight != null)
+            directionalLight.enabled = false;
     }
 
     private void PrepareModule()
@@ -183,6 +189,9 @@ public class PrismController : MonoBehaviour
 
         if (finalVO != null)
         {
+            if (directionalLight != null)
+                directionalLight.enabled = true;
+
             PlayAudio(finalVO);
 
             if (prismTravelLightFX != null)
@@ -204,6 +213,7 @@ public class PrismController : MonoBehaviour
                     finalVO.length
                 )
             );
+            PlayAudio(clickLabels);
         }
 
         mainSequenceCoroutine = null;
