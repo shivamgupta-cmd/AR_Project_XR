@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.unity.2d.spriteshape": "9.1.1",
     "com.unity.collab-proxy": "2.12.4",
     "com.unity.ide.visualstudio": "2.0.22",
     "com.unity.ide.vscode": "1.2.5",

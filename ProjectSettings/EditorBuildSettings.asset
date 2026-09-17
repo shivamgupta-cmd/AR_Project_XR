@@ -68,6 +68,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_ARNewProject/Subjects/Physics/Concave Lans/Concave lans.unity
     guid: fd20c7c6d13508f459edbfef21b61d56
+  - enabled: 1
+    path: Assets/_ARNewProject/Subjects/Chemistry/Effects Of Temperature On States
+      Of Matter/Effects Of Temperature On States Of Matter.unity
+    guid: b015922358acd144da47352f43652585
+  - enabled: 1
+    path: Assets/_ARNewProject/Subjects/Chemistry/Rutherford Model/Rutherford Model.unity
+    guid: 66bf569d7d07bca44a009fe9ffe71878
   m_configObjects:
     : {fileID: 0}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af, type: 2}
