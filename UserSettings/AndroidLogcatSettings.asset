@@ -3,7 +3,7 @@
     "m_SelectedProcess": {
         "deviceId": "R9ZX80DB9VW",
         "name": "com.unity.template.ar_mobile",
-        "processId": 15811,
+        "processId": 8201,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -42,6 +42,12 @@
             "deviceId": "R9ZX80DB9VW",
             "name": "com.unity.template.ar_mobile",
             "processId": 15811,
+            "exited": false
+        },
+        {
+            "deviceId": "R9ZX80DB9VW",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 8201,
             "exited": false
         },
         {
