@@ -1,0 +1,11 @@
+fileFormatVersion: 2
+guid: 4faeaf800de6d8d4a904bb8be4423d5b
+ShaderImporter:
+  externalObjects: {}
+  defaultTextures:
+  - _HoseTextureNormal: {fileID: 2800000, guid: 5ca22024af7c2e3418c8343b38bf8c41,
+      type: 3}
+  nonModifiableTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
