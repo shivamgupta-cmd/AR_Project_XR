@@ -21,9 +21,9 @@ MonoBehaviour:
       m_GuidLow: 5699911438166998866
       m_GuidHigh: 1473546471146694532
     m_SerializedTextureGuid:
-      m_GuidLow: 0
-      m_GuidHigh: 0
-    m_Size: {x: 0.15, y: 0.15}
+      m_GuidLow: 11881627362094174431
+      m_GuidHigh: 3899841036174016744
+    m_Size: {x: 0.15, y: 0.07161145}
     m_SpecifySize: 1
-    m_Name: 
+    m_Name: Bohr
     m_Texture: {fileID: 0}

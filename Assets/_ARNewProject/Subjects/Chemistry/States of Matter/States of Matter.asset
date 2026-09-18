@@ -16,4 +16,14 @@ MonoBehaviour:
   m_GuidHigh: 14353812843721706923
   m_DataStore:
     m_Storage: []
-  m_Images: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5649051123664317943
+      m_GuidHigh: 7897523605889578896
+    m_SerializedTextureGuid:
+      m_GuidLow: 15349450062685329296
+      m_GuidHigh: 2844779171873973866
+    m_Size: {x: 0.15, y: 0.15125}
+    m_SpecifySize: 1
+    m_Name: State of Matter IT
+    m_Texture: {fileID: 0}
