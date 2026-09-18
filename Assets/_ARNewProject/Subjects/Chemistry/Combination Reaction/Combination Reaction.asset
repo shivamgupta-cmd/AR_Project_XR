@@ -21,9 +21,9 @@ MonoBehaviour:
       m_GuidLow: 5663951804353069129
       m_GuidHigh: 7904738184564150672
     m_SerializedTextureGuid:
-      m_GuidLow: 17412196033533487210
-      m_GuidHigh: 6753729656867662811
-    m_Size: {x: 0.15, y: 0.0998088}
+      m_GuidLow: 9111979493445086766
+      m_GuidHigh: 8716996607495358395
+    m_Size: {x: 0.15, y: 0.15}
     m_SpecifySize: 1
     m_Name: Combination Reaction
     m_Texture: {fileID: 0}

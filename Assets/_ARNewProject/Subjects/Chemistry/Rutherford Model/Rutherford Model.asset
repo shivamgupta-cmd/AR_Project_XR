@@ -21,9 +21,9 @@ MonoBehaviour:
       m_GuidLow: 5309552670193965268
       m_GuidHigh: 13862735338421776276
     m_SerializedTextureGuid:
-      m_GuidLow: 6972701913474372486
-      m_GuidHigh: 8804348632900719163
-    m_Size: {x: 0.15, y: 0.06314554}
+      m_GuidLow: 16065701546742177355
+      m_GuidHigh: 13511585608596084427
+    m_Size: {x: 0.15, y: 0.075}
     m_SpecifySize: 1
     m_Name: Displacement
     m_Texture: {fileID: 0}
