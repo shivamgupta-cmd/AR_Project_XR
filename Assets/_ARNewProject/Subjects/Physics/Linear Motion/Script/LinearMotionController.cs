@@ -21,19 +21,24 @@ public class LinearMotionController : MonoBehaviour
     [SerializeField] private AudioClip welcomeVO;
     [SerializeField] private AudioClip setupVO;
     [SerializeField] private AudioClip averageSpeed;
+    [SerializeField] private AudioClip uniformMotion;
+    [SerializeField] private AudioClip nonUniformMotion;
+    [SerializeField] private AudioClip realLife;
+    [SerializeField] private AudioClip finalvo;
 
     [Header("Formula Panel")]
-    [SerializeField] private GameObject formulaPanel;
+    [SerializeField] private GameObject PanelParent;
+    [SerializeField] private CanvasGroup[] m_panels;
+    private int m_currentPanels = -1;
+    [Range(1,10)][SerializeField] private float m_smoothnessSpeed;
+
+    private bool panelTransitionComplete = true;
 
     [Header("Stopwatch")]
     [SerializeField] private Transform stopwatchRoot;
     [SerializeField] private TMP_Text stopwatchText;
     [SerializeField] private Vector3 stopwatchTargetScale = Vector3.one;
     [SerializeField, Min(0f)] private float stopwatchScaleDuration = 0.5f;
-
-    [Header("Auto Stop")]
-    [SerializeField, Min(0f)]
-    private float stopDelayAfterAverageVO = 3f;
 
     private bool isInitialized;
     private bool isPaused;
@@ -88,6 +93,84 @@ public class LinearMotionController : MonoBehaviour
         StartActivity();
     }
 
+
+    private void Update()
+    {
+        if (!isInitialized || isPaused)
+            return;
+
+        PanelManager(m_currentPanels);
+    }
+
+    private void PanelManager(int index)
+    {
+        panelTransitionComplete = true;
+
+        if (m_panels == null)
+            return;
+
+        for (int i = 0; i < m_panels.Length; i++)
+        {
+            CanvasGroup panel = m_panels[i];
+
+            if (panel == null)
+                continue;
+
+            bool selected = i == index;
+            float targetAlpha = selected ? 1f : 0f;
+
+            panel.alpha = Mathf.Lerp(
+                panel.alpha,
+                targetAlpha,
+                Time.deltaTime * m_smoothnessSpeed
+            );
+
+            if (Mathf.Abs(panel.alpha - targetAlpha) <= 0.001f)
+            {
+                panel.alpha = targetAlpha;
+            }
+            else
+            {
+                panelTransitionComplete = false;
+            }
+
+            bool canInteract = selected && panel.alpha >= 0.99f;
+
+            panel.interactable = canInteract;
+            panel.blocksRaycasts = canInteract;
+        }
+    }
+
+    private void ShowPanel(int index)
+    {
+        m_currentPanels = index;
+        panelTransitionComplete = false;
+
+        if (index >= 0 && PanelParent != null)
+        {
+            PanelParent.SetActive(true);
+        }
+    }
+
+    private IEnumerator HidePanels()
+    {
+        ShowPanel(-1);
+
+        while (isPaused || !panelTransitionComplete)
+        {
+            yield return null;
+        }
+
+        if (PanelParent != null)
+        {
+            PanelParent.SetActive(false);
+        }
+    }
+
+
+
+
+
     public void StartActivity()
     {
         if (!isInitialized || !isActiveAndEnabled || m_car == null || audioSource == null)
@@ -100,46 +183,80 @@ public class LinearMotionController : MonoBehaviour
         StartCoroutine(ActivitySequence());
     }
 
-
     private IEnumerator ActivitySequence()
     {
         PlayAudio(welcomeVO);
-
         yield return WaitForVoiceOver();
 
         PlayAudio(setupVO);
 
-        Coroutine movementCoroutine =
-            StartCoroutine(MoveCarAndStopwatch());
+        Coroutine movementCoroutine = StartCoroutine(MoveCarAndStopwatch());
 
         yield return WaitForVoiceOver();
 
-        if (formulaPanel != null)
-        {
-            formulaPanel.SetActive(true);
-        }
-
+        ShowPanel(0);
         PlayAudio(averageSpeed);
-
         yield return WaitForVoiceOver();
 
-        float elapsed = 0f;
-        float delay = Mathf.Max(0f, stopDelayAfterAverageVO);
-
-        while (elapsed < delay)
+        if (stopwatchRoot != null)
         {
-            yield return null;
-
-            if (!isPaused)
-            {
-                elapsed += Time.deltaTime;
-            }
+            stopwatchRoot.gameObject.SetActive(false);
         }
 
+        ShowPanel(1);
+        PlayAudio(uniformMotion);
+        yield return WaitForVoiceOver();
+
+        ShowPanel(2);
+        speed = 20f;
+        PlayAudio(nonUniformMotion);
+        yield return WaitForVoiceOver();
+
+        ShowPanel(3);
+        PlayAudio(realLife);
         if (movementCoroutine != null)
         {
             StopCoroutine(movementCoroutine);
         }
+        yield return WaitForVoiceOver();
+
+        yield return HidePanels();
+
+        PlayAudio(finalvo);
+        yield return WaitForVoiceOver();
+    }
+
+    public void ResetCar()
+    {
+        if (!isInitialized || m_car == null)
+            return;
+
+        StopActivity();
+
+        m_car.localPosition = initialLocalPosition;
+        m_car.localRotation = initialLocalRotation;
+
+        FollowCamera();
+
+        if (followCamera && m_camera != null)
+        {
+            m_camera.rotation = initialCameraRotation;
+        }
+
+        stopwatchStarted = false;
+        stopwatchScaleCompleted = false;
+        stopwatchScaleElapsed = 0f;
+        stopwatchElapsedTime = 0d;
+        lastDisplayedSecond = -1;
+
+        if (stopwatchRoot != null)
+        {
+            stopwatchRoot.localScale = Vector3.zero;
+            stopwatchRoot.gameObject.SetActive(false);
+        }
+
+        ShowStopwatchTime();
+        //ShowPanel(4);
     }
 
     private IEnumerator MoveCarAndStopwatch()
@@ -309,43 +426,43 @@ public class LinearMotionController : MonoBehaviour
         }
     }
 
-    public void ResetCar()
-    {
-        if (!isInitialized || m_car == null)
-            return;
+    //public void ResetCar()
+    //{
+    //    if (!isInitialized || m_car == null)
+    //        return;
 
-        StopActivity();
+    //    StopActivity();
 
-        m_car.localPosition = initialLocalPosition;
-        m_car.localRotation = initialLocalRotation;
+    //    m_car.localPosition = initialLocalPosition;
+    //    m_car.localRotation = initialLocalRotation;
 
-        FollowCamera();
+    //    FollowCamera();
 
-        if (followCamera && m_camera != null)
-        {
-            m_camera.rotation = initialCameraRotation;
-        }
+    //    if (followCamera && m_camera != null)
+    //    {
+    //        m_camera.rotation = initialCameraRotation;
+    //    }
 
-        stopwatchStarted = false;
-        stopwatchScaleCompleted = false;
+    //    stopwatchStarted = false;
+    //    stopwatchScaleCompleted = false;
 
-        stopwatchScaleElapsed = 0f;
-        stopwatchElapsedTime = 0d;
+    //    stopwatchScaleElapsed = 0f;
+    //    stopwatchElapsedTime = 0d;
 
-        lastDisplayedSecond = -1;
+    //    lastDisplayedSecond = -1;
 
-        if (stopwatchRoot != null)
-        {
-            stopwatchRoot.localScale = Vector3.zero;
-        }
+    //    if (stopwatchRoot != null)
+    //    {
+    //        stopwatchRoot.localScale = Vector3.zero;
+    //    }
 
-        ShowStopwatchTime();
+    //    ShowStopwatchTime();
 
-        if (formulaPanel != null)
-        {
-            formulaPanel.SetActive(false);
-        }
-    }
+    //    if (formulaPanel != null)
+    //    {
+    //        formulaPanel.SetActive(false);
+    //    }
+    //}
 
     private void StopActivity()
     {
