@@ -9,6 +9,7 @@ public class LinearMotionController : MonoBehaviour
 
     [Header("3D Camera")]
     [Tooltip("Assign the normal 3D camera, not the AR camera.")]
+    [SerializeField] private Transform m_cameraParent;
     [SerializeField] private Transform m_camera;
     [SerializeField] private bool followCamera = true;
 
@@ -426,44 +427,6 @@ public class LinearMotionController : MonoBehaviour
         }
     }
 
-    //public void ResetCar()
-    //{
-    //    if (!isInitialized || m_car == null)
-    //        return;
-
-    //    StopActivity();
-
-    //    m_car.localPosition = initialLocalPosition;
-    //    m_car.localRotation = initialLocalRotation;
-
-    //    FollowCamera();
-
-    //    if (followCamera && m_camera != null)
-    //    {
-    //        m_camera.rotation = initialCameraRotation;
-    //    }
-
-    //    stopwatchStarted = false;
-    //    stopwatchScaleCompleted = false;
-
-    //    stopwatchScaleElapsed = 0f;
-    //    stopwatchElapsedTime = 0d;
-
-    //    lastDisplayedSecond = -1;
-
-    //    if (stopwatchRoot != null)
-    //    {
-    //        stopwatchRoot.localScale = Vector3.zero;
-    //    }
-
-    //    ShowStopwatchTime();
-
-    //    if (formulaPanel != null)
-    //    {
-    //        formulaPanel.SetActive(false);
-    //    }
-    //}
-
     private void StopActivity()
     {
         StopAllCoroutines();
@@ -484,5 +447,12 @@ public class LinearMotionController : MonoBehaviour
             0f,
             stopwatchScaleDuration
         );
+    }
+
+
+    public void ResetCameraPos()
+    {
+        m_camera.position = Vector3.zero;
+        m_cameraParent.position = Vector3.zero;
     }
 }
