@@ -1,0 +1,53 @@
+{
+  "info": "A redox reaction is a chemical reaction in which oxidation and reduction occur at the same time. In the reaction between copper(II) oxide and hydrogen, black copper(II) oxide is heated while hydrogen gas passes over it. Copper(II) oxide is reduced to copper because oxygen is removed from it. Hydrogen is oxidized because it combines with oxygen to form water. The reaction is CuO + H2 → Cu + H2O. The formation of reddish-brown copper and water shows that new substances have been produced.",
+  "questions": [
+    {
+      "questionText": "What happens to copper(II) oxide during the redox reaction with hydrogen?",
+      "options": [
+        "It is reduced to copper",
+        "It is oxidized to copper",
+        "It changes into hydrogen",
+        "It remains unchanged"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "Why is hydrogen oxidized in this reaction?",
+      "options": [
+        "It combines with oxygen to form water",
+        "It loses oxygen to form copper",
+        "It changes directly into copper",
+        "It removes hydrogen from water"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What are the products of the reaction between copper(II) oxide and hydrogen?",
+      "options": [
+        "Copper and water",
+        "Copper oxide and water",
+        "Hydrogen and copper oxide",
+        "Copper and oxygen"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "Which equation represents this redox reaction?",
+      "options": [
+        "CuO + H2 → Cu + H2O",
+        "Cu + H2O → CuO + H2",
+        "CuO + O2 → Cu + H2O",
+        "Cu + H2 → CuO"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    }
+  ]
+}
