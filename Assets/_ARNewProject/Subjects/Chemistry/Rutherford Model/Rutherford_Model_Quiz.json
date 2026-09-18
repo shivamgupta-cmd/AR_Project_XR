@@ -1,0 +1,53 @@
+{
+  "info": "Rutherford's atomic model was developed from the results of the gold foil experiment. In the experiment, positively charged alpha particles were directed at a very thin sheet of gold foil. Most alpha particles passed straight through, showing that most of the atom is empty space. Some particles were deflected, and a very small number were deflected through large angles or scattered backward. From these observations, Rutherford concluded that an atom has a tiny, dense, positively charged nucleus at its center, with electrons outside the nucleus.",
+  "questions": [
+    {
+      "questionText": "What did Rutherford conclude when most alpha particles passed straight through the gold foil?",
+      "options": [
+        "Most of the atom is empty space",
+        "The atom is completely solid",
+        "Electrons are inside the nucleus",
+        "The atom has no charged particles"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What did the deflection of some alpha particles indicate?",
+      "options": [
+        "Positive charge is concentrated in a small region",
+        "The atom contains no nucleus",
+        "All particles pass through atoms unchanged",
+        "Electrons form the center of the atom"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What is located at the center of Rutherford's atomic model?",
+      "options": [
+        "A tiny, dense, positively charged nucleus",
+        "A large negatively charged sphere",
+        "Only empty space",
+        "A ring of electrons"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What happened to a very small number of alpha particles in the gold foil experiment?",
+      "options": [
+        "They were deflected through large angles or scattered backward",
+        "They disappeared inside the gold foil",
+        "They changed into electrons",
+        "They all passed straight through"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    }
+  ]
+}

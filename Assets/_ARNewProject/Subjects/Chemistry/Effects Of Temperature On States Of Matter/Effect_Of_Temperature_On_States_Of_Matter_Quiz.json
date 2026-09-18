@@ -1,0 +1,53 @@
+{
+  "info": "Temperature affects the state of water by changing the energy and movement of its particles. At low temperatures, water can exist as solid ice, where particles are tightly packed and mainly vibrate in fixed positions. When ice is heated to its melting point, it changes into liquid water. In the liquid state, particles remain close together but can move past one another. With further heating, water reaches its boiling point and changes into water vapour. In the gas state, particles are far apart and move freely at high speed. Cooling reverses these changes: water vapour condenses into liquid water, and further cooling can freeze the liquid into solid ice.",
+  "questions": [
+    {
+      "questionText": "What happens to ice when it is heated to its melting point?",
+      "options": [
+        "It changes into liquid water",
+        "It changes directly into water vapour",
+        "It becomes colder",
+        "It remains solid"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What happens to water particles as the temperature increases?",
+      "options": [
+        "They gain energy and move faster",
+        "They stop moving",
+        "They lose all their energy",
+        "They become larger particles"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What change of state occurs when liquid water is heated to its boiling point?",
+      "options": [
+        "Liquid changes into gas",
+        "Gas changes into liquid",
+        "Liquid changes into solid",
+        "Solid changes into liquid"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What happens when water vapour is cooled?",
+      "options": [
+        "It condenses into liquid water",
+        "It immediately becomes ice",
+        "It becomes hotter",
+        "It changes into a new substance"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    }
+  ]
+}
