@@ -1,162 +1,3 @@
-//using System.Collections;
-//using System.Collections.Generic;
-//using UnityEngine;
-
-//public class ElectricalSwitchManager : MonoBehaviour
-//{
-
-//    public CurrentFlowPath flowPath;
-//    [Header("AUDIO")]
-//    [SerializeField] private AudioSource audioSource;
-//    [SerializeField] AudioClip[] audioClips;
-
-//    [SerializeField] ObjectHighlighter ObjectHighlighter;
-//    [SerializeField] ObjectHighlighter switchRedLightHighlighter;
-
-//    [Header("3D CAMERA")]
-//    [SerializeField] private bool moveCameraToSwitch = true;
-//    [SerializeField] private Transform m_camera;
-//    [SerializeField] private Transform switchCameraPoint;
-//    [SerializeField, Min(0f)] private float cameraMoveDuration = 1f;
-//    [SerializeField, Min(0f)] private float cameraReturnDuration = 1f;
-
-
-//    [Header("Switch Button")]
-//    [SerializeField] private Transform m_switchButton;
-//    [SerializeField] private GameObject m_bulbLight;
-//    [SerializeField] private GameObject m_switchClickLable;
-
-//    [Header("LABELS")]
-//    [SerializeField] private GameObject[] labels;
-
-
-//    private bool isPaused;
-
-//    void Start()
-//    {
-//        StartActivity();
-//        foreach (GameObject label in labels)
-//        {
-//            if (label != null)
-//                label.SetActive(false);
-//        }
-//        if (m_switchButton != null)
-//        {
-//            m_switchButton.gameObject.GetComponent<BoxCollider>().enabled = false;
-//        }
-//        if (m_bulbLight != null)
-//        {
-//            m_bulbLight.SetActive(false);
-//        }
-//        if (m_switchClickLable != null)
-//        {
-//            m_switchClickLable.SetActive(false);
-//        }
-//        if (flowPath != null)
-//        {
-//            flowPath.enabled = false;
-//        }
-
-//    }
-//    public void StartActivity()
-//    {
-
-//        StartCoroutine(ActivitySequence());
-//    }
-
-//    private IEnumerator ActivitySequence()
-//    {
-//        PlayAudio(audioClips[0]);
-//        yield return WaitForVoiceOver();
-
-//        PlayAudio(audioClips[1]);
-//        yield return WaitForVoiceOver();
-
-//        PlayAudio(audioClips[2]);
-//        yield return WaitForVoiceOver();
-//        ObjectHighlighter.StartHighlight();
-//        if (m_switchButton != null)
-//        {
-//            m_switchButton.gameObject.GetComponent<BoxCollider>().enabled = true;
-//        }
-//        if (m_switchClickLable != null)
-//        {
-//            m_switchClickLable.SetActive(true);
-//        }
-//    }
-
-//    public void ClickSwitchBtn()
-//    {
-//        ObjectHighlighter.StopHighlight();
-//        if (m_switchButton != null)
-//        {
-//            m_switchButton.gameObject.GetComponent<BoxCollider>().enabled = false;
-//            m_switchButton.rotation = Quaternion.Euler(-10f, 0f, 0f);
-//        }
-//        if (m_switchClickLable != null)
-//        {
-//            m_switchClickLable.SetActive(false);
-//        }
-//        switchRedLightHighlighter.StartHighlight();
-//        StartCoroutine(ActiveSwitchButton());
-//    }
-
-//    private IEnumerator ActiveSwitchButton()
-//    {
-//        PlayAudio(audioClips[3]);
-//        yield return WaitForVoiceOver();
-//        PlayAudio(audioClips[4]);
-//        if (m_bulbLight != null)
-//        {
-//            m_bulbLight.SetActive(true);
-//        }
-//        if (flowPath != null)
-//        {
-//            flowPath.enabled = true;
-//        }
-//        yield return WaitForVoiceOver();
-//        PlayAudio(audioClips[5]);
-//        yield return WaitForVoiceOver();
-//        ShowLabels();
-//        PlayAudio(audioClips[6]);
-//    }
-
-
-//    public void ShowLabels()
-//    {
-//        foreach (GameObject label in labels)
-//        {
-//            if (label != null)
-//                label.SetActive(true);
-//        }
-//    }
-
-//    private void PlayAudio(AudioClip clip)
-//    {
-//        if (audioSource == null || clip == null)
-//            return;
-
-//        audioSource.Stop();
-
-//        audioSource.loop = false;
-//        audioSource.clip = clip;
-
-//        audioSource.Play();
-//    }
-
-//    private IEnumerator WaitForVoiceOver()
-//    {
-//        yield return null;
-
-//        while (isPaused ||
-//               (audioSource != null && audioSource.isPlaying))
-//        {
-//            yield return null;
-//        }
-//    }
-//}
-
-
 using System.Collections;
 using UnityEngine;
 
@@ -183,6 +24,10 @@ public class ElectricalSwitchManager : MonoBehaviour
     [SerializeField] private GameObject m_bulbLight;
     [SerializeField] private GameObject m_switchClickLable;
 
+
+    [Header("Formula Panel")]
+    [SerializeField] private GameObject m_formulaPanel;
+
     [Header("LABELS")]
     [SerializeField] private GameObject[] labels;
 
@@ -195,6 +40,7 @@ public class ElectricalSwitchManager : MonoBehaviour
     private bool hasSavedCameraPose;
     private bool canClickSwitch;
     private bool isPaused;
+    private bool wasFormulaPanelActive;
 
     private void Awake()
     {
@@ -298,6 +144,10 @@ public class ElectricalSwitchManager : MonoBehaviour
         if (m_switchClickLable != null)
         {
             m_switchClickLable.SetActive(false);
+        }
+        if (m_formulaPanel != null)
+        {
+            m_formulaPanel.SetActive(false);
         }
 
         if (flowPath != null)
@@ -431,12 +281,19 @@ public class ElectricalSwitchManager : MonoBehaviour
         {
             flowPath.enabled = true;
         }
+        if (m_formulaPanel != null)
+        {
+            m_formulaPanel.SetActive(true);
+        }
 
         yield return WaitForVoiceOver();
 
         PlayAudio(audioClips[5]);
         yield return WaitForVoiceOver();
-
+        if (m_formulaPanel != null)
+        {
+            m_formulaPanel.SetActive(false);
+        }
         ShowLabels();
         PlayAudio(audioClips[6]);
     }
@@ -536,4 +393,115 @@ public class ElectricalSwitchManager : MonoBehaviour
             audioSource.Stop();
         }
     }
+
+    //public void PauseActivity()
+    //{
+    //    if (!isActiveAndEnabled || isPaused)
+    //        return;
+
+    //    isPaused = true;
+
+    //    if (audioSource != null)
+    //    {
+    //        audioSource.Pause();
+    //    }
+
+    //    if (switchCollider != null)
+    //    {
+    //        switchCollider.enabled = false;
+    //    }
+
+    //    if (m_formulaPanel != null && m_formulaPanel.activeSelf)
+    //    {
+    //        m_formulaPanel.SetActive(false);
+    //    }
+    //}
+
+    //public void ResumeActivity()
+    //{
+    //    if (!isActiveAndEnabled || !isPaused)
+    //        return;
+
+    //    if (audioSource == null || !audioSource.isActiveAndEnabled)
+    //    {
+    //        Debug.LogWarning(
+    //            "Keep the narration AudioSource active before resuming.",
+    //            this
+    //        );
+
+    //        return;
+    //    }
+
+    //    audioSource.UnPause();
+
+    //    if (switchCollider != null)
+    //    {
+    //        switchCollider.enabled = canClickSwitch;
+    //    }
+
+    //    if (m_formulaPanel != null && m_formulaPanel.activeSelf)
+    //    {
+    //        m_formulaPanel.SetActive(true);
+    //    }
+
+    //    isPaused = false;
+    //}
+
+    public void PauseActivity()
+    {
+        if (!isActiveAndEnabled || isPaused)
+            return;
+
+        isPaused = true;
+
+        wasFormulaPanelActive =
+            m_formulaPanel != null && m_formulaPanel.activeSelf;
+
+        if (audioSource != null)
+        {
+            audioSource.Pause();
+        }
+
+        if (switchCollider != null)
+        {
+            switchCollider.enabled = false;
+        }
+
+        if (m_formulaPanel != null)
+        {
+            m_formulaPanel.SetActive(false);
+        }
+    }
+
+    public void ResumeActivity()
+    {
+        if (!isActiveAndEnabled || !isPaused)
+            return;
+
+        if (audioSource == null || !audioSource.isActiveAndEnabled)
+        {
+            Debug.LogWarning(
+                "Keep the narration AudioSource active before resuming.",
+                this
+            );
+
+            return;
+        }
+
+        if (m_formulaPanel != null)
+        {
+            m_formulaPanel.SetActive(wasFormulaPanelActive);
+        }
+
+        audioSource.UnPause();
+
+        if (switchCollider != null)
+        {
+            switchCollider.enabled = canClickSwitch;
+        }
+
+        wasFormulaPanelActive = false;
+        isPaused = false;
+    }
+
 }
