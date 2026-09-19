@@ -78,6 +78,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_ARNewProject/Subjects/Physics/Linear Motion/Linear Motion.unity
     guid: 416f4bae24bfdfa42ae259fadfa805d1
+  - enabled: 1
+    path: Assets/_ARNewProject/Subjects/History/Qutub Minar/Qutub Minar.unity
+    guid: 1d8870a05322ce54c94a82a220d98309
   m_configObjects:
     : {fileID: 0}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af, type: 2}

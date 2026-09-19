@@ -1235,6 +1235,8 @@ MonoBehaviour:
       topicLogo: {fileID: 0}
     - topicName: Taj Mahal
       topicLogo: {fileID: 0}
+    - topicName: Qutub Minar
+      topicLogo: {fileID: 0}
   - subjectName: Civics
     topics: []
   - subjectName: Geography
