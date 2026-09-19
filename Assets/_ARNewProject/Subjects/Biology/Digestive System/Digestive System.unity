@@ -14887,25 +14887,36 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A food web shows how plants and animals in an ecosystem are connected
-    through feeding relationships. It explains who eats whom and how energy moves
-    from one organism to another. Unlike a food chain, which shows a single path,
-    a food web connects many different food chains.\nEnergy usually begins with producers,
-    such as grass and other green plants. Plants make their own food using sunlight
-    through photosynthesis and form the base of most food webs.\nAnimals that eat
-    plants are called primary consumers or herbivores. For example, a grasshopper
-    eats grass and receives energy from it. A frog may then eat the grasshopper,
-    a snake may eat the frog, and an eagle may eat the snake. This creates an energy
-    pathway:\n\nGrass \u2192 Grasshopper \u2192 Frog \u2192 Snake \u2192 Eagle\n\nThe
-    arrows show the direction of energy transfer, from the organism being eaten to
-    the organism that eats it.\nIn nature, animals usually have more than one food
-    source. A frog may eat different insects, while a snake may eat frogs, mice,
-    and other small animals. When several such food chains connect, they form a food
-    web.\nAll organisms in a food web depend on one another. If the population of
-    one organism changes, it can affect many others. For example, fewer frogs may
-    lead to more grasshoppers and less food for snakes.\nFood webs help us understand
-    how energy flows through ecosystems and how living organisms depend on each other
-    to maintain ecological balance."
+  m_text: 'The digestive system is a group of organs that work together to break
+    down food, absorb useful nutrients and water, and remove waste from the body.
+    Digestion begins in the mouth, where food is chewed into smaller pieces and mixed
+    with saliva. Saliva helps moisten the food and begins the process of digestion,
+    making it easier to swallow.
+
+    After swallowing, food travels through the
+    esophagus, also called the food pipe. Muscular contractions in its walls push
+    the food downward toward the stomach. In the stomach, food is churned and mixed
+    with digestive juices. This process breaks the food down further and turns it
+    into a semi-liquid mixture.
+
+    The partially digested food then enters the
+    small intestine. Most digestion and nutrient absorption take place here. Digestive
+    substances help break food into simpler nutrients. These nutrients are absorbed
+    through the walls of the small intestine and enter the bloodstream, which carries
+    them to different parts of the body. The body uses these nutrients for energy,
+    growth, and repair.
+
+    The remaining undigested material moves into the large
+    intestine. Here, water and some minerals are absorbed from the remaining material.
+    This helps the body conserve water and changes the waste into a more solid form.
+
+    Finally,
+    the remaining waste moves through the final part of the digestive tract and leaves
+    the body through the anus.
+
+    From the mouth to the anus, each part of the
+    digestive system performs an important role in processing food and providing
+    the body with the nutrients it needs.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ecf77945acdc26144b2f70e021c9fd31, type: 2}
   m_sharedMaterial: {fileID: 6468205213134445944, guid: ecf77945acdc26144b2f70e021c9fd31, type: 2}
@@ -31204,33 +31215,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modelModeManager: {fileID: 2137073922}
   questions:
-  - questionText: What is the main purpose of a food web?
+  - questionText: Where does digestion begin?
     options:
-    - To show where animals live
-    - To show feeding relationships and energy flow
-    - To show how plants grow
-    - To show the life cycle of animals
-    correctAnswerIndex: 1
-    questionVoice: {fileID: 0}
-    correctAnswerVoice: {fileID: 0}
-  - questionText: Which organism is the producer in the example?
-    options:
-    - Frog
-    - Grasshopper
-    - Grass
-    - Eagle
+    - Stomach
+    - Small intestine
+    - Mouth
+    - Large intestine
     correctAnswerIndex: 2
-    questionVoice: {fileID: 0}
-    correctAnswerVoice: {fileID: 0}
-  - questionText: What happens when many food chains are connected together?
+    questionVoice: {fileID: 8300000, guid: 4345d0e2a5da208428cc86cecf8df4fb, type: 3}
+    correctAnswerVoice: {fileID: 8300000, guid: cd01db94c85f0eb409db86289b23b4ae, type: 3}
+  - questionText: Where are most nutrients absorbed?
     options:
-    - They form a food web
-    - They form a habitat
-    - They form a population
-    - They form a life cycle
-    correctAnswerIndex: 0
-    questionVoice: {fileID: 0}
-    correctAnswerVoice: {fileID: 0}
+    - Esophagus
+    - Small intestine
+    - Large intestine
+    - Mouth
+    correctAnswerIndex: 1
+    questionVoice: {fileID: 8300000, guid: 06f3d2ac7955f8c4a8dacff29eea47fb, type: 3}
+    correctAnswerVoice: {fileID: 8300000, guid: cd01db94c85f0eb409db86289b23b4ae, type: 3}
+  - questionText: What is an important function of the large intestine?
+    options:
+    - Chewing food
+    - Pumping blood
+    - Producing oxygen
+    - Absorbing water
+    correctAnswerIndex: 3
+    questionVoice: {fileID: 8300000, guid: aaa2b488e1fd06d4c95895395cee0c0a, type: 3}
+    correctAnswerVoice: {fileID: 8300000, guid: cd01db94c85f0eb409db86289b23b4ae, type: 3}
   m_quizPanel: {fileID: 7019613817051215216}
   m_gameOverPanel: {fileID: 4707464959079549715}
   questionText: {fileID: 6369457900495591985}
@@ -31245,7 +31256,7 @@ MonoBehaviour:
   m_default: {fileID: 21300000, guid: f307faa5c5168774cbc5ba5e237c139f, type: 3}
   audioSource: {fileID: 1582698851164859230}
   wrongAnswerVoice: {fileID: 8300000, guid: 808e757e66741e948bfd9ae620b37f6b, type: 3}
-  assessmentCompleteVoice: {fileID: 8300000, guid: 6543d7c987a93c64abe3092d120414e0, type: 3}
+  assessmentCompleteVoice: {fileID: 0}
   m_quitButton: {fileID: 6619774112123484004}
   m_playAgainButton: {fileID: 535800231000430830}
 --- !u!222 &6209783343557520429
@@ -33945,7 +33956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7553623654631623925, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7642819779840384066, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
       propertyPath: m_LocalPosition.x

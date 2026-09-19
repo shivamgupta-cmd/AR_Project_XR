@@ -18030,7 +18030,7 @@ MonoBehaviour:
     - Many cells
     correctAnswerIndex: 0
     questionVoice: {fileID: 8300000, guid: 527ea549630772e4a890c77bb3e4bee3, type: 3}
-    correctAnswerVoice: {fileID: 0}
+    correctAnswerVoice: {fileID: 8300000, guid: cd01db94c85f0eb409db86289b23b4ae, type: 3}
   - questionText: Which structure can help some bacteria move?
     options:
     - Nucleus
@@ -18039,7 +18039,7 @@ MonoBehaviour:
     - Vacuole
     correctAnswerIndex: 1
     questionVoice: {fileID: 8300000, guid: 17585e04616d67246bf67a2e08379e94, type: 3}
-    correctAnswerVoice: {fileID: 0}
+    correctAnswerVoice: {fileID: 8300000, guid: cd01db94c85f0eb409db86289b23b4ae, type: 3}
   - questionText: How do most bacteria reproduce?
     options:
     - Photosynthesis
@@ -18048,7 +18048,7 @@ MonoBehaviour:
     - Germination
     correctAnswerIndex: 3
     questionVoice: {fileID: 8300000, guid: 41b1fba90458fe048abf2a81371b3f2c, type: 3}
-    correctAnswerVoice: {fileID: 0}
+    correctAnswerVoice: {fileID: 8300000, guid: cd01db94c85f0eb409db86289b23b4ae, type: 3}
   m_quizPanel: {fileID: 7019613817051215216}
   m_gameOverPanel: {fileID: 4707464959079549715}
   questionText: {fileID: 6369457900495591985}
@@ -18063,7 +18063,7 @@ MonoBehaviour:
   m_default: {fileID: 21300000, guid: f307faa5c5168774cbc5ba5e237c139f, type: 3}
   audioSource: {fileID: 1582698851164859230}
   wrongAnswerVoice: {fileID: 8300000, guid: 808e757e66741e948bfd9ae620b37f6b, type: 3}
-  assessmentCompleteVoice: {fileID: 8300000, guid: 6543d7c987a93c64abe3092d120414e0, type: 3}
+  assessmentCompleteVoice: {fileID: 0}
   m_quitButton: {fileID: 6619774112123484004}
   m_playAgainButton: {fileID: 535800231000430830}
 --- !u!222 &6209783343557520429
@@ -19579,7 +19579,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7553623654631623925, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7642819779840384066, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
       propertyPath: m_LocalPosition.x
