@@ -565,6 +565,206 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3171587936084818337, guid: 7f00c53b4b392a542bc2bc4e93968c5a, type: 3}
   m_PrefabInstance: {fileID: 744171492}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &127468320
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1221394799}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8658709030017046943, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8658709030017046943, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Center.x
+      value: -0.091389984
+      objectReference: {fileID: 0}
+    - target: {fileID: -8658709030017046943, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: -0.037471443
+      objectReference: {fileID: 0}
+    - target: {fileID: -8658709030017046943, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: -0.0012243986
+      objectReference: {fileID: 0}
+    - target: {fileID: -8658709030017046943, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 0.4204915
+      objectReference: {fileID: 0}
+    - target: {fileID: -8658709030017046943, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 0.58752537
+      objectReference: {fileID: 0}
+    - target: {fileID: -8658709030017046943, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 0.32055977
+      objectReference: {fileID: 0}
+    - target: {fileID: -3840973590959672476, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2640420865089911795, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2640420865089911795, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Center.x
+      value: 0.11958286
+      objectReference: {fileID: 0}
+    - target: {fileID: -2640420865089911795, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: -1.7332582
+      objectReference: {fileID: 0}
+    - target: {fileID: -2640420865089911795, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: 0.2661848
+      objectReference: {fileID: 0}
+    - target: {fileID: -2640420865089911795, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 0.45226774
+      objectReference: {fileID: 0}
+    - target: {fileID: -2640420865089911795, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 1.7460833
+      objectReference: {fileID: 0}
+    - target: {fileID: -2640420865089911795, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 0.2630266
+      objectReference: {fileID: 0}
+    - target: {fileID: -2543286678540705624, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2154329534956209961, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2154329534956209961, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Center.x
+      value: 0.11958286
+      objectReference: {fileID: 0}
+    - target: {fileID: -2154329534956209961, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: -1.7332582
+      objectReference: {fileID: 0}
+    - target: {fileID: -2154329534956209961, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: 0.2661848
+      objectReference: {fileID: 0}
+    - target: {fileID: -2154329534956209961, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 0.45226774
+      objectReference: {fileID: 0}
+    - target: {fileID: -2154329534956209961, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 1.7460833
+      objectReference: {fileID: 0}
+    - target: {fileID: -2154329534956209961, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 0.2630266
+      objectReference: {fileID: 0}
+    - target: {fileID: -674449036139524865, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 562039821458884877, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_Name
+      value: Life cycle of bean plant v3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2920835487355159819, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5257235357969217382, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504604645892982863, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_DirtyAABB
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504604645892982863, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Center.x
+      value: 0.11958286
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504604645892982863, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Center.y
+      value: -1.7332582
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504604645892982863, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Center.z
+      value: 0.2661848
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504604645892982863, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Extent.x
+      value: 0.45226774
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504604645892982863, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Extent.y
+      value: 1.7460833
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504604645892982863, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      propertyPath: m_AABB.m_Extent.z
+      value: 0.2630266
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 910861722}
+  m_SourcePrefab: {fileID: 100100000, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
 --- !u!1 &154458728
 GameObject:
   m_ObjectHideFlags: 0
@@ -1331,7 +1531,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -1373,9 +1573,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d34019c8c7b3a8544b0b8166b2389efe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 910861722}
   animationSlider: {fileID: 1827215380}
-  animationStateName: Dissemble
+  animationStateName: Germination
 --- !u!4 &688183367
 Transform:
   m_ObjectHideFlags: 0
@@ -2136,6 +2336,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 536830844398360535, guid: 7f00c53b4b392a542bc2bc4e93968c5a, type: 3}
   m_PrefabInstance: {fileID: 744171492}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &910861720 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+  m_PrefabInstance: {fileID: 127468320}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &910861721 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2a8853e1d3a3af845a2dc592551916ce, type: 3}
+  m_PrefabInstance: {fileID: 127468320}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &910861722
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 910861720}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7dee152b72856704a882bc1db14e2ba3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &947417554
 GameObject:
   m_ObjectHideFlags: 0
@@ -2356,8 +2587,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1926150017}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 45}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2399,6 +2630,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211842024}
   m_CullTransparentMesh: 1
+--- !u!4 &1221394799 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3368047377423006119, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
+  m_PrefabInstance: {fileID: 7970589158703615919}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1231424794
 GameObject:
   m_ObjectHideFlags: 0
@@ -2564,6 +2800,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8964859838461161948, guid: 80b62063616f6ad428380e04f78317ad, type: 3}
   m_PrefabInstance: {fileID: 1348008569}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1477783634 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2512387469002778311, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+  m_PrefabInstance: {fileID: 331264285}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2fadf230d1919748a9aa21d40f74619, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1477783635 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2512387469002778310, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+  m_PrefabInstance: {fileID: 331264285}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 816b289ef451e094f9ae174fb4cf8db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1477783636 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2512387469002778329, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+  m_PrefabInstance: {fileID: 331264285}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4966719baa26e4b0e8231a24d9bd491a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1493905483
 GameObject:
   m_ObjectHideFlags: 0
@@ -2573,10 +2842,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1493905484}
-  - component: {fileID: 1493905489}
-  - component: {fileID: 1493905488}
-  - component: {fileID: 1493905487}
-  - component: {fileID: 1493905486}
   - component: {fileID: 1493905485}
   m_Layer: 0
   m_Name: 3D_Model
@@ -2584,7 +2849,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1493905484
 Transform:
   m_ObjectHideFlags: 0
@@ -2624,54 +2889,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1493905486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1493905483}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa606874164cca44982ee1ec0f6de32d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1493905487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1493905483}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70e2500538d158d41a5647343ed884a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1493905488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1493905483}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eda371e5375f454490a86f21559ee38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1493905489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1493905483}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c73c1ab94e28d244827af556dca1ed2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1515292085
 GameObject:
   m_ObjectHideFlags: 0
@@ -2895,24 +3112,27 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "An animal cell is the basic structural and functional unit of an animal\u2019s
-    body. Animal cells contain several specialized parts called organelles, and each
-    organelle performs a particular job. Together, these parts help the cell grow,
-    produce energy, transport materials, and carry out important activities.\nThe
-    cell membrane forms the outer boundary of the cell. It protects the cell and
-    controls which substances enter and leave. Inside the cell is the cytoplasm,
-    a jelly-like substance that holds the organelles and is the site of many chemical
-    reactions.\nThe nucleus acts as the control center of the cell. It contains DNA,
-    which carries instructions for the cell\u2019s growth and activities. Inside
-    the nucleus, the nucleolus helps produce ribosomes needed for making proteins.\nThe
-    endoplasmic reticulum is a network of membranes that helps make and transport
-    proteins and other materials. These materials can then be processed by the Golgi
-    apparatus, which modifies, sorts, packages, and sends them to where they are
-    needed.\nMitochondria release usable energy from food, providing energy for different
-    cell activities. Centrioles also play an important role by helping organize structures
-    involved in cell division.\nAlthough each organelle has a different function,
-    they work together as a coordinated system to keep the animal cell alive and
-    functioning properly."
+  m_text: "Germination is the process by which a seed begins to grow and develop
+    into a new plant. A seed contains a tiny young plant called an embryo, along
+    with stored food that provides energy during the early stages of growth. For
+    germination to begin, the seed needs suitable conditions such as water, oxygen,
+    and an appropriate temperature.\nIn a bean plant, germination begins when the
+    bean seed absorbs water from the soil. The seed swells, and its outer covering,
+    called the seed coat, begins to break open. The first structure to emerge is
+    the radicle, which develops into the primary root. It grows downward into the
+    soil and begins absorbing water and minerals.\nNext, the young shoot grows upward
+    toward the surface. As it emerges above the soil, its leaves unfold and begin
+    receiving sunlight. At this stage, the young plant is called a seedling. Initially,
+    stored food inside the seed supports its development, but as the leaves grow,
+    the plant becomes increasingly able to produce its own food through photosynthesis.\nThe
+    roots continue to spread through the soil while the stem becomes taller and stronger.
+    With sufficient sunlight, water, air, and nutrients, the seedling gradually develops
+    into a mature bean plant.\nAs the plant reaches maturity, flower buds develop
+    and bloom. These flowers are important for the plant's reproductive cycle and
+    can eventually contribute to the formation of new seeds.\nThus, germination transforms
+    a small, inactive seed into a growing plant through a sequence of stages: seed
+    \u2192 swelling \u2192 root \u2192 shoot \u2192 seedling \u2192 growing plant
+    \u2192 mature plant."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ecf77945acdc26144b2f70e021c9fd31, type: 2}
   m_sharedMaterial: {fileID: 6468205213134445944, guid: ecf77945acdc26144b2f70e021c9fd31, type: 2}
@@ -3735,7 +3955,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 1
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3765,11 +3985,23 @@ MonoBehaviour:
   contentRoot: {fileID: 1885877118}
   positionOffset: {x: 0, y: 0, z: 0}
   rotationOffset: {x: 0, y: 0, z: 0}
-  voiceSource: {fileID: 0}
+  voiceSource: {fileID: 1582698851164859230}
   modelActiveVO: {fileID: 0}
   onModelActivated:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1827215378}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1870067134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4430,7 +4662,19 @@ MonoBehaviour:
   onARMode:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 792074332}
+        m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
+        m_MethodName: Pause
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1493905483}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -4442,10 +4686,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
-        m_MethodName: Stop
-        m_Mode: 1
+      - m_Target: {fileID: 825780780723998879}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 73840073}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4524,11 +4780,11 @@ MonoBehaviour:
   infoVoiceClip: {fileID: 0}
   animationSlider: {fileID: 0}
   model3DObject: {fileID: 1493905483}
-  arSession: {fileID: 0}
-  arCamera: {fileID: 0}
-  arCameraManager: {fileID: 0}
-  arCameraBackground: {fileID: 0}
-  trackedPoseDriver: {fileID: 0}
+  arSession: {fileID: 702413258}
+  arCamera: {fileID: 563042378}
+  arCameraManager: {fileID: 1477783636}
+  arCameraBackground: {fileID: 1477783635}
+  trackedPoseDriver: {fileID: 1477783634}
 --- !u!4 &2137073923
 Transform:
   m_ObjectHideFlags: 0
@@ -22984,33 +23240,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   modelModeManager: {fileID: 2137073922}
   questions:
-  - questionText: Which part acts as the control center of an animal cell?
+  - questionText: What does a seed absorb to begin germination?
     options:
-    - Cytoplasm
-    - Nucleus
-    - Mitochondria
-    - Golgi apparatus
+    - Soil
+    - Water
+    - Flowers
+    - Minerals only
     correctAnswerIndex: 1
-    questionVoice: {fileID: 0}
-    correctAnswerVoice: {fileID: 0}
-  - questionText: What is the main function of mitochondria?
+    questionVoice: {fileID: 8300000, guid: a587a6b96d6ead9489d8bac964968c30, type: 3}
+    correctAnswerVoice: {fileID: 8300000, guid: cd01db94c85f0eb409db86289b23b4ae, type: 3}
+  - questionText: Which part usually emerges first from a germinating bean seed?
     options:
-    - Control what enters the cell
-    - Store DNA
-    - Release usable energy from food
-    - Package proteins
+    - Flower
+    - Leaf
+    - Radicle
+    - Fruit
     correctAnswerIndex: 2
-    questionVoice: {fileID: 0}
-    correctAnswerVoice: {fileID: 0}
-  - questionText: Which organelle modifies, sorts, and packages proteins?
+    questionVoice: {fileID: 8300000, guid: cf05e09c0d372e74aa6b9ba8a6a878ff, type: 3}
+    correctAnswerVoice: {fileID: 8300000, guid: cd01db94c85f0eb409db86289b23b4ae, type: 3}
+  - questionText: What does the radicle develop into?
     options:
-    - Golgi apparatus
-    - Nucleolus
-    - Cell membrane
-    - Centrioles
-    correctAnswerIndex: 0
-    questionVoice: {fileID: 0}
-    correctAnswerVoice: {fileID: 0}
+    - Stem
+    - Flower
+    - 'Leaf '
+    - Root
+    correctAnswerIndex: 3
+    questionVoice: {fileID: 8300000, guid: dfe971c3c7c4212418f583b0f84bf115, type: 3}
+    correctAnswerVoice: {fileID: 8300000, guid: cd01db94c85f0eb409db86289b23b4ae, type: 3}
   m_quizPanel: {fileID: 7019613817051215216}
   m_gameOverPanel: {fileID: 4707464959079549715}
   questionText: {fileID: 6369457900495591985}
@@ -23025,7 +23281,7 @@ MonoBehaviour:
   m_default: {fileID: 21300000, guid: f307faa5c5168774cbc5ba5e237c139f, type: 3}
   audioSource: {fileID: 1582698851164859230}
   wrongAnswerVoice: {fileID: 8300000, guid: 808e757e66741e948bfd9ae620b37f6b, type: 3}
-  assessmentCompleteVoice: {fileID: 8300000, guid: 6543d7c987a93c64abe3092d120414e0, type: 3}
+  assessmentCompleteVoice: {fileID: 0}
   m_quitButton: {fileID: 6619774112123484004}
   m_playAgainButton: {fileID: 535800231000430830}
 --- !u!1 &6203459183692103956
@@ -27398,6 +27654,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ARContentRoot
       objectReference: {fileID: 0}
+    - target: {fileID: 7553623654631623925, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7642819779840384066, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -27441,7 +27701,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6270852424300394120, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3368047377423006119, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 910861721}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
 --- !u!1 &7973165564258120288

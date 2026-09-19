@@ -5604,7 +5604,7 @@ MonoBehaviour:
   onARMode:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1016309398}
         m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
         m_MethodName: Pause
         m_Mode: 1
@@ -5631,7 +5631,7 @@ MonoBehaviour:
   onInfoMode:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1016309398}
         m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
         m_MethodName: Pause
         m_Mode: 1
@@ -5646,7 +5646,7 @@ MonoBehaviour:
   onQuizMode:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1016309398}
         m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
         m_MethodName: Pause
         m_Mode: 1
@@ -5661,7 +5661,7 @@ MonoBehaviour:
   onInfoCancel:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1016309398}
         m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
         m_MethodName: Resume
         m_Mode: 1
@@ -5676,7 +5676,7 @@ MonoBehaviour:
   onQuizCancel:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1016309398}
         m_TargetAssemblyTypeName: UnityEngine.Playables.PlayableDirector, UnityEngine
         m_MethodName: Resume
         m_Mode: 1
@@ -9759,7 +9759,7 @@ MonoBehaviour:
     - To produce water
     - To make food
     correctAnswerIndex: 1
-    questionVoice: {fileID: 8300000, guid: 4f9f904471129d348a00ac69a70139e4, type: 3}
+    questionVoice: {fileID: 8300000, guid: 1e87c7d46b3dab945abd68286e794752, type: 3}
     correctAnswerVoice: {fileID: 8300000, guid: cd01db94c85f0eb409db86289b23b4ae, type: 3}
   - questionText: What genetic material can viruses contain?
     options:
@@ -9768,7 +9768,7 @@ MonoBehaviour:
     - DNA or RNA
     - Glucose
     correctAnswerIndex: 2
-    questionVoice: {fileID: 8300000, guid: bcb7438fdca4304488b528786f721627, type: 3}
+    questionVoice: {fileID: 8300000, guid: 820eaa13d46e2d64d9458543722bee5e, type: 3}
     correctAnswerVoice: {fileID: 8300000, guid: cd01db94c85f0eb409db86289b23b4ae, type: 3}
   - questionText: What happens after new virus particles are formed?
     options:
@@ -9777,7 +9777,7 @@ MonoBehaviour:
     - They leave the host cell and can infect other cells
     - They produce their own food
     correctAnswerIndex: 2
-    questionVoice: {fileID: 8300000, guid: b12f23eccd1519746afae3939fb5eb03, type: 3}
+    questionVoice: {fileID: 8300000, guid: a3d7d1573a1b05049bde4298abec5bd1, type: 3}
     correctAnswerVoice: {fileID: 8300000, guid: cd01db94c85f0eb409db86289b23b4ae, type: 3}
   m_quizPanel: {fileID: 7019613817051215216}
   m_gameOverPanel: {fileID: 4707464959079549715}
@@ -10994,7 +10994,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7553623654631623925, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7642819779840384066, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
       propertyPath: m_LocalPosition.x
