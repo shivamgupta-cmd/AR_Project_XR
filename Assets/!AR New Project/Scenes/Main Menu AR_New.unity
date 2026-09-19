@@ -1193,6 +1193,8 @@ MonoBehaviour:
       topicLogo: {fileID: 0}
     - topicName: Linear Motion
       topicLogo: {fileID: 0}
+    - topicName: Electric Switch
+      topicLogo: {fileID: 0}
   - subjectName: Chemistry
     topics:
     - topicName: Combination Reaction
