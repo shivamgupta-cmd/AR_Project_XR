@@ -14,6 +14,7 @@ public class WindEnergyController : MonoBehaviour
     [SerializeField] private AudioClip generatorVO;
     [SerializeField] private AudioClip electricityVO;
     [SerializeField] private AudioClip finalVO;
+    [SerializeField] private AudioClip clickAllLableVo;
 
 
     [Header("WIND TURBINE ROTATE PARTS")]
@@ -53,6 +54,8 @@ public class WindEnergyController : MonoBehaviour
 
     [Tooltip("Camera position for viewing inside generator.")]
     [SerializeField] private Transform generatorCameraPoint;
+
+    [SerializeField] private Transform startGeneratorCameraPoint;
 
     [SerializeField, Min(0f)]
     private float cameraMoveDuration = 1f;
@@ -142,8 +145,20 @@ public class WindEnergyController : MonoBehaviour
 
     private IEnumerator ActivitySequence()
     {
+        if (m_camera != null)
+        {
+            savedCameraPosition = m_camera.position;
+            savedCameraRotation = m_camera.rotation;
+
+            hasSavedCameraPose = true;
+        }
 
         PlayAudio(introVO);
+        yield return MoveCamera(
+               startGeneratorCameraPoint.position,
+               startGeneratorCameraPoint.rotation,
+               cameraMoveDuration
+        );
 
         yield return WaitForVoiceOver();
 
@@ -162,22 +177,11 @@ public class WindEnergyController : MonoBehaviour
 
         PlayAudio(lookInsideVO);
 
-        // Save original camera
-        if (moveCameraToGenerator &&
-            m_camera != null &&
-            generatorCameraPoint != null)
-        {
-            savedCameraPosition = m_camera.position;
-            savedCameraRotation = m_camera.rotation;
-
-            hasSavedCameraPose = true;
-
-            yield return MoveCamera(
-                generatorCameraPoint.position,
-                generatorCameraPoint.rotation,
-                cameraMoveDuration
-            );
-        }
+        yield return MoveCamera(
+            generatorCameraPoint.position,
+            generatorCameraPoint.rotation,
+            cameraMoveDuration
+        );
 
         yield return FadeMaterialAlpha(
             transparentAlpha,
@@ -221,7 +225,6 @@ public class WindEnergyController : MonoBehaviour
             m_formulaPanel.SetActive(false);
 
 
-        ShowLabels();
 
 
         PlayAudio(finalVO);
@@ -231,6 +234,10 @@ public class WindEnergyController : MonoBehaviour
         }
 
         yield return WaitForVoiceOver();
+        PlayAudio(clickAllLableVo);
+        turbineRotating = false;
+        yield return FadeMaterialAlpha(transparentAlpha, transparencyDuration);
+        ShowLabels();
     }
 
 
