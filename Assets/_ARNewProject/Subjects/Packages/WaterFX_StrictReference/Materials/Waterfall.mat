@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Waterfall
+  m_Shader: {fileID: 4800000, guid: eb44bad6292cff44595b6a0c7aea0508, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _ADDMIST_ON
+  - _USEDEPTHFADE_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: 08b9a45cd455cf64b9ea71d737a2a7b1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 95d9310879a6d764eaa1512c8a4286a2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _WaterfallTex:
+        m_Texture: {fileID: 2800000, guid: daa20de9bf3730e40a5f97606feafeea, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AddMist: 1
+    - _Distortion: 0.06
+    - _EdgeSoftness: 0.15
+    - _FlowSpeed: 0.3
+    - _FoamIntensity: 3
+    - _MistIntensity: 1
+    - _NormalIntensity: 0.78
+    - _SplashIntensity: 1
+    - _SplashScale: 1
+    - _Tiling: 0.1
+    - _Transparency: 0.377
+    - _UseDepthFade: 1
+    - _WindInfluence: 0.2
+    m_Colors:
+    - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
+    - _WaterColor: {r: 0.34999996, g: 0.82, b: 1, a: 1}
+  m_BuildTextureStacks: []
