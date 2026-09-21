@@ -105,7 +105,7 @@ public class QutubMinarManager : MonoBehaviour
         if (isPlaying) return;
 
         StartCoroutine(
-            CameraPartHandler(Base, 0)
+            CameraPartHandler(Base, 4)
         );
     }
 
@@ -119,7 +119,7 @@ public class QutubMinarManager : MonoBehaviour
         if (isPlaying) return;
 
         StartCoroutine(
-            CameraPartHandler(Top, 1)
+            CameraPartHandler(Top, 0)
         );
     }
 
@@ -133,7 +133,7 @@ public class QutubMinarManager : MonoBehaviour
         if (isPlaying) return;
 
         StartCoroutine(
-            CameraPartHandler(shaft, 2)
+            CameraPartHandler(shaft, 1)
         );
     }
 
@@ -161,7 +161,7 @@ public class QutubMinarManager : MonoBehaviour
         if (isPlaying) return;
 
         StartCoroutine(
-            CameraPartHandler(Carvings, 4)
+            CameraPartHandler(Carvings, 2)
         );
     }
 
