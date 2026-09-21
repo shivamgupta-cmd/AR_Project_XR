@@ -88,6 +88,9 @@ EditorBuildSettings:
     path: Assets/_ARNewProject/Subjects/Physics/Refraction By Prism/Refraction By
       Prism.unity
     guid: d82b299ab1ee663408af2c969d44796f
+  - enabled: 1
+    path: Assets/_ARNewProject/Subjects/History/Sanchi Stuppa/Sanchi Stuppa.unity
+    guid: 27fe8d49bb0212245916678c3897639e
   m_configObjects:
     : {fileID: 0}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af, type: 2}
