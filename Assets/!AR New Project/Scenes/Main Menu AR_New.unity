@@ -1195,6 +1195,8 @@ MonoBehaviour:
       topicLogo: {fileID: 0}
     - topicName: Electric Switch
       topicLogo: {fileID: 0}
+    - topicName: Wind Energy
+      topicLogo: {fileID: 0}
   - subjectName: Chemistry
     topics:
     - topicName: Combination Reaction
