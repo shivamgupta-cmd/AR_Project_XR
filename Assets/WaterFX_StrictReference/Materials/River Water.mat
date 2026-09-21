@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: River Water
+  m_Shader: {fileID: 4800000, guid: 719748408648d6f4299132ca590eac29, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _CUSTOMFLOWTEXTURE_ON
+  - _EDGEFOAM_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _FlowMap:
+        m_Texture: {fileID: 2800000, guid: aa461bcf1ca234046858e3618cfac477, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FoamTex:
+        m_Texture: {fileID: 2800000, guid: c840b96b3303ac446b844c6576a46591, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 2800000, guid: 6bc91b6d7d398814bb7db2b7a44751cc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _CustomFlowTexture: 1
+    - _Distortion: 0.3
+    - _EdgeFoam: 1
+    - _FlowMapTiling: 10
+    - _FlowScale: 10
+    - _FlowSpeed: 0.5
+    - _FoamStrength: 0.077
+    - _Refraction: 0.5
+    - _SurfaceRoughness: 1
+    - _TilingOffsetSpeed: 0.5
+    - _Transparency: 0.496
+    - _WaveIntensity: 1.241
+    m_Colors:
+    - _DepthColor: {r: 0, g: 0.24999997, b: 0.54999995, a: 1}
+    - _FlowDirection: {r: 1.32, g: 0, b: 0, a: 2}
+    - _WaterColor: {r: 0.14999998, g: 0.75, b: 1, a: 1}
+  m_BuildTextureStacks: []
