@@ -24,15 +24,18 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 6ab7ef57013120c4098b08c332d23064, type: 3}
+        m_Texture: {fileID: 2800000, guid: 67524ce3b57fca649b82fa988914941a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _ContinuousBase: 0
+    - _FlipX: 0
+    - _FlipY: 0
     - _FlowSpeed: 0
     - _HighlightStrength: 0
     - _Intensity: 4.2
+    - _Rotation: 0
     - _Softness: 2.2
     m_Colors:
     - _Tint: {r: 1, g: 1, b: 1, a: 1}
