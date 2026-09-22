@@ -47715,11 +47715,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5e4627c8ee6d57147a0f4832f7092686, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0335
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e4627c8ee6d57147a0f4832f7092686, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0718
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5e4627c8ee6d57147a0f4832f7092686, type: 3}
       propertyPath: m_LocalPosition.z
@@ -82739,11 +82739,23 @@ MonoBehaviour:
   contentRoot: {fileID: 1885877118}
   positionOffset: {x: 0, y: 0, z: 0}
   rotationOffset: {x: 0, y: 0, z: 0}
-  voiceSource: {fileID: 0}
-  modelActiveVO: {fileID: 0}
+  voiceSource: {fileID: 1582698851164859230}
+  modelActiveVO: {fileID: 8300000, guid: 05a95409c48c445458a1f732ca23cb58, type: 3}
   onModelActivated:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1827215378}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1870067134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106653,7 +106665,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7553623654631623925, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7642819779840384066, guid: bd0f8e62e6e6cf64b85f28934a5160c9, type: 3}
       propertyPath: m_LocalPosition.x

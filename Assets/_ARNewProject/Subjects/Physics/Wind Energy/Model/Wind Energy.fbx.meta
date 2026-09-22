@@ -1,0 +1,339 @@
+fileFormatVersion: 2
+guid: 974f49a62dd85254f92640829d13e41b
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cylinder2
+    second: {fileID: 2100000, guid: 1fb9981144794ec469269c1a41ee647d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ElectricRoom03
+    second: {fileID: 2100000, guid: 808a88983ef4cf549a98b64c9918a82b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Electric_Roof1
+    second: {fileID: 2100000, guid: b3c09c1eb1ee1d543b4bb1104cebe515, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fan
+    second: {fileID: 2100000, guid: 8fb013a8680b0704b8578a0098e209fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ground
+    second: {fileID: 2100000, guid: 7e08b6a8b4533964db80e362bffc216d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Motar_Part_03
+    second: {fileID: 2100000, guid: e1b1dbab6762a434ba4ceb193938b607, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Moter_Box2
+    second: {fileID: 2100000, guid: 3c3c37952d968e449b6010b4d7ad444b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Moter_Part2
+    second: {fileID: 2100000, guid: e7805fe74ee580c4c92d71fe845d1a0d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Moter_stand2
+    second: {fileID: 2100000, guid: 59d1a5cc7f0bcee4e8f9748573cdd37c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stair1
+    second: {fileID: 2100000, guid: e68ce5c5dd8fa7140994f6ed7beda2c2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StairsGrid1
+    second: {fileID: 2100000, guid: 7d3b22970b8fa464cbcdd0162334122a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wire1
+    second: {fileID: 2100000, guid: 061c373fcd2ba464499f17320cb976ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__Material.001
+    second: {fileID: 2100000, guid: cc31dd07a6a59ce4ca3561b46cee5b87, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__Material.002
+    second: {fileID: 2100000, guid: ec4cd3dd9fa19f449b3a08225e16cbf7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__avocado_bark
+    second: {fileID: 2100000, guid: 7ff5334a8f72a4a43810edbd8185c0bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__avocado_leaf
+    second: {fileID: 2100000, guid: 48102d69ab225d745856bccef10809a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__ground_soil
+    second: {fileID: 2100000, guid: a8a98feea31a34844a71418abe96b783, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 0765ccf23de94812b0ebb2f086cf114b_RGB_Turbine_Base_Diffuse
+    second: {fileID: 2800000, guid: 6a7d21b7cbc4be146a8bd9da4c97ee58, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 4899cffec68349a883a4e5a5127163bf_R_T_ElectricRoom02_Roughness
+    second: {fileID: 2800000, guid: 1c5851a5fdfe7a8409b71055c6689d1b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: 58a1320e839f41ab9f0fe0be311459e5_RGB_T_ElectricRoom02_BaseColor_Red
+    second: {fileID: 2800000, guid: 30698ec2345733d4bbc702a6f4d15348, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ground_Ground_AlbedoTransparency.1001
+    second: {fileID: 2800000, guid: e1600db314a4edc4eb4e17602e38adb9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Ground_Ground_Normal.1001
+    second: {fileID: 2800000, guid: ec6e0b0d5be357842904b22023f747d3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Moter_Cylinder1_AlbedoTransparency.1004
+    second: {fileID: 2800000, guid: fbbd083e8ec70544c94b640b540ae88f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Moter_Cylinder1_Normal.1004
+    second: {fileID: 2800000, guid: 91f4a908c1e0aff4d8938c678f8e63c6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Moter_Motar_Part_02_AlbedoTransparency.1003
+    second: {fileID: 2800000, guid: 7a0d4c24ab713034cb295c6c3dcaa269, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Moter_Motar_Part_02_Normal.1003
+    second: {fileID: 2800000, guid: a407c38d3c8a4234ab5ee1ce3d755aba, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Moter_Moter_Box2_AlbedoTransparency.1005
+    second: {fileID: 2800000, guid: 7b410842d3f57d3489ddd7fcc6e24227, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Moter_Moter_Box2_Normal.1005
+    second: {fileID: 2800000, guid: 49ff43ce6ced45c4daa222909af5656f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Moter_Moter_Part1_AlbedoTransparency.1001
+    second: {fileID: 2800000, guid: 63a8e28df70932e4e9e4340a727e8e6f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Moter_Moter_Part1_Normal.1001
+    second: {fileID: 2800000, guid: 174ba33bd51b60249a12434b6c3aec20, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Moter_Moter_stand1_AlbedoTransparency.1002
+    second: {fileID: 2800000, guid: 569b1604088dbc942a8654ebc1e6bb5f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Moter_Moter_stand1_Normal.1002
+    second: {fileID: 2800000, guid: 608bf2e9247462a4ea53d05790f4667c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Stair_Stair_AlbedoTransparency.1001
+    second: {fileID: 2800000, guid: c93888114a2a7c1489b6f4731edf608d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Stair_Stair_Normal.1001
+    second: {fileID: 2800000, guid: e8512a95c155a4d4786c83a9f45e1734, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: StairsGrid_Opacity
+    second: {fileID: 2800000, guid: 41d35b434bfd6ed4aadc6ce3a862093f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: a160a9e54cb6448f9782dfe347dd43c5_RGB_T_ElectricRoom01_BaseColor_Red
+    second: {fileID: 2800000, guid: 032ba81f2662b9a4e9ef8298834f8f54, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: a376f4197a1b41028827f7232ecef7fd_N_T_StairsGrid_Normal
+    second: {fileID: 2800000, guid: 870edf97bd581d341a841423530a8601, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: avocado_bark_baseColor
+    second: {fileID: 2800000, guid: 91a7b0d137a799746b7222c6a750c9c1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: avocado_bark_normal
+    second: {fileID: 2800000, guid: 500dbfa95b777e8468157f013ba763f3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: avocado_leaf_baseColor
+    second: {fileID: 2800000, guid: 81a82971d6ffc9842aca1b59112b35e1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: avocado_leaf_normal
+    second: {fileID: 2800000, guid: f3150c883b6ac3b4a8b96f7f45f924e3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: b63d2070c2c24c4ea5657ad8e869dff3_R_T_ElectricRoom01_Roughness
+    second: {fileID: 2800000, guid: dc14e33a8ce4dd149a537baf845c5d95, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: b68a3c30caf6473593d07d0c60705bb6_A_Turbine_Alpha_DiffuseOpacity
+    second: {fileID: 2800000, guid: e4ac4384490be3e499d9045a3b34f748, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: baa50d9c9fc64e1ba5408c5511c732be_RGB_Turbine_Main_Diffuse
+    second: {fileID: 2800000, guid: dba173024713879438fa025a12d051dc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ground_soil_baseColor
+    second: {fileID: 2800000, guid: 30c70be82e7929445a3c19526d91cac3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ground_soil_normal
+    second: {fileID: 2800000, guid: c2b7816c0ff54774f883842b09db080a, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

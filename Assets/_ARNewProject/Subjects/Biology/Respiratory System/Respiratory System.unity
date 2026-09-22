@@ -3762,6 +3762,39 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2512387470528047738, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
   m_PrefabInstance: {fileID: 331264285}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &331264287 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2512387469002778311, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+  m_PrefabInstance: {fileID: 331264285}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2fadf230d1919748a9aa21d40f74619, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &331264288 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2512387469002778310, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+  m_PrefabInstance: {fileID: 331264285}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 816b289ef451e094f9ae174fb4cf8db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &331264289 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2512387469002778329, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+  m_PrefabInstance: {fileID: 331264285}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4966719baa26e4b0e8231a24d9bd491a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &333566154
 GameObject:
   m_ObjectHideFlags: 0
@@ -18450,7 +18483,7 @@ MonoBehaviour:
   positionOffset: {x: 0, y: 0, z: 0}
   rotationOffset: {x: 0, y: 0, z: 0}
   voiceSource: {fileID: 1582698851164859230}
-  modelActiveVO: {fileID: 0}
+  modelActiveVO: {fileID: 8300000, guid: 2121354f38a09184bb6e6b077e1a9519, type: 3}
   onModelActivated:
     m_PersistentCalls:
       m_Calls: []
@@ -19831,8 +19864,8 @@ Transform:
   m_GameObject: {fileID: 1948575437}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.008, y: -5.6201997, z: -4.4915996}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 391820552}
@@ -21423,11 +21456,11 @@ MonoBehaviour:
   infoVoiceClip: {fileID: 0}
   animationSlider: {fileID: 0}
   model3DObject: {fileID: 1493905483}
-  arSession: {fileID: 0}
-  arCamera: {fileID: 0}
-  arCameraManager: {fileID: 0}
-  arCameraBackground: {fileID: 0}
-  trackedPoseDriver: {fileID: 0}
+  arSession: {fileID: 702413258}
+  arCamera: {fileID: 563042378}
+  arCameraManager: {fileID: 331264289}
+  arCameraBackground: {fileID: 331264288}
+  trackedPoseDriver: {fileID: 331264287}
 --- !u!4 &2137073923
 Transform:
   m_ObjectHideFlags: 0
