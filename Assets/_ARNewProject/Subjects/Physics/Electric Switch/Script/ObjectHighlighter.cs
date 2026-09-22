@@ -12,6 +12,10 @@ public class ObjectHighlighter : MonoBehaviour
     public float maxIntensity = 1.2f;
     public float blinkSpeed = 1f;
 
+    private void Start()
+    {
+        //StartHighlight();
+    }
     void Awake()
     {
         mat = GetComponent<Renderer>().material;

@@ -1,0 +1,53 @@
+{
+  "info": "A compass is a navigation tool that uses a freely rotating magnetic needle to show direction. Earth behaves like a giant magnet, and its magnetic field causes the marked end of the needle to align toward Magnetic North. The compass dial displays the four cardinal directions—North, East, South, and West—and the four intermediate directions. When using a compass with a map, rotate the map until its north direction aligns with the compass needle.",
+  "questions": [
+    {
+      "questionText": "Which end of a compass needle points toward Magnetic North?",
+      "options": [
+        "The red or marked end",
+        "The white end",
+        "The east end",
+        "The south end"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "Why does a compass needle align in a north-south direction?",
+      "options": [
+        "Because sunlight pulls the needle",
+        "Because Earth's magnetic field influences the needle",
+        "Because the compass dial rotates automatically",
+        "Because gravity points toward North"
+      ],
+      "correctAnswerIndex": 1,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "Which set contains the four cardinal directions?",
+      "options": [
+        "North, Northeast, South, Southwest",
+        "Northeast, Southeast, Southwest, Northwest",
+        "North, East, South, West",
+        "Up, Down, Left, Right"
+      ],
+      "correctAnswerIndex": 2,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What should you do when using a compass together with a map?",
+      "options": [
+        "Hold the map upside down",
+        "Point the compass toward the Sun",
+        "Keep the compass away from the map",
+        "Rotate the map until its north aligns with the compass needle"
+      ],
+      "correctAnswerIndex": 3,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    }
+  ]
+}
