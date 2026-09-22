@@ -43,6 +43,7 @@ public class OhmsLawController : MonoBehaviour
 
     [Header("OHMS LAW SLIDER")]
     [SerializeField] private Slider voltageSlider;
+    [SerializeField] private GameObject sliderBg;
     [SerializeField] private float minVoltage = 2f;
     [SerializeField] private float maxVoltage = 12f;
     [SerializeField] private float defaultVoltage = 6f;
@@ -112,9 +113,14 @@ public class OhmsLawController : MonoBehaviour
         {
             m_switchClickLable.SetActive(false);
         }
+
         if (switchCollider != null)
         {
             switchCollider.enabled = false;
+        }
+        if (sliderBg != null)
+        {
+            sliderBg.SetActive(false);
         }
     }
 
@@ -394,6 +400,10 @@ public class OhmsLawController : MonoBehaviour
         yield return WaitForVoiceOver();
 
         PlayAudio(nowUseSliderVO);
+        if (sliderBg != null)
+        {
+            sliderBg.SetActive(true);
+        }
         yield return WaitForVoiceOver();
         PlayAudio(formulaVO);
 
