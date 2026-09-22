@@ -96,9 +96,9 @@ public class SanchiStuppaManager : MonoBehaviour
     {
         sectionCompleted = new bool[7];
 
-        DisableLines();
+        //DisableLines();
 
-        EnableBtn();
+        //EnableBtn();
     }
 
 
