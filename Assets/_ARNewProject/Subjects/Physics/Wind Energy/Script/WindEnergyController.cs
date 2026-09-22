@@ -235,7 +235,7 @@ public class WindEnergyController : MonoBehaviour
 
         yield return WaitForVoiceOver();
         PlayAudio(clickAllLableVo);
-        turbineRotating = false;
+        StopTurbine();
         yield return FadeMaterialAlpha(transparentAlpha, transparencyDuration);
         ShowLabels();
     }
@@ -271,6 +271,18 @@ public class WindEnergyController : MonoBehaviour
     public void StopTurbine()
     {
         turbineRotating = false;
+        currentTurbineSpeed = 0f;
+
+        if (turbinePart == null)
+            return;
+
+        foreach (Transform part in turbinePart)
+        {
+            if (part == null)
+                continue;
+
+            part.localRotation = Quaternion.identity;
+        }
     }
 
     public void SetTurbineSpeed(float speed)
