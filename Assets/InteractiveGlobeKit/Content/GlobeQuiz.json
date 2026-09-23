@@ -1,0 +1,12 @@
+{
+  "topicId": "interactive_globe",
+  "title": "Explore Our Earth",
+  "passingScorePercent": 70,
+  "questions": [
+    {"question":"Which line divides Earth into Northern and Southern Hemispheres?","choices":["Prime Meridian","Equator","Tropic of Cancer","Arctic Circle"],"correctIndex":1,"explanation":"The Equator is 0 degrees latitude."},
+    {"question":"Latitude measures a place in which direction?","choices":["North or south","East or west","Above sea level","From the Sun"],"correctIndex":0,"explanation":"Latitude is measured north or south from the Equator."},
+    {"question":"What is the longitude of the Prime Meridian?","choices":["90 degrees","180 degrees","23.5 degrees","0 degrees"],"correctIndex":3,"explanation":"The Prime Meridian is 0 degrees longitude."},
+    {"question":"How long does Earth take to complete one rotation?","choices":["24 hours","7 days","30 days","365 days"],"correctIndex":0,"explanation":"One rotation takes about 24 hours and produces day and night."},
+    {"question":"Earth's axis is tilted by approximately how much?","choices":["5 degrees","12 degrees","23.5 degrees","45 degrees"],"correctIndex":2,"explanation":"Earth's rotational axis is tilted about 23.5 degrees."}
+  ]
+}

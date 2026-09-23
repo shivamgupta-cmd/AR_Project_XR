@@ -42,6 +42,9 @@ EditorBuildSettings:
     path: Assets/_ARNewProject/Subjects/Biology/Food Web/Food Web.unity
     guid: e666f49181dce1a439e7235fca86156e
   - enabled: 1
+    path: Assets/_ARNewProject/Subjects/History/Humayus Tomb/Humayus Tomb.unity
+    guid: ac1eed947c41c5c40aec8e01a6a1cd49
+  - enabled: 1
     path: Assets/_ARNewProject/Subjects/Biology/Digestive System/Digestive System.unity
     guid: b0eef1afe38f91742b2d2a9f0316eae1
   - enabled: 1
@@ -122,8 +125,8 @@ EditorBuildSettings:
     path: Assets/_ARNewProject/Subjects/Geography/Compass/Compass.unity
     guid: 6f22da02063d7aa4f8204270a81317b6
   - enabled: 1
-    path: Assets/_ARNewProject/Subjects/History/Humayus Tomb/Humayus Tomb.unity
-    guid: ac1eed947c41c5c40aec8e01a6a1cd49
+    path: Assets/_ARNewProject/Subjects/Physics/Ohms Law/Ohms Law.unity
+    guid: d8533f57a1f4ac1409a6c37da6979e5f
   m_configObjects:
     : {fileID: 0}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af, type: 2}

@@ -80,6 +80,7 @@ public class OhmsLawController : MonoBehaviour
     private bool hasSavedCameraPose;
     private bool isPaused;
     private bool wasFormulaPanelActive;
+    private bool wasSliderBgActive;
 
     private void Awake()
     {
@@ -577,8 +578,7 @@ public class OhmsLawController : MonoBehaviour
 
     public void PauseActivity()
     {
-        if (!isActiveAndEnabled ||
-            isPaused)
+        if (!isActiveAndEnabled || isPaused)
             return;
 
         isPaused = true;
@@ -587,33 +587,36 @@ public class OhmsLawController : MonoBehaviour
             m_formulaPanel != null &&
             m_formulaPanel.activeSelf;
 
+        wasSliderBgActive = sliderBg != null && sliderBg.activeSelf;
+
         if (audioSource != null)
             audioSource.Pause();
 
         if (m_formulaPanel != null)
             m_formulaPanel.SetActive(false);
+
+        if (sliderBg != null)
+            sliderBg.SetActive(false);
     }
 
     public void ResumeActivity()
     {
-        if (!isActiveAndEnabled ||
-            !isPaused)
+        if (!isActiveAndEnabled || !isPaused)
             return;
 
-        if (audioSource == null ||
-            !audioSource.isActiveAndEnabled)
+        if (audioSource == null || !audioSource.isActiveAndEnabled)
             return;
 
         if (m_formulaPanel != null)
-        {
-            m_formulaPanel.SetActive(
-                wasFormulaPanelActive
-            );
-        }
+            m_formulaPanel.SetActive(wasFormulaPanelActive);
+
+        if (sliderBg != null)
+            sliderBg.SetActive(wasSliderBgActive);
 
         audioSource.UnPause();
 
         wasFormulaPanelActive = false;
+        wasSliderBgActive = false;
 
         isPaused = false;
     }
