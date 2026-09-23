@@ -1,0 +1,284 @@
+fileFormatVersion: 2
+guid: cfd3ee591ed28d848bfe293f063ca575
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_Plastic
+    second: {fileID: 2100000, guid: 7b4612f2ddadf784ea48609948eb96c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 90434f3a6d1bd844ba221af323e4e486, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Holder_metal
+    second: {fileID: 2100000, guid: 7c0c23f04cf61ea46b43cba7fa377bce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Protective_Outer1
+    second: {fileID: 2100000, guid: ebb129d2788789f43b1bc0569f937c56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Switch1
+    second: {fileID: 2100000, guid: ae6622c9e93dbdb4aadfb80fad6bcda6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Switch_Board3
+    second: {fileID: 2100000, guid: afad6b2ceda732e438d996ced8d0638b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Terminal
+    second: {fileID: 2100000, guid: 5afe3c7e5dcb28140bfc91528ba81c2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wire4
+    second: {fileID: 2100000, guid: 4bc90e4d91031294992ed700b2d73238, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal
+    second: {fileID: 2100000, guid: 19d320bea4e18064e8350787e2f3c819, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: phong1
+    second: {fileID: 2100000, guid: 2cf52961df23ca74c80199891a8e04a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wire
+    second: {fileID: 2100000, guid: 824a7d9bd1f111c459488f6e871c6b95, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Black_Plastic_baseColor
+    second: {fileID: 2800000, guid: 419f2a328c5586743921d157171b39bd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Black_Plastic_normal
+    second: {fileID: 2800000, guid: cb24a108dc926b645bfacbbbf479b2d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cell_Protective_Outer1_AlbedoTransparency.1001
+    second: {fileID: 2800000, guid: ffff625528503af4dbda5be8a7995156, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cell_Protective_Outer1_Normal.1001
+    second: {fileID: 2800000, guid: 8838e2c8a41ebdf489214b3a13151dcf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cell_Terminal_AlbedoTransparency.1001
+    second: {fileID: 2800000, guid: 6159b417b00055d4e99a6adea4d11eae, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cell_Terminal_MetallicSmoothness.1001
+    second: {fileID: 2800000, guid: 2449875147d4f2d44a9c7b839dcb6156, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Cell_Terminal_Normal.1001
+    second: {fileID: 2800000, guid: 631acbac71ab27645b66469693bf97d3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Electric Switch_Switch_Board1_AlbedoTransparency.1001
+    second: {fileID: 2800000, guid: 6efa935c61c813b4e908deb369558932, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Electric Switch_Switch_Board1_MetallicSmoothness.1001
+    second: {fileID: 2800000, guid: 0ba00f8686489494b9d9c862b145a2ed, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Electric Switch_Switch_Board1_Normal.1001
+    second: {fileID: 2800000, guid: ca84e16f3bcfb2247919355a72202ab6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Glass_baseColor
+    second: {fileID: 2800000, guid: 4314d67d843b8e94aa5a01ffb7c4444c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Glass_emissive
+    second: {fileID: 2800000, guid: 8816a51f720111944888b9e2f4a66c11, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Glass_normal
+    second: {fileID: 2800000, guid: 656e8901ece85fe459fa5a1adea3b7cb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wire_Wire02_AlbedoTransparency.1001
+    second: {fileID: 2800000, guid: c05f1a45bb6a28c4f9ee52e42700d3ef, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wire_Wire02_MetallicSmoothness.1001
+    second: {fileID: 2800000, guid: 7f41c772f5c7d8c4f979d5230fd38adb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wire_Wire02_Normal.1001
+    second: {fileID: 2800000, guid: dd09e96c99e24184cafb80777ec18197, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface1_baseColor
+    second: {fileID: 2800000, guid: 13df2398ec76e1848883cab2093954e6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface1_normal
+    second: {fileID: 2800000, guid: 5fb14c6962e23ea478b0ee000d9355d3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal_baseColor
+    second: {fileID: 2800000, guid: eb27eca40cc968740a74d9114a62e51e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal_emissive
+    second: {fileID: 2800000, guid: eb1a950b14b0aa548abf93b0f1d5da4e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: metal_normal
+    second: {fileID: 2800000, guid: d66f0a169c28f3f45bd77a3920eff3de, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wire_baseColor
+    second: {fileID: 2800000, guid: d4864a78c0956cb4492befa08cfe0762, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wire_emissive
+    second: {fileID: 2800000, guid: 15bd39199e659584f9e16aaab8decbd6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wire_normal
+    second: {fileID: 2800000, guid: 8a8e929966358db439074c93cac7062f, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

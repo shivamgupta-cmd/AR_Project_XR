@@ -1197,6 +1197,8 @@ MonoBehaviour:
       topicLogo: {fileID: 0}
     - topicName: Wind Energy
       topicLogo: {fileID: 0}
+    - topicName: Ohms Law
+      topicLogo: {fileID: 0}
   - subjectName: Chemistry
     topics:
     - topicName: Combination Reaction
@@ -1254,6 +1256,8 @@ MonoBehaviour:
     - topicName: Qutub Minar
       topicLogo: {fileID: 0}
     - topicName: Sanchi Stuppa
+      topicLogo: {fileID: 0}
+    - topicName: Humayus Tomb
       topicLogo: {fileID: 0}
   - subjectName: Civics
     topics: []
