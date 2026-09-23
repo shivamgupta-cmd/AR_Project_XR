@@ -1225,9 +1225,21 @@ MonoBehaviour:
       topicLogo: {fileID: 0}
     - topicName: Food Web
       topicLogo: {fileID: 0}
-    - topicName: Plant Cell 3D
+    - topicName: Plant Cell
       topicLogo: {fileID: 0}
     - topicName: Protozoa
+      topicLogo: {fileID: 0}
+    - topicName: Bacteria
+      topicLogo: {fileID: 0}
+    - topicName: Digestive System
+      topicLogo: {fileID: 0}
+    - topicName: Germination
+      topicLogo: {fileID: 0}
+    - topicName: Respiratory System
+      topicLogo: {fileID: 0}
+    - topicName: Skeletal System
+      topicLogo: {fileID: 0}
+    - topicName: Virus
       topicLogo: {fileID: 0}
   - subjectName: History
     topics:
