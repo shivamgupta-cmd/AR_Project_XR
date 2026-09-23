@@ -562,6 +562,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1990167148}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &72170431 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3112454222516900330, guid: 82cc712af7adb654a81b72757544eaf0, type: 3}
+  m_PrefabInstance: {fileID: 766606481}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &72557365
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,7 +617,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 72557365}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -761,6 +772,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 119956007}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &110792125 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3112454222516900330, guid: 82cc712af7adb654a81b72757544eaf0, type: 3}
+  m_PrefabInstance: {fileID: 2086638251}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &113615997 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4142321577294900010, guid: 7f00c53b4b392a542bc2bc4e93968c5a, type: 3}
@@ -3181,17 +3203,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 398832791}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &421366753 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3112454222516900330, guid: 82cc712af7adb654a81b72757544eaf0, type: 3}
-  m_PrefabInstance: {fileID: 710201609}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &446233594
 GameObject:
   m_ObjectHideFlags: 0
@@ -3648,6 +3659,82 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1971557332769493282, guid: 82cc712af7adb654a81b72757544eaf0, type: 3}
   m_PrefabInstance: {fileID: 1977654339}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &568147975
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 568147976}
+  - component: {fileID: 568147978}
+  - component: {fileID: 568147977}
+  m_Layer: 5
+  m_Name: Slider Bg
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &568147976
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568147975}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 728968595}
+  m_Father: {fileID: 5414086063245304454}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 330}
+  m_SizeDelta: {x: 646.6667, y: 182}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &568147977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568147975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 113600c7624c1f846ac0b478b7055c57, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &568147978
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568147975}
+  m_CullTransparentMesh: 1
 --- !u!1 &569741300
 GameObject:
   m_ObjectHideFlags: 0
@@ -4840,19 +4927,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 728968594}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.2, y: 2.2, z: 2.2}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 72557366}
   - {fileID: 563258158}
   - {fileID: 1006793149}
-  m_Father: {fileID: 5414086063245304454}
+  m_Father: {fileID: 568147976}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 136, y: 346}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -55, y: -25}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &728968596
@@ -4902,7 +4989,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.911
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5929,7 +6016,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 0ab88fb76fda92948b2e9b5c0bb279af, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6404,17 +6491,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 536830844398360535, guid: 7f00c53b4b392a542bc2bc4e93968c5a, type: 3}
   m_PrefabInstance: {fileID: 744171492}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &933431695 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3112454222516900330, guid: 82cc712af7adb654a81b72757544eaf0, type: 3}
-  m_PrefabInstance: {fileID: 1861347062}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &939707540
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6918,10 +6994,10 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1367456850}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &968474146 stripped
+--- !u!114 &980311003 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3112454222516900330, guid: 82cc712af7adb654a81b72757544eaf0, type: 3}
-  m_PrefabInstance: {fileID: 614384727}
+  m_PrefabInstance: {fileID: 1008400097}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -7275,6 +7351,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1367456850}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1033263010 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3112454222516900330, guid: 82cc712af7adb654a81b72757544eaf0, type: 3}
+  m_PrefabInstance: {fileID: 1260850196}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1036722504
 GameObject:
   m_ObjectHideFlags: 0
@@ -8858,6 +8945,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1866660260}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1328417500 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3112454222516900330, guid: 82cc712af7adb654a81b72757544eaf0, type: 3}
+  m_PrefabInstance: {fileID: 336115455}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1342635295
 GameObject:
   m_ObjectHideFlags: 0
@@ -9363,23 +9461,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons:
-  - button: {fileID: 1939349875}
-    voiceOver: {fileID: 8300000, guid: a9a150ec6ec471b4fa41c74351505ed1, type: 3}
+  - button: {fileID: 980311003}
+    voiceOver: {fileID: 8300000, guid: ee600888c12355745a3e1bc4b7f694aa, type: 3}
     isClicked: 0
-  - button: {fileID: 933431695}
-    voiceOver: {fileID: 8300000, guid: 0ecb027c11803214ba6fff3122fa28fd, type: 3}
+  - button: {fileID: 72170431}
+    voiceOver: {fileID: 8300000, guid: 0188df7652eddea409596533163f8358, type: 3}
     isClicked: 0
-  - button: {fileID: 968474146}
-    voiceOver: {fileID: 8300000, guid: b974a3e2dc2ab4049ada900c38285466, type: 3}
+  - button: {fileID: 110792125}
+    voiceOver: {fileID: 8300000, guid: bb579f3fae4dfdc4e8159d4fb6807337, type: 3}
     isClicked: 0
-  - button: {fileID: 1681807032}
-    voiceOver: {fileID: 8300000, guid: 73b1b1091ed3d80459909afe7481a0eb, type: 3}
+  - button: {fileID: 1033263010}
+    voiceOver: {fileID: 8300000, guid: a91163fe0e8d3f3438b9015888613209, type: 3}
     isClicked: 0
-  - button: {fileID: 421366753}
-    voiceOver: {fileID: 8300000, guid: 4ecb2427b29f39240a51edaec29fb617, type: 3}
+  - button: {fileID: 1771547593}
+    voiceOver: {fileID: 8300000, guid: c8691c0f871690448b819e18258efedc, type: 3}
+    isClicked: 0
+  - button: {fileID: 1328417500}
+    voiceOver: {fileID: 8300000, guid: 30498cf4d9ba89c4f8e8842fa78dafd5, type: 3}
     isClicked: 0
   audioSource: {fileID: 1448558489}
-  finalVO: {fileID: 8300000, guid: 22c45e9ba765a3c48ad77ee5a2b744d1, type: 3}
+  finalVO: {fileID: 8300000, guid: 11d6c6660bbeeb0438b2d0f5a413d2a7, type: 3}
 --- !u!114 &1448558491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9426,6 +9527,7 @@ MonoBehaviour:
   - {fileID: 559401510}
   - {fileID: 369800797}
   voltageSlider: {fileID: 728968596}
+  sliderBg: {fileID: 568147975}
   minVoltage: 2
   maxVoltage: 12
   defaultVoltage: 7
@@ -10378,40 +10480,22 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'An electric switch is a device used to control the flow of electric current
-    in an electrical circuit. It works by either completing or breaking the conducting
-    path.
-
-
-    When the switch is ON, its contacts are connected and the circuit
-    becomes closed. This provides a continuous path through which electric current
-    can flow. For example, in a simple circuit containing a battery, switch, wires,
-    and bulb, closing the switch allows current to reach the bulb and the bulb lights
-    up.
-
-
-    When the switch is OFF, its contacts are separated and the circuit
-    becomes open. The conducting path is broken, so current cannot flow through the
-    complete circuit and the bulb turns off.
-
-
-    A switch does not produce electrical
-    energy. Instead, it controls whether the electrical circuit is complete or incomplete.
-    Common examples include wall switches used for lights, push-button switches,
-    toggle switches, and switches used in electrical appliances.
-
-
-    In a 3D learning
-    model, the operation of a switch can be clearly demonstrated by showing the actual
-    movement of its contacts. When the student turns the switch ON, the contacts
-    join, current-flow animation starts, and the bulb illuminates. When the student
-    turns it OFF, the contacts separate, current-flow animation stops, and the bulb
-    goes dark.
-
-
-    This simple ON/OFF operation helps students understand an important
-    principle of electricity: a complete conducting path is required for current
-    to flow in a basic circuit.'
+  m_text: "Ohm\u2019s Law describes the relationship between voltage, current, and
+    resistance in an electrical circuit. For a resistor that obeys this law, current
+    is directly proportional to the voltage across it, provided the temperature and
+    other physical conditions remain constant.\n\nV = I \xD7 R\n\nV represents voltage,
+    measured in volts (V).\nI represents current, measured in amperes (A).\nR represents
+    resistance, measured in ohms (\u03A9).\n\nThe DC voltage source provides the
+    potential difference that drives current around a closed circuit. The resistor
+    limits current without using up electric charge. The switch opens or closes the
+    circuit.\n\nAn ammeter measures current and is connected in series. A voltmeter
+    measures the voltage across the resistor and is connected in parallel.\n\nIn
+    this module, the resistance is fixed at 6 \u03A9. At 6 V, the current is 1 A.
+    Increasing the voltage to 12 V increases the current to 2 A. Doubling the voltage
+    doubles the current because resistance remains unchanged.\n\nUse the slider to
+    adjust the voltage from 2 V to 12 V and observe the meter readings. The current-versus-voltage
+    graph forms a straight line through the origin, showing their directly proportional
+    relationship."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10910,17 +10994,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 40292006}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1681807032 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3112454222516900330, guid: 82cc712af7adb654a81b72757544eaf0, type: 3}
-  m_PrefabInstance: {fileID: 296339534}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1705890352
 GameObject:
   m_ObjectHideFlags: 0
@@ -11372,8 +11445,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 131e73b56504b9e4fac8be7ee6e49dc1, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -11390,6 +11463,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768586349}
   m_CullTransparentMesh: 1
+--- !u!114 &1771547593 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3112454222516900330, guid: 82cc712af7adb654a81b72757544eaf0, type: 3}
+  m_PrefabInstance: {fileID: 945110499}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1777418002
 GameObject:
   m_ObjectHideFlags: 0
@@ -12794,17 +12878,6 @@ MonoBehaviour:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
---- !u!114 &1939349875 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3112454222516900330, guid: 82cc712af7adb654a81b72757544eaf0, type: 3}
-  m_PrefabInstance: {fileID: 1977654339}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1942567537
 GameObject:
   m_ObjectHideFlags: 0
@@ -14622,8 +14695,8 @@ MonoBehaviour:
   onARMode:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ElectricalSwitchManager, Assembly-CSharp
+      - m_Target: {fileID: 1448558491}
+        m_TargetAssemblyTypeName: OhmsLawController, Assembly-CSharp
         m_MethodName: PauseActivity
         m_Mode: 1
         m_Arguments:
@@ -14637,8 +14710,8 @@ MonoBehaviour:
   onInfoMode:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ElectricalSwitchManager, Assembly-CSharp
+      - m_Target: {fileID: 1448558491}
+        m_TargetAssemblyTypeName: OhmsLawController, Assembly-CSharp
         m_MethodName: PauseActivity
         m_Mode: 1
         m_Arguments:
@@ -14652,8 +14725,8 @@ MonoBehaviour:
   onQuizMode:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ElectricalSwitchManager, Assembly-CSharp
+      - m_Target: {fileID: 1448558491}
+        m_TargetAssemblyTypeName: OhmsLawController, Assembly-CSharp
         m_MethodName: PauseActivity
         m_Mode: 1
         m_Arguments:
@@ -14667,8 +14740,8 @@ MonoBehaviour:
   onInfoCancel:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ElectricalSwitchManager, Assembly-CSharp
+      - m_Target: {fileID: 1448558491}
+        m_TargetAssemblyTypeName: OhmsLawController, Assembly-CSharp
         m_MethodName: ResumeActivity
         m_Mode: 1
         m_Arguments:
@@ -14682,8 +14755,8 @@ MonoBehaviour:
   onQuizCancel:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ElectricalSwitchManager, Assembly-CSharp
+      - m_Target: {fileID: 1448558491}
+        m_TargetAssemblyTypeName: OhmsLawController, Assembly-CSharp
         m_MethodName: ResumeActivity
         m_Mode: 1
         m_Arguments:
@@ -18298,7 +18371,7 @@ RectTransform:
   - {fileID: 1935127039}
   - {fileID: 113615998}
   - {fileID: 1827215379}
-  - {fileID: 728968595}
+  - {fileID: 568147976}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
