@@ -14,7 +14,7 @@ public class ObjectHighlighter : MonoBehaviour
 
     private void Start()
     {
-        //StartHighlight();
+       // StartHighlight();
     }
     void Awake()
     {
