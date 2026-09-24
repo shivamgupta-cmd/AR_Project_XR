@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Animates every child LineRenderer so each line appears to travel along its path.
-/// Attach this component to the parent containing the LineRenderers.
+/// Keeps all child LineRenderers hidden at startup.
+/// Call PlayReveal() to animate the lines along their paths.
 /// </summary>
 public sealed class LineRendererDistanceReveal : MonoBehaviour
 {
@@ -15,27 +15,37 @@ public sealed class LineRendererDistanceReveal : MonoBehaviour
     }
 
     [Header("Animation")]
-    [SerializeField] private RevealMode revealMode = RevealMode.Staggered;
+    [SerializeField]
+    private RevealMode revealMode = RevealMode.Staggered;
 
     [Tooltip("Time required for each complete line to appear.")]
     [Min(0.01f)]
-    [SerializeField] private float lineDuration = 1.5f;
+    [SerializeField]
+    private float lineDuration = 1.5f;
 
-    [Tooltip("Delay between the start of each line when using Staggered mode.")]
+    [Tooltip("Delay between each line in Staggered mode.")]
     [Min(0f)]
-    [SerializeField] private float staggerDelay = 0.06f;
+    [SerializeField]
+    private float staggerDelay = 0.06f;
 
-    [SerializeField] private AnimationCurve revealCurve =
+    [SerializeField]
+    private AnimationCurve revealCurve =
         AnimationCurve.EaseInOut(0f, 0f, 1f, 1f);
 
     [Header("Playback")]
-    [SerializeField] private bool playOnEnable = true;
-    [SerializeField] private bool useUnscaledTime;
+    [Tooltip("Enable this only when the animation should start automatically.")]
+    [SerializeField]
+    private bool playOnEnable = false;
 
-    [Tooltip("Enable this only if inactive child objects should also be collected.")]
-    [SerializeField] private bool includeInactiveChildren;
+    [SerializeField]
+    private bool useUnscaledTime = false;
+
+    [Tooltip("Collect LineRenderers from inactive child objects too.")]
+    [SerializeField]
+    private bool includeInactiveChildren = false;
 
     private readonly List<LineData> lines = new List<LineData>();
+
     private Coroutine revealRoutine;
     private bool hasCachedLines;
 
@@ -52,6 +62,9 @@ public sealed class LineRendererDistanceReveal : MonoBehaviour
     private void Awake()
     {
         CacheLines();
+
+        // All lines remain completely invisible at startup.
+        HideLines();
     }
 
     private void OnEnable()
@@ -60,51 +73,84 @@ public sealed class LineRendererDistanceReveal : MonoBehaviour
             PlayReveal();
     }
 
-    /// <summary>Replays the complete appearing animation.</summary>
+    /// <summary>
+    /// Starts or restarts the complete line-reveal animation.
+    /// Connect this method to a Button, UnityEvent, Timeline Signal,
+    /// Animation Event or another script.
+    /// </summary>
     public void PlayReveal()
     {
         if (!hasCachedLines)
             CacheLines();
 
         StopCurrentAnimation();
+        HideLines();
+
         revealRoutine = StartCoroutine(RevealRoutine());
     }
 
     /// <summary>
-    /// Rebuilds the cache. Call this after adding or rebuilding LineRenderers.
+    /// Recollects all child LineRenderers and starts the animation.
+    /// Call this after adding or rebuilding LineRenderers.
     /// </summary>
     public void RefreshAndPlay()
     {
         StopCurrentAnimation();
         CacheLines();
+        HideLines();
+
         revealRoutine = StartCoroutine(RevealRoutine());
     }
 
-    /// <summary>Immediately hides every collected line.</summary>
+    /// <summary>
+    /// Immediately hides all collected LineRenderers.
+    /// </summary>
     public void HideLines()
     {
         StopCurrentAnimation();
 
         foreach (LineData line in lines)
         {
-            if (line.renderer == null || line.positions.Length == 0)
+            if (line.renderer == null ||
+                line.positions == null ||
+                line.positions.Length == 0)
+            {
                 continue;
+            }
 
             line.renderer.loop = false;
-            line.renderer.enabled = line.originalEnabled;
+
+            // Collapse the line at its first position.
             line.renderer.positionCount = 2;
             line.renderer.SetPosition(0, line.positions[0]);
             line.renderer.SetPosition(1, line.positions[0]);
+
+            // Disable it so even the starting cap/dot is invisible.
+            line.renderer.enabled = false;
         }
     }
 
-    /// <summary>Immediately restores every complete line.</summary>
+    /// <summary>
+    /// Immediately displays every complete line without animation.
+    /// </summary>
     public void ShowImmediately()
     {
         StopCurrentAnimation();
 
+        if (!hasCachedLines)
+            CacheLines();
+
         foreach (LineData line in lines)
             RestoreCompleteLine(line);
+    }
+
+    /// <summary>
+    /// Stops the current animation and hides all lines.
+    /// </summary>
+    public void StopAndHide()
+    {
+        StopCurrentAnimation();
+        HideLines();
     }
 
     private void CacheLines()
@@ -112,11 +158,14 @@ public sealed class LineRendererDistanceReveal : MonoBehaviour
         lines.Clear();
 
         LineRenderer[] foundLines =
-            GetComponentsInChildren<LineRenderer>(includeInactiveChildren);
+            GetComponentsInChildren<LineRenderer>(
+                includeInactiveChildren
+            );
 
         foreach (LineRenderer lineRenderer in foundLines)
         {
             int pointCount = lineRenderer.positionCount;
+
             if (pointCount < 2)
                 continue;
 
@@ -128,7 +177,11 @@ public sealed class LineRendererDistanceReveal : MonoBehaviour
 
             for (int i = 1; i < pointCount; i++)
             {
-                totalDistance += Vector3.Distance(positions[i - 1], positions[i]);
+                totalDistance += Vector3.Distance(
+                    positions[i - 1],
+                    positions[i]
+                );
+
                 distances[i] = totalDistance;
             }
 
@@ -148,27 +201,35 @@ public sealed class LineRendererDistanceReveal : MonoBehaviour
 
     private IEnumerator RevealRoutine()
     {
-        HideLines();
-
-        float finalDelay = revealMode == RevealMode.Staggered
-            ? Mathf.Max(0, lines.Count - 1) * staggerDelay
-            : 0f;
+        float finalDelay =
+            revealMode == RevealMode.Staggered
+                ? Mathf.Max(0, lines.Count - 1) * staggerDelay
+                : 0f;
 
         float totalAnimationTime = finalDelay + lineDuration;
         float elapsed = 0f;
 
         while (elapsed < totalAnimationTime)
         {
-            elapsed += useUnscaledTime ? Time.unscaledDeltaTime : Time.deltaTime;
+            elapsed += useUnscaledTime
+                ? Time.unscaledDeltaTime
+                : Time.deltaTime;
 
             for (int i = 0; i < lines.Count; i++)
             {
-                float delay = revealMode == RevealMode.Staggered
-                    ? i * staggerDelay
-                    : 0f;
+                float delay =
+                    revealMode == RevealMode.Staggered
+                        ? i * staggerDelay
+                        : 0f;
 
-                float normalizedTime = Mathf.Clamp01((elapsed - delay) / lineDuration);
-                float revealAmount = Mathf.Clamp01(revealCurve.Evaluate(normalizedTime));
+                float normalizedTime = Mathf.Clamp01(
+                    (elapsed - delay) / lineDuration
+                );
+
+                float revealAmount = Mathf.Clamp01(
+                    revealCurve.Evaluate(normalizedTime)
+                );
+
                 DrawPartialLine(lines[i], revealAmount);
             }
 
@@ -181,10 +242,24 @@ public sealed class LineRendererDistanceReveal : MonoBehaviour
         revealRoutine = null;
     }
 
-    private static void DrawPartialLine(LineData line, float normalizedDistance)
+    private static void DrawPartialLine(
+        LineData line,
+        float normalizedDistance)
     {
-        if (line.renderer == null || line.positions.Length < 2)
+        if (line.renderer == null ||
+            line.positions == null ||
+            line.positions.Length < 2)
+        {
             return;
+        }
+
+        // Keep delayed lines completely invisible.
+        // This also prevents a small cap/dot at the starting position.
+        if (normalizedDistance <= 0f)
+        {
+            line.renderer.enabled = false;
+            return;
+        }
 
         line.renderer.enabled = line.originalEnabled;
         line.renderer.loop = false;
@@ -197,35 +272,60 @@ public sealed class LineRendererDistanceReveal : MonoBehaviour
             return;
         }
 
-        float targetDistance = line.totalDistance * normalizedDistance;
-        int segment = FindSegment(line.distances, targetDistance);
-        int visiblePointCount = Mathf.Clamp(segment + 2, 2, line.positions.Length);
+        float targetDistance =
+            line.totalDistance * normalizedDistance;
+
+        int segment = FindSegment(
+            line.distances,
+            targetDistance
+        );
+
+        int visiblePointCount = Mathf.Clamp(
+            segment + 2,
+            2,
+            line.positions.Length
+        );
 
         line.renderer.positionCount = visiblePointCount;
 
         for (int i = 0; i <= segment; i++)
             line.renderer.SetPosition(i, line.positions[i]);
 
-        int nextPoint = Mathf.Min(segment + 1, line.positions.Length - 1);
+        int nextPoint = Mathf.Min(
+            segment + 1,
+            line.positions.Length - 1
+        );
+
         float segmentStart = line.distances[segment];
+
         float segmentLength = Mathf.Max(
             Mathf.Epsilon,
-            line.distances[nextPoint] - segmentStart);
+            line.distances[nextPoint] - segmentStart
+        );
 
         float segmentProgress = Mathf.Clamp01(
-            (targetDistance - segmentStart) / segmentLength);
+            (targetDistance - segmentStart) / segmentLength
+        );
 
         Vector3 movingEndPoint = Vector3.Lerp(
             line.positions[segment],
             line.positions[nextPoint],
-            segmentProgress);
+            segmentProgress
+        );
 
-        line.renderer.SetPosition(visiblePointCount - 1, movingEndPoint);
+        line.renderer.SetPosition(
+            visiblePointCount - 1,
+            movingEndPoint
+        );
     }
 
-    private static int FindSegment(float[] cumulativeDistances, float targetDistance)
+    private static int FindSegment(
+        float[] cumulativeDistances,
+        float targetDistance)
     {
-        for (int i = 0; i < cumulativeDistances.Length - 1; i++)
+        for (int i = 0;
+             i < cumulativeDistances.Length - 1;
+             i++)
         {
             if (targetDistance <= cumulativeDistances[i + 1])
                 return i;
@@ -236,13 +336,16 @@ public sealed class LineRendererDistanceReveal : MonoBehaviour
 
     private static void RestoreCompleteLine(LineData line)
     {
-        if (line.renderer == null)
+        if (line.renderer == null ||
+            line.positions == null)
+        {
             return;
+        }
 
-        line.renderer.enabled = line.originalEnabled;
         line.renderer.loop = line.originalLoop;
         line.renderer.positionCount = line.positions.Length;
         line.renderer.SetPositions(line.positions);
+        line.renderer.enabled = line.originalEnabled;
     }
 
     private void StopCurrentAnimation()

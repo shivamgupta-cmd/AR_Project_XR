@@ -1267,6 +1267,8 @@ MonoBehaviour:
     topics:
     - topicName: Compass
       topicLogo: {fileID: 0}
+    - topicName: Globe
+      topicLogo: {fileID: 0}
   topicButtonPrefab: {fileID: 2372046749351720376, guid: 961794087b3ddd14289e32cf0f294ea7, type: 3}
   topicButtonParent: {fileID: 5739463904626674572}
 --- !u!4 &1033389877

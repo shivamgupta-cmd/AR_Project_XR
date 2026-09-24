@@ -35,19 +35,19 @@ Material:
     m_Floats:
     - _DepthMix: 0.85
     - _FoamIntensity: 2.73
-    - _FoamThreshold: 0.927
+    - _FoamThreshold: 0.9
     - _FoamTiling: 5.1
     - _FresnelPower: 4
     - _HDRHighlight: 1.1
-    - _NormalIntensity: 0.09
-    - _NormalTiling: 6
+    - _NormalIntensity: 3
+    - _NormalTiling: 10
     - _ReflectionIntensity: 0
     - _Smoothness: 0.8
     - _SpecularStrength: 0.91
-    - _Transparency: 0.767
-    - _WaveHeight: 1
-    - _WaveScale: 8
-    - _WaveSpeed: 2
+    - _Transparency: 0.6
+    - _WaveHeight: 0.5
+    - _WaveScale: 4
+    - _WaveSpeed: 0.2
     m_Colors:
     - _DeepWaterColor: {r: 0.2622375, g: 0.7114436, b: 0.7830189, a: 1}
     - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
