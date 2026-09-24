@@ -1199,6 +1199,8 @@ MonoBehaviour:
       topicLogo: {fileID: 0}
     - topicName: Ohms Law
       topicLogo: {fileID: 0}
+    - topicName: Electric Cell
+      topicLogo: {fileID: 0}
   - subjectName: Chemistry
     topics:
     - topicName: Combination Reaction
@@ -1258,6 +1260,8 @@ MonoBehaviour:
     - topicName: Sanchi Stuppa
       topicLogo: {fileID: 0}
     - topicName: Humayus Tomb
+      topicLogo: {fileID: 0}
+    - topicName: Three estates pyramid
       topicLogo: {fileID: 0}
   - subjectName: Civics
     topics:
