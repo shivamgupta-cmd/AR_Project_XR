@@ -131,11 +131,17 @@ EditorBuildSettings:
     path: Assets/_ARNewProject/Subjects/Physics/Electric Cell/Electric Cell.unity
     guid: 9d7edde5570269d4fa9f8440da28769e
   - enabled: 1
-    path: Assets/_ARNewProject/Subjects/Civics/EVM.unity
+    path: Assets/_ARNewProject/Subjects/Civics/EVM/EVM.unity
     guid: 83f7b97ab44cc094495c402e5e49754c
   - enabled: 1
     path: Assets/_ARNewProject/Subjects/Geography/Globe/Globe.unity
     guid: 91a9468359f2b2b499180e783e29b15e
+  - enabled: 1
+    path: Assets/_ARNewProject/Subjects/Civics/3 State/Three States of Government.unity
+    guid: f08fe41b16f634b4080d8342bade12df
+  - enabled: 1
+    path: Assets/_ARNewProject/Subjects/Geography/Arid Soil/Arid Soil.unity
+    guid: c622adfc9412b65499fdde9633513d22
   m_configObjects:
     : {fileID: 0}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af, type: 2}

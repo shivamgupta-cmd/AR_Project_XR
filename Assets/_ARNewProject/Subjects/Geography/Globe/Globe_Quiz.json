@@ -1,0 +1,149 @@
+{
+  "info": "A globe is a spherical model of Earth. It shows the seven continents, five oceans, the North and South Poles, and imaginary reference lines used to locate places. Latitude lines run east-west and measure distance north or south of the Equator, while longitude lines run north-south and measure distance east or west of the Prime Meridian. The Equator is at 0 degrees latitude, and the Prime Meridian is at 0 degrees longitude. The Tropics lie at about 23.5 degrees north and south, while the Polar Circles lie at about 66.5 degrees north and south. Earth rotates once in about 24 hours, producing day and night. Its axis is tilted by about 23.5 degrees, and this tilt, together with Earth's revolution around the Sun, causes the seasons.",
+  "questions": [
+    {
+      "questionText": "What is a globe?",
+      "options": [
+        "A spherical model of Earth",
+        "A flat map of one country",
+        "A model of the Moon",
+        "A weather instrument"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "Which imaginary line divides Earth into the Northern and Southern Hemispheres?",
+      "options": [
+        "Prime Meridian",
+        "Equator",
+        "Tropic of Cancer",
+        "Arctic Circle"
+      ],
+      "correctAnswerIndex": 1,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What do latitude lines measure?",
+      "options": [
+        "Height above sea level",
+        "Distance east or west of the Prime Meridian",
+        "Distance north or south of the Equator",
+        "Distance between continents"
+      ],
+      "correctAnswerIndex": 2,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What do longitude lines measure?",
+      "options": [
+        "Distance north or south of the Equator",
+        "The depth of an ocean",
+        "The height of a mountain",
+        "Distance east or west of the Prime Meridian"
+      ],
+      "correctAnswerIndex": 3,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "At what longitude is the Prime Meridian located?",
+      "options": [
+        "0 degrees longitude",
+        "23.5 degrees north",
+        "66.5 degrees south",
+        "180 degrees latitude"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "Where is the Tropic of Cancer located?",
+      "options": [
+        "23.5 degrees south",
+        "23.5 degrees north",
+        "66.5 degrees north",
+        "0 degrees longitude"
+      ],
+      "correctAnswerIndex": 1,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "Where is the Tropic of Capricorn located?",
+      "options": [
+        "66.5 degrees south",
+        "23.5 degrees north",
+        "23.5 degrees south",
+        "0 degrees latitude"
+      ],
+      "correctAnswerIndex": 2,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "Which pair correctly identifies the Polar Circles?",
+      "options": [
+        "Equator and Prime Meridian",
+        "Tropic of Cancer and Tropic of Capricorn",
+        "North Pole and South Pole",
+        "Arctic Circle and Antarctic Circle"
+      ],
+      "correctAnswerIndex": 3,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What causes day and night on Earth?",
+      "options": [
+        "Earth's rotation on its axis",
+        "Earth's changing distance from the Sun",
+        "The Moon moving around Earth",
+        "Clouds blocking sunlight"
+      ],
+      "correctAnswerIndex": 0,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "What mainly causes the seasons on Earth?",
+      "options": [
+        "The daily rotation of Earth",
+        "Earth's 23.5-degree axial tilt and revolution around the Sun",
+        "The movement of ocean water",
+        "The changing phases of the Moon"
+      ],
+      "correctAnswerIndex": 1,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "How many continents and major oceans are shown in this module?",
+      "options": [
+        "Five continents and seven oceans",
+        "Six continents and four oceans",
+        "Seven continents and five oceans",
+        "Eight continents and six oceans"
+      ],
+      "correctAnswerIndex": 2,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    },
+    {
+      "questionText": "Which coordinates identify a precise location on Earth?",
+      "options": [
+        "Altitude and temperature",
+        "Direction and speed",
+        "Time and distance",
+        "Latitude and longitude"
+      ],
+      "correctAnswerIndex": 3,
+      "questionVoice": "",
+      "correctAnswerVoice": ""
+    }
+  ]
+}
