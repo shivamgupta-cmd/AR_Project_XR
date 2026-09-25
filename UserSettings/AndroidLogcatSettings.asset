@@ -3,7 +3,7 @@
     "m_SelectedProcess": {
         "deviceId": "R9ZX80DB9VW",
         "name": "com.unity.template.ar_mobile",
-        "processId": 9949,
+        "processId": 17246,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,61 +11,43 @@
         {
             "deviceId": "R9ZX80DB9VW",
             "name": "com.unity.template.ar_mobile",
-            "processId": 23787,
-            "exited": false
-        },
-        {
-            "deviceId": "R9ZX80DB9VW",
-            "name": "com.unity.template.ar_mobile",
-            "processId": 16242,
-            "exited": false
-        },
-        {
-            "deviceId": "R9ZX80DB9VW",
-            "name": "com.unity.template.ar_mobile",
-            "processId": 17197,
-            "exited": false
-        },
-        {
-            "deviceId": "R9ZX80DB9VW",
-            "name": "com.unity.template.ar_mobile",
-            "processId": 19870,
-            "exited": false
-        },
-        {
-            "deviceId": "R9ZX80DB9VW",
-            "name": "com.unity.template.ar_mobile",
-            "processId": 21143,
-            "exited": false
-        },
-        {
-            "deviceId": "R9ZX80DB9VW",
-            "name": "com.unity.template.ar_mobile",
-            "processId": 15811,
-            "exited": false
-        },
-        {
-            "deviceId": "R9ZX80DB9VW",
-            "name": "com.unity.template.ar_mobile",
             "processId": 8201,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "R9ZX80DB9VW",
             "name": "com.unity.template.ar_mobile",
             "processId": 12936,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "R9ZX80DB9VW",
             "name": "com.unity.template.ar_mobile",
             "processId": 4943,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "R9ZX80DB9VW",
             "name": "com.unity.template.ar_mobile",
             "processId": 9949,
+            "exited": true
+        },
+        {
+            "deviceId": "R9ZX80DB9VW",
+            "name": "com.sec.android.app.launcher",
+            "processId": 2741,
+            "exited": false
+        },
+        {
+            "deviceId": "R9ZX80DB9VW",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 16369,
+            "exited": false
+        },
+        {
+            "deviceId": "R9ZX80DB9VW",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 17246,
             "exited": false
         },
         {

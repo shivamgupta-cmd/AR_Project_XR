@@ -34,6 +34,10 @@ public class MaterialHighlighter : MonoBehaviour
         CacheMaterials();
     }
 
+    //private void Start()
+    //{
+    //    Highlight();
+    //}
     private void CacheMaterials()
     {
         materials.Clear();

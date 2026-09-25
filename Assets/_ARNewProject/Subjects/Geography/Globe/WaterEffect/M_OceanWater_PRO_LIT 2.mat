@@ -35,7 +35,7 @@ Material:
     m_Floats:
     - _DepthMix: 0.85
     - _FoamIntensity: 2.73
-    - _FoamThreshold: 0.9
+    - _FoamThreshold: 0.92
     - _FoamTiling: 5.1
     - _FresnelPower: 4
     - _HDRHighlight: 1.1
