@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
-  m_Name: Sanchi Stuppa
+  m_Name: Globe Library
   m_EditorClassIdentifier: 
-  m_GuidLow: 4647307631507929528
-  m_GuidHigh: 5679105521003502262
+  m_GuidLow: 5561295560856252977
+  m_GuidHigh: 9652949771734922632
   m_DataStore:
     m_Storage: []
   m_Images:
   - m_SerializedGuid:
-      m_GuidLow: 5442009133709703131
-      m_GuidHigh: 12884635323988758667
+      m_GuidLow: 5397307797697903463
+      m_GuidHigh: 4175502082068464035
     m_SerializedTextureGuid:
-      m_GuidLow: 8945409911724564940
-      m_GuidHigh: 8437606495310741242
-    m_Size: {x: 0.15, y: 0.15059604}
+      m_GuidLow: 3572584926922537926
+      m_GuidHigh: 1245304354220861194
+    m_Size: {x: 0.15, y: 0.15169385}
     m_SpecifySize: 1
-    m_Name: Screenshot 2026-09-17 145933
+    m_Name: Globe
     m_Texture: {fileID: 0}
