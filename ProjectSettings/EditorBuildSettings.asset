@@ -131,7 +131,7 @@ EditorBuildSettings:
     path: Assets/_ARNewProject/Subjects/Physics/Electric Cell/Electric Cell.unity
     guid: 9d7edde5570269d4fa9f8440da28769e
   - enabled: 1
-    path: Assets/_ARNewProject/Subjects/Civics/EVM.unity
+    path: Assets/_ARNewProject/Subjects/Civics/EVM/EVM.unity
     guid: 83f7b97ab44cc094495c402e5e49754c
   - enabled: 1
     path: Assets/_ARNewProject/Subjects/Geography/Globe/Globe.unity
