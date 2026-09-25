@@ -1,5 +1,5 @@
-using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,24 +17,23 @@ public class ElectricCellController : MonoBehaviour
     [SerializeField] private float cutawayAppearDuration = 0.7f;
 
     [Header("PART HIGHLIGHTERS")]
-    [SerializeField] private ObjectHighlighter positiveTerminalHighlighter;
-    [SerializeField] private ObjectHighlighter insulatingSealHighlighter;
-    [SerializeField] private ObjectHighlighter carbonRodHighlighter;
-    [SerializeField] private ObjectHighlighter electrolyteHighlighter;
-    [SerializeField] private ObjectHighlighter separatorHighlighter;
-    [SerializeField] private ObjectHighlighter zincContainerHighlighter;
-    [SerializeField] private ObjectHighlighter negativeTerminalHighlighter;
+    [SerializeField] private MaterialHighlighter positiveTerminalHighlighter;
+    [SerializeField] private MaterialHighlighter insulatingSealHighlighter;
+    [SerializeField] private MaterialHighlighter carbonRodHighlighter;
+    [SerializeField] private MaterialHighlighter electrolyteHighlighter;
+    [SerializeField] private MaterialHighlighter separatorHighlighter;
+    [SerializeField] private MaterialHighlighter zincContainerHighlighter;
+    [SerializeField] private MaterialHighlighter negativeTerminalHighlighter;
 
     [Header("AUDIO")]
     [SerializeField] private AudioSource audioSource;
-
     [SerializeField] private AudioClip intro3DVO;
     [SerializeField] private AudioClip setupVO;
     [SerializeField] private AudioClip cellTwoPartsVO;
     [SerializeField] private AudioClip cellExternalPartVO;
     [SerializeField] private AudioClip labelsIntroVO;
 
-    [Header("Lable VO")]
+    [Header("LABEL VO")]
     [SerializeField] private AudioClip positiveTerminalVO;
     [SerializeField] private AudioClip insulatingSealVO;
     [SerializeField] private AudioClip carbonRodVO;
@@ -42,8 +41,9 @@ public class ElectricCellController : MonoBehaviour
     [SerializeField] private AudioClip separatorVO;
     [SerializeField] private AudioClip zincContainerVO;
     [SerializeField] private AudioClip negativeTerminalVO;
+    [SerializeField] private AudioClip completeAllLableVO;
 
-    [Header("Button")]
+    [Header("BUTTON")]
     [SerializeField] private Button positiveTerminalBtn;
     [SerializeField] private Button insulatingSealBtn;
     [SerializeField] private Button carbonRodBtn;
@@ -54,15 +54,16 @@ public class ElectricCellController : MonoBehaviour
 
     [Header("LABELS")]
     [SerializeField] private GameObject[] labels;
+    [SerializeField] private GameObject cellTwoPars;
 
     private bool isPaused;
     private bool rotateFullCell;
-
+    private bool completeAllLableVOPlayed;
     private Vector3 cutawayOriginalScale;
-
     private Coroutine activityCoroutine;
     private Coroutine labelVOCoroutine;
-    private ObjectHighlighter activeHighlighter;
+    private MaterialHighlighter activeHighlighter;
+    private HashSet<Button> visitedLabelButtons = new HashSet<Button>();
 
     private void Awake()
     {
@@ -76,129 +77,54 @@ public class ElectricCellController : MonoBehaviour
         StartActivity();
     }
 
-
-
-
-
-
-    private void SetupButtonListeners()
-    {
-        if (positiveTerminalBtn != null)
-            positiveTerminalBtn.onClick.AddListener(() =>
-                PlayLabelVO(positiveTerminalVO, positiveTerminalHighlighter, positiveTerminalBtn));
-
-        if (insulatingSealBtn != null)
-            insulatingSealBtn.onClick.AddListener(() =>
-                PlayLabelVO(insulatingSealVO, insulatingSealHighlighter, insulatingSealBtn));
-
-        if (carbonRodBtn != null)
-            carbonRodBtn.onClick.AddListener(() =>
-                PlayLabelVO(carbonRodVO, carbonRodHighlighter, carbonRodBtn));
-
-        if (electrolyteBtn != null)
-            electrolyteBtn.onClick.AddListener(() =>
-                PlayLabelVO(electrolyteVO, electrolyteHighlighter, electrolyteBtn));
-
-        if (separatorBtn != null)
-            separatorBtn.onClick.AddListener(() =>
-                PlayLabelVO(separatorVO, separatorHighlighter, separatorBtn));
-
-        if (zincContainerBtn != null)
-            zincContainerBtn.onClick.AddListener(() =>
-                PlayLabelVO(zincContainerVO, zincContainerHighlighter, zincContainerBtn));
-
-        if (negativeTerminalBtn != null)
-            negativeTerminalBtn.onClick.AddListener(() =>
-                PlayLabelVO(negativeTerminalVO, negativeTerminalHighlighter, negativeTerminalBtn));
-    }
-
-    private void PlayLabelVO(AudioClip clip, ObjectHighlighter highlighter, Button button)
-    {
-        if (labelVOCoroutine != null)
-            StopCoroutine(labelVOCoroutine);
-
-        if (button != null)
-        {
-            UIFadeIn fade = button.GetComponentInParent<UIFadeIn>();
-
-            if (fade != null)
-                fade.FadeOut();
-        }
-
-        if (audioSource != null)
-            audioSource.Stop();
-
-        StopAllHighlights();
-
-        labelVOCoroutine = StartCoroutine(LabelVOSequence(clip, highlighter));
-    }
-
-    private IEnumerator LabelVOSequence(AudioClip clip, ObjectHighlighter highlighter)
-    {
-        activeHighlighter = highlighter;
-
-        if (activeHighlighter != null)
-            activeHighlighter.StartHighlight();
-
-        PlayAudio(clip);
-
-        yield return WaitForVoiceOver();
-
-        if (activeHighlighter != null)
-            activeHighlighter.StopHighlight();
-
-        activeHighlighter = null;
-        labelVOCoroutine = null;
-    }
-
-
-
-
-
-
-
     private void Update()
     {
         if (isPaused)
             return;
-
         if (!rotateFullCell)
             return;
-
         if (fullCell == null)
             return;
-
-        fullCell.transform.Rotate(
-            rotationAxis,
-            rotationSpeed * Time.deltaTime,
-            Space.Self
-        );
+        fullCell.transform.Rotate(rotationAxis, rotationSpeed * Time.deltaTime, Space.Self);
     }
 
-    // =========================================================
-    // START ACTIVITY
-    // =========================================================
+    private void SetupButtonListeners()
+    {
+        if (positiveTerminalBtn != null)
+            positiveTerminalBtn.onClick.AddListener(() => PlayLabelVO(positiveTerminalVO, positiveTerminalHighlighter, positiveTerminalBtn));
+        if (insulatingSealBtn != null)
+            insulatingSealBtn.onClick.AddListener(() => PlayLabelVO(insulatingSealVO, insulatingSealHighlighter, insulatingSealBtn));
+        if (carbonRodBtn != null)
+            carbonRodBtn.onClick.AddListener(() => PlayLabelVO(carbonRodVO, carbonRodHighlighter, carbonRodBtn));
+        if (electrolyteBtn != null)
+            electrolyteBtn.onClick.AddListener(() => PlayLabelVO(electrolyteVO, electrolyteHighlighter, electrolyteBtn));
+        if (separatorBtn != null)
+            separatorBtn.onClick.AddListener(() => PlayLabelVO(separatorVO, separatorHighlighter, separatorBtn));
+        if (zincContainerBtn != null)
+            zincContainerBtn.onClick.AddListener(() => PlayLabelVO(zincContainerVO, zincContainerHighlighter, zincContainerBtn));
+        if (negativeTerminalBtn != null)
+            negativeTerminalBtn.onClick.AddListener(() => PlayLabelVO(negativeTerminalVO, negativeTerminalHighlighter, negativeTerminalBtn));
+    }
 
     public void StartActivity()
     {
         if (!isActiveAndEnabled)
             return;
-
         StopAllCoroutines();
-
         labelVOCoroutine = null;
         activeHighlighter = null;
-
+        visitedLabelButtons.Clear();
+        completeAllLableVOPlayed = false;
         if (audioSource != null)
             audioSource.Stop();
-
         isPaused = false;
+
+        if (cellTwoPars != null)
+            cellTwoPars.SetActive(false);
 
         HideLabels();
         StopAllHighlights();
-
         rotateFullCell = true;
-
         activityCoroutine = StartCoroutine(ActivitySequence());
     }
 
@@ -206,94 +132,123 @@ public class ElectricCellController : MonoBehaviour
     {
         PlayAudio(intro3DVO);
         yield return WaitForVoiceOver();
-
         PlayAudio(setupVO);
         yield return WaitForVoiceOver();
-
         StopFullCellRotation();
-
         if (cutawayCell != null)
         {
             cutawayCell.SetActive(true);
             cutawayCell.transform.localScale = cutawayOriginalScale;
         }
 
-        PlayAudio(cellTwoPartsVO);
+        if (cellTwoPars != null)
+            cellTwoPars.SetActive(true);
 
+        PlayAudio(cellTwoPartsVO);
         if (cutawayCell != null)
             StartCoroutine(ScaleObject(cutawayCell.transform, cutawayOriginalScale, Vector3.zero, cutawayAppearDuration));
-
         yield return WaitForVoiceOver();
+
 
         PlayAudio(cellExternalPartVO);
         yield return WaitForVoiceOver();
-
+        if (cellTwoPars != null)
+            cellTwoPars.SetActive(false);
         ShowLabels();
-
         PlayAudio(labelsIntroVO);
         yield return WaitForVoiceOver();
     }
+
     private void StopFullCellRotation()
     {
         rotateFullCell = false;
-
         if (fullCell != null)
             fullCell.transform.localRotation = Quaternion.identity;
     }
 
-
-
-
-
-
-
-
-    private IEnumerator ScaleObject(Transform target,Vector3 startScale,Vector3 endScale,float duration)
+    private IEnumerator ScaleObject(Transform target, Vector3 startScale, Vector3 endScale, float duration)
     {
         if (target == null)
             yield break;
-
         if (duration <= 0f)
         {
             target.localScale = endScale;
             yield break;
         }
-
         target.localScale = startScale;
-
         float timer = 0f;
-
         while (timer < duration)
         {
             if (!isPaused)
             {
                 timer += Time.deltaTime;
-
-                float t =
-                    Mathf.Clamp01(timer / duration);
-
-                // Smooth animation
+                float t = Mathf.Clamp01(timer / duration);
                 t = Mathf.SmoothStep(0f, 1f, t);
-
-                target.localScale =
-                    Vector3.Lerp(
-                        startScale,
-                        endScale,
-                        t
-                    );
+                target.localScale = Vector3.Lerp(startScale, endScale, t);
             }
-
             yield return null;
         }
-
         target.localScale = endScale;
+    }
+
+    private void PlayLabelVO(AudioClip clip, MaterialHighlighter highlighter, Button button)
+    {
+        StopAllHighlights();
+        if (labelVOCoroutine != null)
+            StopCoroutine(labelVOCoroutine);
+        if (button != null)
+        {
+            visitedLabelButtons.Add(button);
+            UIFadeIn fade = button.GetComponentInParent<UIFadeIn>();
+            if (fade != null)
+                fade.FadeOut();
+        }
+        if (audioSource != null)
+            audioSource.Stop();
+        labelVOCoroutine = StartCoroutine(LabelVOSequence(clip, highlighter));
+    }
+
+    private IEnumerator LabelVOSequence(AudioClip clip, MaterialHighlighter highlighter)
+    {
+        activeHighlighter = highlighter;
+        if (activeHighlighter != null)
+            activeHighlighter.Highlight();
+        PlayAudio(clip);
+        yield return WaitForVoiceOver();
+        if (activeHighlighter != null)
+            activeHighlighter.StopHighlight();
+        activeHighlighter = null;
+        labelVOCoroutine = null;
+        CheckAllLabelsComplete();
+    }
+
+    private void CheckAllLabelsComplete()
+    {
+        if (completeAllLableVOPlayed)
+            return;
+        if (visitedLabelButtons.Count >= 7)
+        {
+            completeAllLableVOPlayed = true;
+            StartCoroutine(CompleteAllLabelsSequence());
+        }
+    }
+
+    private IEnumerator CompleteAllLabelsSequence()
+    {
+        StopAllHighlights();
+
+        if (cutawayCell != null)
+            StartCoroutine(ScaleObject(cutawayCell.transform, Vector3.zero, cutawayOriginalScale,cutawayAppearDuration));
+
+        PlayAudio(completeAllLableVO);
+        rotateFullCell = true;
+        yield return WaitForVoiceOver();
     }
 
     public void ShowLabels()
     {
         if (labels == null)
             return;
-
         foreach (GameObject label in labels)
         {
             if (label != null)
@@ -305,7 +260,6 @@ public class ElectricCellController : MonoBehaviour
     {
         if (labels == null)
             return;
-
         foreach (GameObject label in labels)
         {
             if (label != null)
@@ -313,27 +267,20 @@ public class ElectricCellController : MonoBehaviour
         }
     }
 
-
     private void StopAllHighlights()
     {
         if (positiveTerminalHighlighter != null)
             positiveTerminalHighlighter.StopHighlight();
-
         if (insulatingSealHighlighter != null)
             insulatingSealHighlighter.StopHighlight();
-
         if (carbonRodHighlighter != null)
             carbonRodHighlighter.StopHighlight();
-
         if (electrolyteHighlighter != null)
             electrolyteHighlighter.StopHighlight();
-
         if (separatorHighlighter != null)
             separatorHighlighter.StopHighlight();
-
         if (zincContainerHighlighter != null)
             zincContainerHighlighter.StopHighlight();
-
         if (negativeTerminalHighlighter != null)
             negativeTerminalHighlighter.StopHighlight();
     }
@@ -342,55 +289,34 @@ public class ElectricCellController : MonoBehaviour
     {
         if (audioSource == null || clip == null)
             return;
-
         audioSource.Stop();
-
         audioSource.loop = false;
         audioSource.clip = clip;
-
         audioSource.Play();
     }
 
     private IEnumerator WaitForVoiceOver()
     {
         yield return null;
-
-        while (
-            isPaused ||
-            (audioSource != null &&
-             audioSource.isPlaying)
-        )
-        {
+        while (isPaused || (audioSource != null && audioSource.isPlaying))
             yield return null;
-        }
     }
 
     public void PauseActivity()
     {
         if (!isActiveAndEnabled || isPaused)
             return;
-
         isPaused = true;
-
-        if (audioSource != null &&
-            audioSource.isPlaying)
-        {
+        if (audioSource != null && audioSource.isPlaying)
             audioSource.Pause();
-        }
     }
 
     public void ResumeActivity()
     {
         if (!isActiveAndEnabled || !isPaused)
             return;
-
         isPaused = false;
-
-        if (audioSource != null &&
-            audioSource.isActiveAndEnabled &&
-            audioSource.clip != null)
-        {
+        if (audioSource != null && audioSource.isActiveAndEnabled && audioSource.clip != null)
             audioSource.UnPause();
-        }
     }
 }
