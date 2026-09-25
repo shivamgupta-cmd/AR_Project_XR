@@ -488,6 +488,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 375517915199365746, guid: b6d8985fb237d2940a4ad89f9e53dd1c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b6d8985fb237d2940a4ad89f9e53dd1c, type: 3}
       propertyPath: m_Name
       value: KNOWLEDGE TREE
@@ -1040,8 +1044,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.9622642, g: 0.9622642, b: 0.9622642, a: 1}
-  m_Intensity: 1.7
+  m_Color: {r: 1, g: 0.98014176, b: 0.8915094, a: 1}
+  m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
