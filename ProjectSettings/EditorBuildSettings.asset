@@ -134,9 +134,8 @@ EditorBuildSettings:
     path: Assets/_ARNewProject/Subjects/Civics/EVM.unity
     guid: 83f7b97ab44cc094495c402e5e49754c
   - enabled: 1
-    path: Assets/_ARNewProject/Subjects/History/Three estates pyramid/Three estates
-      pyramid.unity
-    guid: afd9ae7d3eb42f44798f387c0868e245
+    path: Assets/_ARNewProject/Subjects/Geography/Globe/Globe.unity
+    guid: 91a9468359f2b2b499180e783e29b15e
   m_configObjects:
     : {fileID: 0}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af, type: 2}
