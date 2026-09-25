@@ -496,6 +496,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: KNOWLEDGE TREE
       objectReference: {fileID: 0}
+    - target: {fileID: 4666369112695768354, guid: b6d8985fb237d2940a4ad89f9e53dd1c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -80.09689
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666369112695768354, guid: b6d8985fb237d2940a4ad89f9e53dd1c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 35.690304
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666369112695768354, guid: b6d8985fb237d2940a4ad89f9e53dd1c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -31.725315
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666369112695768354, guid: b6d8985fb237d2940a4ad89f9e53dd1c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9849913
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666369112695768354, guid: b6d8985fb237d2940a4ad89f9e53dd1c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666369112695768354, guid: b6d8985fb237d2940a4ad89f9e53dd1c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.17260394
+      objectReference: {fileID: 0}
+    - target: {fileID: 4666369112695768354, guid: b6d8985fb237d2940a4ad89f9e53dd1c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -19.879
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1103,13 +1131,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 484415410}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.47, y: 19.71, z: 18.14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &492459530 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2512387469002778311, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
