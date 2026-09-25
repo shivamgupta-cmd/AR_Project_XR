@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: Globe Library
+  m_EditorClassIdentifier: 
+  m_GuidLow: 5561295560856252977
+  m_GuidHigh: 9652949771734922632
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5397307797697903463
+      m_GuidHigh: 4175502082068464035
+    m_SerializedTextureGuid:
+      m_GuidLow: 3572584926922537926
+      m_GuidHigh: 1245304354220861194
+    m_Size: {x: 0.15, y: 0.15169385}
+    m_SpecifySize: 1
+    m_Name: Globe
+    m_Texture: {fileID: 0}

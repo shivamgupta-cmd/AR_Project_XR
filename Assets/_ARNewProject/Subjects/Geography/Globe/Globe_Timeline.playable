@@ -503,145 +503,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: The Prime Meridian is located at zero
   - m_Version: 1
-    m_Start: 63.528000000000006
-    m_ClipIn: 0
-    m_Asset: {fileID: -1981728592239916885}
-    m_Duration: 10.584
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: -8411430680059847582}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: A location can be identified using two coordinates.
-  - m_Version: 1
-    m_Start: 74.11200000000001
-    m_ClipIn: 0
-    m_Asset: {fileID: -7720129068602201578}
-    m_Duration: 8.16
-    m_TimeScale: 1
-    m_ParentTrack: {fileID: -8411430680059847582}
-    m_EaseInDuration: 0
-    m_EaseOutDuration: 0
-    m_BlendInDuration: -1
-    m_BlendOutDuration: -1
-    m_MixInCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_MixOutCurve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      - serializedVersion: 3
-        time: 1
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    m_BlendInCurveMode: 0
-    m_BlendOutCurveMode: 0
-    m_ExposedParameterNames: []
-    m_AnimationCurves: {fileID: 0}
-    m_Recordable: 0
-    m_PostExtrapolationMode: 0
-    m_PreExtrapolationMode: 0
-    m_PostExtrapolationTime: 0
-    m_PreExtrapolationTime: 0
-    m_DisplayName: Some latitude lines have special importance
-  - m_Version: 1
-    m_Start: 82.272
+    m_Start: 63.528
     m_ClipIn: 0
     m_Asset: {fileID: -3977025930012044387}
     m_Duration: 13.92
@@ -710,7 +572,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: The Tropic of Cancer is an important latitude
   - m_Version: 1
-    m_Start: 96.19200000000001
+    m_Start: 77.44800000000001
     m_ClipIn: 0
     m_Asset: {fileID: -8742742980111199967}
     m_Duration: 12.624
@@ -779,7 +641,7 @@ MonoBehaviour:
     m_PreExtrapolationTime: 0
     m_DisplayName: The Tropic of Capricorn is located
   - m_Version: 1
-    m_Start: 108.816
+    m_Start: 90.072
     m_ClipIn: 0
     m_Asset: {fileID: -520482175513920572}
     m_Duration: 11.712
@@ -853,23 +715,6 @@ MonoBehaviour:
     volume: 1
     stereoPan: 0
     spatialBlend: 0
---- !u!114 &-7720129068602201578
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
-  m_Name: AudioPlayableAsset
-  m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: 8731b1d4e93b5fd47ba53af7b452d261, type: 3}
-  m_Loop: 0
-  m_bufferingTime: 0.1
-  m_ClipProperties:
-    volume: 1
 --- !u!114 &-7656781142413452129
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -916,6 +761,8 @@ MonoBehaviour:
     - {fileID: 4026085192095871926}
     - {fileID: 5934546326831193051}
     - {fileID: 4962864323150221568}
+    - {fileID: -1819839863380116992}
+    - {fileID: 512174215315422212}
 --- !u!114 &-7543379033911480482
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -938,10 +785,10 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 55.296
+    m_Start: 57.13333333333333
     m_ClipIn: 0
     m_Asset: {fileID: 3211690474287454178}
-    m_Duration: 53.52
+    m_Duration: 32.93866666666667
     m_TimeScale: 1
     m_ParentTrack: {fileID: -7543379033911480482}
     m_EaseInDuration: 0
@@ -1245,10 +1092,10 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 18.503999999999998
+    m_Start: 21.033333333333335
     m_ClipIn: 0
     m_Asset: {fileID: -473013391409956345}
-    m_Duration: 90.31200000000001
+    m_Duration: 69.03866666666667
     m_TimeScale: 1
     m_ParentTrack: {fileID: -5274324480338629397}
     m_EaseInDuration: 0
@@ -1333,6 +1180,18 @@ MonoBehaviour:
   m_bufferingTime: 0.1
   m_ClipProperties:
     volume: 1
+--- !u!114 &-4267971915299443252
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fde0d25a170598d46a0b9dc16b4527a5, type: 3}
+  m_Name: ActivationPlayableAsset
+  m_EditorClassIdentifier: 
 --- !u!114 &-3977025930012044387
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1372,10 +1231,10 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 37.416666666666664
+    m_Start: 37.8
     m_ClipIn: 0
     m_Asset: {fileID: 3792738005598399507}
-    m_Duration: 17.879333333333335
+    m_Duration: 17.496000000000002
     m_TimeScale: 1
     m_ParentTrack: {fileID: -3378721825452692777}
     m_EaseInDuration: 0
@@ -1455,7 +1314,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: 
-  m_Time: 48.7
+  m_Time: 47.784
   m_Retroactive: 0
   m_EmitOnce: 1
   m_Asset: {fileID: 11400000, guid: 9a0e66f8079e3e24a85a3d48173102a8, type: 2}
@@ -1522,7 +1381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fde0d25a170598d46a0b9dc16b4527a5, type: 3}
   m_Name: ActivationPlayableAsset
   m_EditorClassIdentifier: 
---- !u!114 &-1981728592239916885
+--- !u!114 &-1819839863380116992
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1531,14 +1390,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f10dd60657c6004587f237a7e90f8e4, type: 3}
-  m_Name: AudioPlayableAsset
+  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
+  m_Name: Signal Emitter
   m_EditorClassIdentifier: 
-  m_Clip: {fileID: 8300000, guid: f05c04aabbad2bb4fa15aa75f8ec6d44, type: 3}
-  m_Loop: 0
-  m_bufferingTime: 0.1
-  m_ClipProperties:
-    volume: 1
+  m_Time: 11.316666666666666
+  m_Retroactive: 0
+  m_EmitOnce: 1
+  m_Asset: {fileID: 11400000, guid: 7d477353a8cb9cf4d9ec104a587e6901, type: 2}
 --- !u!114 &-1326561468683122494
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1561,10 +1419,10 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 82.272
+    m_Start: 65.36666666666666
     m_ClipIn: 0
     m_Asset: {fileID: -2135513392487260178}
-    m_Duration: 26.543999999999997
+    m_Duration: 24.705333333333336
     m_TimeScale: 1
     m_ParentTrack: {fileID: -1326561468683122494}
     m_EaseInDuration: 0
@@ -1701,6 +1559,7 @@ MonoBehaviour:
   m_Tracks:
   - {fileID: -8411430680059847582}
   - {fileID: -7567730021946529265}
+  - {fileID: 1512639107179032541}
   - {fileID: -5434673903515566233}
   - {fileID: 8772511888425244278}
   - {fileID: -1326561468683122494}
@@ -1734,6 +1593,115 @@ MonoBehaviour:
   m_bufferingTime: 0.1
   m_ClipProperties:
     volume: 1
+--- !u!114 &512174215315422212
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
+  m_Name: Signal Emitter
+  m_EditorClassIdentifier: 
+  m_Time: 90.072
+  m_Retroactive: 0
+  m_EmitOnce: 1
+  m_Asset: {fileID: 11400000, guid: 2eff6d292f673c044a4fa48c46ae2aab, type: 2}
+--- !u!114 &1512639107179032541
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21bf7f712d84d26478ebe6a299f21738, type: 3}
+  m_Name: Activation Track (9)
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children: []
+  m_Clips:
+  - m_Version: 1
+    m_Start: 9.552
+    m_ClipIn: 0
+    m_Asset: {fileID: -4267971915299443252}
+    m_Duration: 8.951999999999998
+    m_TimeScale: 1
+    m_ParentTrack: {fileID: 1512639107179032541}
+    m_EaseInDuration: 0
+    m_EaseOutDuration: 0
+    m_BlendInDuration: 0
+    m_BlendOutDuration: 0
+    m_MixInCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_MixOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_BlendInCurveMode: 0
+    m_BlendOutCurveMode: 0
+    m_ExposedParameterNames: []
+    m_AnimationCurves: {fileID: 0}
+    m_Recordable: 0
+    m_PostExtrapolationMode: 0
+    m_PreExtrapolationMode: 0
+    m_PostExtrapolationTime: 0
+    m_PreExtrapolationTime: 0
+    m_DisplayName: Active
+  m_Markers:
+    m_Objects: []
+  m_PostPlaybackState: 3
 --- !u!114 &2251931647454459718
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1773,10 +1741,10 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 96.19200000000001
+    m_Start: 79.45
     m_ClipIn: 0
     m_Asset: {fileID: -465067162104409404}
-    m_Duration: 12.623999999999995
+    m_Duration: 10.622
     m_TimeScale: 1
     m_ParentTrack: {fileID: 3017489713753751824}
     m_EaseInDuration: 0
@@ -1878,10 +1846,10 @@ MonoBehaviour:
   m_Children: []
   m_Clips:
   - m_Version: 1
-    m_Start: 48.7
+    m_Start: 49.733333333333334
     m_ClipIn: 0
     m_Asset: {fileID: 7713720761035629630}
-    m_Duration: 6.5959999999999965
+    m_Duration: 5.562666666666665
     m_TimeScale: 1
     m_ParentTrack: {fileID: 3442322127314069993}
     m_EaseInDuration: 0
@@ -2005,7 +1973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: 
-  m_Time: 96.19200000000001
+  m_Time: 77.44800000000001
   m_Retroactive: 0
   m_EmitOnce: 1
   m_Asset: {fileID: 11400000, guid: aba5d5b7171cb4147bc6e52029bc1c63, type: 2}
@@ -2038,7 +2006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15c38f6fa1940124db1ab7f6fe7268d1, type: 3}
   m_Name: Signal Emitter
   m_EditorClassIdentifier: 
-  m_Time: 82.272
+  m_Time: 63.528
   m_Retroactive: 0
   m_EmitOnce: 1
   m_Asset: {fileID: 11400000, guid: 1053dc2def901c64b84c9ce137365825, type: 2}
