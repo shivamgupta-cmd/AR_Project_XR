@@ -961,22 +961,22 @@ PrefabInstance:
     - target: {fileID: 4381817914513172938, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 694f9922a6dc6f24f9d9013cbcbb6dc2, type: 3}
+      objectReference: {fileID: 21300000, guid: 6a79ffb4fe3e1474692579c66aeaeacb, type: 3}
     - target: {fileID: 4381817914513172938, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4381817914513172938, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.8018868
       objectReference: {fileID: 0}
     - target: {fileID: 4381817914513172938, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.8018868
       objectReference: {fileID: 0}
     - target: {fileID: 4381817914513172938, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.8018868
       objectReference: {fileID: 0}
     - target: {fileID: 7396428813678820027, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
       propertyPath: m_Camera
@@ -1039,7 +1039,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.98014176, b: 0.8915094, a: 1}
+  m_Color: {r: 0.9339623, g: 0.8938409, b: 0.7092827, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
