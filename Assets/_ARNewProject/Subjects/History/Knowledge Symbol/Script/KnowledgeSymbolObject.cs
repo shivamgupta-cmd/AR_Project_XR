@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 
 public class KnowledgeSymbolObject : MonoBehaviour
@@ -35,6 +36,19 @@ public class KnowledgeSymbolObject : MonoBehaviour
             if (highlighter != null)
             {
                 highlighter.StartHighlight();
+            }
+        }
+    }
+    public void StopHighlight()
+    {
+        if (highlighters == null)
+            return;
+
+        foreach (KnowledgeSymbolObjectHighlighter highlighter in highlighters)
+        {
+            if (highlighter != null)
+            {
+                highlighter.StopHighlight();
             }
         }
     }
