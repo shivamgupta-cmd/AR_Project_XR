@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.Playables;
 public class KnowledgeSymbolManagerScript : MonoBehaviour
 {
     [Header("Knowledge Symbol Objects")]
@@ -16,6 +16,7 @@ public class KnowledgeSymbolManagerScript : MonoBehaviour
     private int completedObjects = 0;
     private bool finalVOPlayed = false;
 
+    public PlayableDirector playable;
     // Currently highlighted object
     private KnowledgeSymbolObject currentHighlightedObject;
 
@@ -155,19 +156,20 @@ public class KnowledgeSymbolManagerScript : MonoBehaviour
             yield return new WaitWhile(
                 () => audioSource.isPlaying
             );
+            playable.Resume();
         }
 
         // ------------------------------------------------
         // FINAL CONCLUSION VO
         // ------------------------------------------------
-        if (audioSource != null && finalConclusionVO != null)
-        {
-            audioSource.clip = finalConclusionVO;
-            audioSource.Play();
+        //if (audioSource != null && finalConclusionVO != null)
+        //{
+        //    audioSource.clip = finalConclusionVO;
+        //    audioSource.Play();
 
-            yield return new WaitWhile(
-                () => audioSource.isPlaying
-            );
-        }
+        //    yield return new WaitWhile(
+        //        () => audioSource.isPlaying
+        //    );
+        //}
     }
 }
