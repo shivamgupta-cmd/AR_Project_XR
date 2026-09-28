@@ -148,6 +148,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_ARNewProject/Subjects/Geography/Bauxite/Bauxite.unity
     guid: f038cf4fd1c5ce44f85b382397c603b2
+  - enabled: 1
+    path: Assets/_ARNewProject/Subjects/History/Knowledge Symbol/Knowledge Symbol.unity
+    guid: 6bc6de35b54b2ce4da39c72900b1ad11
   m_configObjects:
     : {fileID: 0}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af, type: 2}
