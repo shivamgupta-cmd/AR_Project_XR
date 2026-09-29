@@ -1,0 +1,1129 @@
+fileFormatVersion: 2
+guid: e8e73a6b025d8f04ca22c12081a62885
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ATM_Diff
+    second: {fileID: 2100000, guid: a80ad390041c80545abe641b18b8d9b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bench_Metal_Diff
+    second: {fileID: 2100000, guid: d390d9cc840159248984a60ca8d18d05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bench_Wood_Diff
+    second: {fileID: 2100000, guid: 72b138f17b5033442afce48c3f4b4d86, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_Tile_Diff
+    second: {fileID: 2100000, guid: 706fc30ab5ac9ed44aaf97596581f3df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Board_Diff
+    second: {fileID: 2100000, guid: 1f38b31490d0af74c9b1d7c42344439f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Books_Diff
+    second: {fileID: 2100000, guid: 2c2f16de426691940a5864f3dea280b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brick_Wall_Diff
+    second: {fileID: 2100000, guid: 48be9b1551d9736429610b19cfd7d0b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bridge_Relling2
+    second: {fileID: 2100000, guid: 544e20554378d2843bd420b749f82e53, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chrome
+    second: {fileID: 2100000, guid: 03e347c909a2a434894b877da767884d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cola
+    second: {fileID: 2100000, guid: b61809a6a3c00b74db56c697ca191d50, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Compartment
+    second: {fileID: 2100000, guid: 0aa4872303975d743ae2d814f4decf5c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Compartment_Diff
+    second: {fileID: 2100000, guid: b877d25e107fc9d4fa3083c03e83f844, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Compartment_Navy_Blue
+    second: {fileID: 2100000, guid: fa42f8f16a07ac0499f0f25b23dc3d46, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Compartment_Navy_Blue_Diff
+    second: {fileID: 2100000, guid: ed757450970dca44d9e923935b97d65e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Compartment_Wheel_Diff
+    second: {fileID: 2100000, guid: 2f4cda54f3005084186e56bc9f5071ea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Compartment_Wheel_Diff_1
+    second: {fileID: 2100000, guid: df817df4835cdb44782eef7585f536fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Concrete_Diff
+    second: {fileID: 2100000, guid: f2b497536a581274eac0510fb3d59c1a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Concrete_Diff_1
+    second: {fileID: 2100000, guid: 62dd6fb858675a64ca259c86c0885434, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Counter_Ceiling_Diff
+    second: {fileID: 2100000, guid: 56f0bf3d636decc4fa8af74489311040, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crossing_Signal_Diff
+    second: {fileID: 2100000, guid: a10b3edffdccb9a4bb19817799cd59dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door_Diff
+    second: {fileID: 2100000, guid: ee74054e48f2b1d409001fae705eadf9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Electric_Box_Diff
+    second: {fileID: 2100000, guid: f67a241e91801724db283683f2bcb529, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Engine_Diff
+    second: {fileID: 2100000, guid: eac80489cade5694eb3245051463d7fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Engine_Wheel_Diff
+    second: {fileID: 2100000, guid: f478590c91d569b48b30dc2082ea178d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fan_Diff1
+    second: {fileID: 2100000, guid: 578b2a0dff1bbe844868e12366c18d58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fence_Diff
+    second: {fileID: 2100000, guid: 71bae95ab249ca247b15de954148393b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor_Diff
+    second: {fileID: 2100000, guid: 5eaa2c591bca3db4ba428ec336fa603a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: d95910d16c863254bb5a197eeea5d1ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass1
+    second: {fileID: 2100000, guid: 1ffaf258c3e7fa54aa02db642309b673, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grass_Diff
+    second: {fileID: 2100000, guid: ea444cd2de72b3c4ead08078752445c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Juice_Glass
+    second: {fileID: 2100000, guid: 09a736fb449cef64e8bd41df7d2d2dda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Led_Lights_Diff
+    second: {fileID: 2100000, guid: d1cd9a35f54e89d48975de32777f8535, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light_Diff
+    second: {fileID: 2100000, guid: aa1bd8ed26cc4b3489ea511b76fd3b1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light_Frame_Diff
+    second: {fileID: 2100000, guid: 61ae453aeb903be48920a33c193367b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Pillar_Base_Diff
+    second: {fileID: 2100000, guid: 4e7bec893157b2349925f6421d20a01c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Main_Water_Pipe_Diff
+    second: {fileID: 2100000, guid: 7385ee36b16ba1745b9e01a437b14d7c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Marble_Floor_Diff
+    second: {fileID: 2100000, guid: a2a3d1b361a9de941a2cf916bba81a18, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_Frame_Diff
+    second: {fileID: 2100000, guid: 76ff716f2ce7dc3449f315dd6183cd95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_Pillar_Diff
+    second: {fileID: 2100000, guid: 78cdfe3124a2f80459a9f496167390f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Nut_Bolts
+    second: {fileID: 2100000, guid: 56a84d4b3e761b944bf3a304d44295d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Office_Chair_Diff
+    second: {fileID: 2100000, guid: fee36d21d75c8e24ab6988eb37019013, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Orange_Juice
+    second: {fileID: 2100000, guid: 714d55e43cc4e54458b6f64a4a7aa6e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PC_Diff
+    second: {fileID: 2100000, guid: 9f6db76afed17974dbc391ba18ebdcd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pillar1
+    second: {fileID: 2100000, guid: 449b746dc7ca6ab43bcfcb7ae88c4ba6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Poles_and_Wire_Diff
+    second: {fileID: 2100000, guid: 696fc69b1c422574bbd50f76003c980a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Railway_Crossing_Diff
+    second: {fileID: 2100000, guid: 9e92eb0b4d1ec8542b3520a4567eb1b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red_Juice_Mtl
+    second: {fileID: 2100000, guid: a5554d3db32fbe040bd8298fa8143f8c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Road_Diff
+    second: {fileID: 2100000, guid: 611d8341a2cc2ed488957eed142c82d6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Rubber_pipes
+    second: {fileID: 2100000, guid: 33ce62d347f9ff24892396b9942e5393, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seats_Diff
+    second: {fileID: 2100000, guid: b9855e049f8a9124aa23d0a12ce656c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seats_Diff_1
+    second: {fileID: 2100000, guid: 3583cac9cf31414408b85233ec3ccee6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shed_Diff
+    second: {fileID: 2100000, guid: 3b9722d4c3331e54daeead033f04a2d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shop_Snacks_Diff
+    second: {fileID: 2100000, guid: 09380a1cdbf88f04281482ae3719e511, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shop_Snacks_yello
+    second: {fileID: 2100000, guid: 72a7f3f0a3e439e4ba9791ce42313a01, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sky_Box
+    second: {fileID: 2100000, guid: 625eb503da4c8b644aae0053f079a91f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stair1
+    second: {fileID: 2100000, guid: f7985b7148f57fe4ea7c2a2d3b59be83, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stall_Table_Diff
+    second: {fileID: 2100000, guid: d1b96ed849a22c346980023392a2166d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Steel_Stairs_Diff
+    second: {fileID: 2100000, guid: 87c1d7a4bb0326844bbe17efc18c0a78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Stones_Diff
+    second: {fileID: 2100000, guid: cfc794ca10f9add42b1957b33bae6506, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Supply_Water_Pipes1
+    second: {fileID: 2100000, guid: bfac43f71cc35a24284c352470b7ad85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TC_Floor_Diff
+    second: {fileID: 2100000, guid: 1e0270135af7a6d41a4e9d90713f44bf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TC_Inner_Wall_Diff
+    second: {fileID: 2100000, guid: eb6c210894fbded4a91212622f216abe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TC_Wall_Diff
+    second: {fileID: 2100000, guid: fbe3f096bf97c89489eacad106771c5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Table_Diff
+    second: {fileID: 2100000, guid: 8b5f1d2d18f0d9c448c87da0baff3d5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tactile_Diff
+    second: {fileID: 2100000, guid: fe8b50107378b7c43bb2104d4edaa5c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Text_Diff
+    second: {fileID: 2100000, guid: 3e5b1399f6cbaaf42a88ac9b34d8d911, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Text_Diff_1
+    second: {fileID: 2100000, guid: c64450b7b5dff994993979961718ce6a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Track_Metal_Diff1
+    second: {fileID: 2100000, guid: c8f5fa4e32b3197428dcc0271d674213, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Track_Plank_Diff
+    second: {fileID: 2100000, guid: 0fa786be3d5b89141bfb733d6d80602f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Track_Railing_Diff
+    second: {fileID: 2100000, guid: 217d3ba97ab451642926e1aebbf24009, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Track_Rocks_Diff
+    second: {fileID: 2100000, guid: afa35ac463dca394ebd29224b1e01dcf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train_Floor_Diff
+    second: {fileID: 2100000, guid: 0f87a62122b7f824aabdeedc2ab0291a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Train_Interior_Diff
+    second: {fileID: 2100000, guid: 77d2ae2b4b30d4a42bc109c316c0278b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tunnel_Diff
+    second: {fileID: 2100000, guid: c4919c0e74bb1ec4abc3bf9dd52cb809, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tunnel_Inner_Diff
+    second: {fileID: 2100000, guid: 6162b05ac731ba34bba124ced138c44a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tunnel_Sign_Diff
+    second: {fileID: 2100000, guid: ce3b434c80533f04b86cec495ac801ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tunnel_Sign_Rod_Diff
+    second: {fileID: 2100000, guid: cb147994785c35048b0b38fb2b474fff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vending_Machine_Diff
+    second: {fileID: 2100000, guid: c6cb0efc4a0744f4aa4b4ea68eb0b42a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall_Diff
+    second: {fileID: 2100000, guid: 08807da5bf59ad340bec9c4e418cf465, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Water_Insertion_Diff
+    second: {fileID: 2100000, guid: 7f1c6b6abfd023b478df5272d31cb90b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Water_Tank_Diff
+    second: {fileID: 2100000, guid: ac3251d66d028cf4e972a4ffa94990b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Water_Tank_Railings_Diff
+    second: {fileID: 2100000, guid: fbcce7f129e4ae04493a0c3544339c9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: blinn56
+    second: {fileID: 2100000, guid: 19a979b10867fbe49942066a12f4c053, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: board
+    second: {fileID: 2100000, guid: ac0e7b019fe09a74b989d2df1897e9fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: compartment_train_compartment_BaseColor
+    second: {fileID: 2100000, guid: 0a766868c4d59934ebbe34267ba7c169, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: 069879f103471f748a4bb8e9a33a67dc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert5
+    second: {fileID: 2100000, guid: 843e8e266823d094892ecf79042549e5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert6
+    second: {fileID: 2100000, guid: 769207cd74f64184bac4c8447882566d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal1
+    second: {fileID: 2100000, guid: 8cb5abfd5cb98e241ac22e9cb5e102c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal2
+    second: {fileID: 2100000, guid: 1018249aa63a4f446b2c634e87cfff53, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: paint1
+    second: {fileID: 2100000, guid: 7fdc0a83ebca9914c8d6dd591a98216e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: paint2
+    second: {fileID: 2100000, guid: cd1e7b9c7dc46064389037bebf44371c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: paint3
+    second: {fileID: 2100000, guid: 02306de582242734a9c0db2760ed2b44, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: paint4
+    second: {fileID: 2100000, guid: d15062441dce1754c84073686649340b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: red1
+    second: {fileID: 2100000, guid: 7d989be67eb935647b1f4bad379eaf19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: swiatlozielone
+    second: {fileID: 2100000, guid: 0402eb31998cb4341bc00e97bb6214ef, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ATM_Diff
+    second: {fileID: 2800000, guid: 046f706a732b6e549a9af1abcd75adb2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ATM_NM
+    second: {fileID: 2800000, guid: 36b33931651041342adc3f8841d7da59, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Bench_Wood_Diff
+    second: {fileID: 2800000, guid: a2cf973f6706a094991cbc93d1c56a18, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Black_Tile_Diff
+    second: {fileID: 2800000, guid: 48ef640b64e4e0b429400afa0239dd0d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Black_Tile_NM
+    second: {fileID: 2800000, guid: fe139a7b9b7fa084089ae8dc7d0d79ef, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Board_Diff
+    second: {fileID: 2800000, guid: 1435cb9bbf2fa7d43a3ea9bc4760a4d7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Board_board_BaseColor
+    second: {fileID: 2800000, guid: ca2aba927a564864a8a9f6923ee6e5f7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Book_Diff
+    second: {fileID: 2800000, guid: afb958f3fa9bb8a4db5ec1eef0de9e62, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Book_Side_Diff
+    second: {fileID: 2800000, guid: ec0c8ff539bc96449abc1c3a8cb74d43, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Book_Side_NM
+    second: {fileID: 2800000, guid: 998062bde4265244483bf0601abb36c2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Brick_Wall_Diff
+    second: {fileID: 2800000, guid: 67462566bfeaa044c9c4457f63a5f161, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Brick_Wall_NM
+    second: {fileID: 2800000, guid: 892841587554bf04c8ef1e9cc55a0743, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Compartment_Diff
+    second: {fileID: 2800000, guid: 4b288fbd889764e44a01736d59ccaf5e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Compartment_NM
+    second: {fileID: 2800000, guid: 1adcb4919a4612a43b722f4f5a54e55b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Compartment_Navy_Blue_Diff
+    second: {fileID: 2800000, guid: 281e539ac717bfe4fb2d853248875575, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Compartment_Navy_Blue_NM
+    second: {fileID: 2800000, guid: fc790d8352395354e81838fed3e31282, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Compartment_Wheel_Diff
+    second: {fileID: 2800000, guid: f81d43b276c58a346aac8657a7ec80c7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Compartment_Wheel_NM
+    second: {fileID: 2800000, guid: a2fdce12d5e3bd1468b12097e876ab22, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Concrete_Diff
+    second: {fileID: 2800000, guid: f62b2f41adcdfd64aa8c5b71151b4fc4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Concrete_NM
+    second: {fileID: 2800000, guid: 526b204dc7726f04eb02320625ce093c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Counter_Ceiling_Diff
+    second: {fileID: 2800000, guid: 5c5bf06470cea1b49963a9e9a35b7b32, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Crossing_Signal_Diff
+    second: {fileID: 2800000, guid: ba5e6351c482f624fb27f61e93752819, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Crossing_Signal_EMS
+    second: {fileID: 2800000, guid: 9d24d51534847b14abe9072cf7fee753, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Crossing_Signal_NM
+    second: {fileID: 2800000, guid: 465db71a56414a542a28778bf2ea45c3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Door_Diff
+    second: {fileID: 2800000, guid: 0cdd32a74b193cf4eb139fc36ef88bad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Electric_Box_NM
+    second: {fileID: 2800000, guid: be5677a518f666844b1cab55c516d63a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Engine_Diff
+    second: {fileID: 2800000, guid: d6bc255025821094dbc5f709cb9df942, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Engine_NM
+    second: {fileID: 2800000, guid: 75d96063284e87c4296f34cad7f642c0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Engine_Wheel_Diff
+    second: {fileID: 2800000, guid: 5873ff32236fe234589f9a985d4105e5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Engine_Wheel_NM
+    second: {fileID: 2800000, guid: 3af32c810e168de44b4ae358203b8542, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fan_Diff
+    second: {fileID: 2800000, guid: 22d3fc5e4d1d56c4bad5cca47c78b892, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fan_NM
+    second: {fileID: 2800000, guid: 27efce9715772e643baee43850265921, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fence_Diff
+    second: {fileID: 2800000, guid: 6c8fca301c6cc524d8c6a295446d10e9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fence_NM
+    second: {fileID: 2800000, guid: f98bdd7fac81cb543961da3c8a460dd6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Floor_Diff
+    second: {fileID: 2800000, guid: 817ca9a1d6358b846b6fd1ee07f5c8f2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Floor_Diff 1
+    second: {fileID: 2800000, guid: 2353a0358ef74cd44ae2533e266b1bb6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Grass_Diff
+    second: {fileID: 2800000, guid: 23c2a35828ca5474c9ef87a30df62065, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Grass_NM
+    second: {fileID: 2800000, guid: c643141dc3b095c4abfb1159a3b48cf5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Led_Lights_Diff_
+    second: {fileID: 2800000, guid: cd0c1b4ccfd636940b14f2b6c404aa14, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Led_Lights_NM
+    second: {fileID: 2800000, guid: 6eb47bf874537ea43b7d8954827aa838, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Light_EMS
+    second: {fileID: 2800000, guid: 2999ac30096deb44aaddf742acd2a0b0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: M_Pillar_Base_Diff
+    second: {fileID: 2800000, guid: f92d67b6e5777ec4f961fe9384e75f55, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Main_Water_Pipe_Diff
+    second: {fileID: 2800000, guid: ac120d87c910e084f952870a0450bbf7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Main_Water_Pipe_NM
+    second: {fileID: 2800000, guid: 4fdcc7d10efdce94dbb04d221d47949c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Marble_Floor_Diff
+    second: {fileID: 2800000, guid: 42ab8e90bbd26ae46a31515c465e4f62, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Marble_Floor_Diff 1
+    second: {fileID: 2800000, guid: 5a34990834b003e4ab365cd3eb0a2335, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Nut_Bolts_Diff
+    second: {fileID: 2800000, guid: fafb6796b53130a468c5de2db21f2359, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Nut_Bolts_NM
+    second: {fileID: 2800000, guid: 472cb19f7fee2454aad43cf2f96bd873, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Office_Chair_Diff
+    second: {fileID: 2800000, guid: 2afd9aec6fb1eaa40a04af7ea87dc335, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Office_Chair_NM
+    second: {fileID: 2800000, guid: 17aff0eaab8e0dd42827ca3981b69ffc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PC_Diff
+    second: {fileID: 2800000, guid: 4bb09194a60c49b488b2d98c5303f3ca, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PC_NM
+    second: {fileID: 2800000, guid: f81b4154aec68ac44b2ce7973b2d386c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Poles_and_Wire_Diff
+    second: {fileID: 2800000, guid: fc18a7a7abcde0943952ff9588d95842, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Railway_Crossing_Diff
+    second: {fileID: 2800000, guid: a25633116e716c2499eaf26376c095c4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Railway_Crossing_NM
+    second: {fileID: 2800000, guid: c209e06c6b8292b4a8fca572c262e2b2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_Diff
+    second: {fileID: 2800000, guid: 494073595900012479701f57450f773f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Road_NM
+    second: {fileID: 2800000, guid: 06a1aa5121310ed42818d5a21b75db60, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Rubber_pipes_Diff
+    second: {fileID: 2800000, guid: e88bab52c7a03b74883e9a1de5be82fa, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Rubber_pipes_NM
+    second: {fileID: 2800000, guid: 16c3a01235296ac4b883d69e1769cc7a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Seats_Diff
+    second: {fileID: 2800000, guid: 86c7cceda1c4b7a47916a36449555768, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Seats_NM
+    second: {fileID: 2800000, guid: b6c54667279590842bb6db290d590356, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Shed_Diff
+    second: {fileID: 2800000, guid: bbc4b0e0de424414fa33cbb660eb8243, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Shop_Snacks_Diff
+    second: {fileID: 2800000, guid: 88b934003b516a344ac14b07c3e4d17a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Shop_Snacks_NM
+    second: {fileID: 2800000, guid: d6cf54a70798add49be5975e2f62e478, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Stair_Bridge_Relling2_AlbedoTransparency
+    second: {fileID: 2800000, guid: 08290301a05ee0a4bb3b36900e4605ee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Stair_Bridge_Relling2_Normal
+    second: {fileID: 2800000, guid: a538f0174e6909a4da8534d94a0a7dca, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Stair_Pillar1_AlbedoTransparency.1001
+    second: {fileID: 2800000, guid: e57fa728bbf6d9f41b40e8493440913a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Stair_Stair1_AlbedoTransparency.1001
+    second: {fileID: 2800000, guid: 3c7c8fb4ee26f9f429ad016d5443c9d0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Stair_Stair1_Normal.1001
+    second: {fileID: 2800000, guid: c610cd3d8a2b11549a176fcf8e78742d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Stall_Table_Diff
+    second: {fileID: 2800000, guid: fc2603291f1021c4e9816feeb84cd2bf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Stall_Table_NM
+    second: {fileID: 2800000, guid: 308da2af7c3344345ba13e90ada2b8ca, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Steel_Stairs_Diff
+    second: {fileID: 2800000, guid: d636ad71de5896d4095fd123a84a7e05, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Steel_Stairs_NM
+    second: {fileID: 2800000, guid: 85cf27ce0fc553743a52d9a42e0eb5f2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Stones_Diff
+    second: {fileID: 2800000, guid: 5e1cfee18b3bdf846974b584a591ac2d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Stones_NM
+    second: {fileID: 2800000, guid: 3da130fbe7aa4414ab2eec830ca4a9ee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Supply_water_Pipes_Diff
+    second: {fileID: 2800000, guid: f0cc0725f4e081944b8a96aee04e17e1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Supply_water_Pipes_NM
+    second: {fileID: 2800000, guid: 1930e6ca502f72640a3f305a6667f0ed, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TC_Floor_Diff
+    second: {fileID: 2800000, guid: a788565a8a77192479b9fb761cfaec45, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TC_Inner_Wall_Diff
+    second: {fileID: 2800000, guid: 98c8251f2dd9cce408b51f0ac02baaa9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TC_Wall_Diff
+    second: {fileID: 2800000, guid: 660c7a04f6af6d147b671b0c79effee6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TC_Wall_NM
+    second: {fileID: 2800000, guid: edc827022baf5344691c73dc6ab552a5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Table_Diff
+    second: {fileID: 2800000, guid: 6660d37b8ecc11c45b5d3c8b021acfa8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Table_Diff 1
+    second: {fileID: 2800000, guid: 90a8ec07c440fc542854d037fc7c8f24, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tactile_Diff
+    second: {fileID: 2800000, guid: 15bf64f36780b0044b22f4d750989a0e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Text_Diff
+    second: {fileID: 2800000, guid: 9dfe3773999720b4cb82e5b7dfe9b558, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Track_NM
+    second: {fileID: 2800000, guid: cbc7610b8b84bda44b06bdf3d338a3d6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Track_Plank_Diff
+    second: {fileID: 2800000, guid: 85256e2be452bd849ae9a8985bfc0210, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Track_Railing_Diff
+    second: {fileID: 2800000, guid: 74ec42f3cd51a9042aa0d328d6b6da98, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Track_Rocks_Diff
+    second: {fileID: 2800000, guid: 531d1c749c8e9f1458dcf71d2526d454, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Track_Rocks_NM
+    second: {fileID: 2800000, guid: 3614dc5e26b706b42930be01367cc8df, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Train_Floor_Diff
+    second: {fileID: 2800000, guid: 9993958aff49d1c43abc4bcfff4d6300, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tunnel_Diff
+    second: {fileID: 2800000, guid: 29b1c10f33394b848a5ea39629bb335d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tunnel_Diff 1
+    second: {fileID: 2800000, guid: cf901877780abff4eac6a04afe835f66, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tunnel_Inner_Diff
+    second: {fileID: 2800000, guid: d34436538131f514cbfb46770cbcdcdd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tunnel_Inner_Diff 1
+    second: {fileID: 2800000, guid: efbb3b68c18ccc54386e1700e8520d0a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tunnel_Sign_Diff
+    second: {fileID: 2800000, guid: 3e68ed666c2ce2741ae1222a2805ae43, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tunnel_Sign_Rod_Diff
+    second: {fileID: 2800000, guid: 611e15c6f9061e54984aced45428ca45, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Vending_Machine_Diff
+    second: {fileID: 2800000, guid: 456a9a581a326c545b2f6909028ec8c7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wall_Diff
+    second: {fileID: 2800000, guid: 7af011113d46b3a4db6cccbd17aa529b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Wall_NM
+    second: {fileID: 2800000, guid: cb206769232209f4e952970f64c60c9c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Water_Insertion_Diff
+    second: {fileID: 2800000, guid: d6d0ce1c1900f8645a46ca26bed0ec65, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Water_Insertion_NM
+    second: {fileID: 2800000, guid: 4afb69a10ef287a42b76c78a83055d98, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Water_Tank_Diff
+    second: {fileID: 2800000, guid: 84db315f86d310d4db59fd6891c125a2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Water_Tank_NM
+    second: {fileID: 2800000, guid: df432981ac00ed74bb16a3da3e4942a3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Water_Tank_Railings_Diff
+    second: {fileID: 2800000, guid: 6e96f5d1360f802449e941870ea686d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Water_Tank_Railings_NM
+    second: {fileID: 2800000, guid: 2bd4f38e894344d468e4c706a81e9876, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: compartment_train_compartment_BaseColor
+    second: {fileID: 2800000, guid: 594379a7dc675dd4fbdc8ce9d039fa30, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: straw_rolls_field_01_4k
+    second: {fileID: 2800000, guid: 743e21974e527444bb9721ebd92c1e72, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
