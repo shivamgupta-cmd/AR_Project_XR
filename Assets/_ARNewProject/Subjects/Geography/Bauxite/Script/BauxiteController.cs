@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class BauxiteController : MonoBehaviour
 {
-
     [System.Serializable]
     public class ButtonVO
     {
@@ -19,53 +18,68 @@ public class BauxiteController : MonoBehaviour
     [Header("3D CAMERA")]
     [SerializeField] private bool moveCameraToGenerator = true;
     [SerializeField] private Transform m_camera;
-
-    [Tooltip("Camera position for viewing inside generator.")]
     [SerializeField] private Transform generatorCameraPoint;
+    [SerializeField, Min(0f)] private float cameraMoveDuration = 1f;
+    [SerializeField, Min(0f)] private float cameraReturnDuration = 1f;
 
-
-    [Header("Label Buttons + VO")]
-    public ButtonVO[] buttons;
-
+    [Header("BAUXITE")]
     [SerializeField] private Transform bauxite;
+
+    [Header("BAUXITE PATH")]
+    [SerializeField] private Transform[] bauxitePathPoints;
+    [SerializeField] private Transform bauxiteTargetPoint;
+    [SerializeField, Min(0.1f)] private float bauxiteMoveDuration = 5f;
+    [SerializeField, Min(0f)] private float bauxiteRotationTurns = 2f;
+    [SerializeField] private Vector3 bauxiteRotationAxis = Vector3.up;
+    [SerializeField] private Vector3 bauxiteAppearStartScale = Vector3.zero;
+
+    [Header("LABEL BUTTONS + VO")]
+    [SerializeField] private ButtonVO[] buttons;
 
     [Header("AUDIO")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip intro3DVO;
     [SerializeField] private AudioClip setupVO;
     [SerializeField] private AudioClip appearVO;
-    [SerializeField] private AudioClip aridSoilAppearVO;
-    [SerializeField] private AudioClip miniExplanationVO;
+    [SerializeField] private AudioClip BauxiteVO;
     [SerializeField] private AudioClip labelsIntroVO;
     [SerializeField] private AudioClip finalVO;
 
     [Header("LABELS")]
     [SerializeField] private GameObject[] labels;
 
-    [SerializeField, Min(0f)]
-    private float cameraMoveDuration = 1f;
-
-    [SerializeField, Min(0f)]
-    private float cameraReturnDuration = 1f;
-
     private Vector3 savedCameraPosition;
     private Quaternion savedCameraRotation;
-
     private bool hasSavedCameraPose;
+
+    private Vector3 bauxiteStartPosition;
+    private Quaternion bauxiteStartRotation;
+    private Vector3 bauxiteStartScale;
 
     private bool isPaused;
     private bool finalVOPlayed;
+
     private Coroutine activityCoroutine;
     private Coroutine currentCoroutine;
 
     private void Start()
     {
-        for (int i = 0; i < buttons.Length; i++)
+        if (bauxite != null)
         {
-            int index = i;
+            bauxiteStartPosition = bauxite.position;
+            bauxiteStartRotation = bauxite.rotation;
+            bauxiteStartScale = bauxite.localScale;
+        }
 
-            if (buttons[i].button != null)
-                buttons[i].button.onClick.AddListener(() => OnButtonClicked(index));
+        if (buttons != null)
+        {
+            for (int i = 0; i < buttons.Length; i++)
+            {
+                int index = i;
+
+                if (buttons[i].button != null)
+                    buttons[i].button.onClick.AddListener(() => OnButtonClicked(index));
+            }
         }
 
         StartActivity();
@@ -73,14 +87,6 @@ public class BauxiteController : MonoBehaviour
 
     public void StartActivity()
     {
-        if (m_camera != null)
-        {
-            savedCameraPosition = m_camera.position;
-            savedCameraRotation = m_camera.rotation;
-
-            hasSavedCameraPose = true;
-        }
-
         if (!isActiveAndEnabled)
             return;
 
@@ -88,6 +94,20 @@ public class BauxiteController : MonoBehaviour
 
         if (audioSource != null)
             audioSource.Stop();
+
+        if (m_camera != null)
+        {
+            savedCameraPosition = m_camera.position;
+            savedCameraRotation = m_camera.rotation;
+            hasSavedCameraPose = true;
+        }
+
+        if (bauxite != null)
+        {
+            bauxite.position = bauxiteStartPosition;
+            bauxite.rotation = bauxiteStartRotation;
+            bauxite.localScale = bauxiteAppearStartScale;
+        }
 
         isPaused = false;
         finalVOPlayed = false;
@@ -109,21 +129,19 @@ public class BauxiteController : MonoBehaviour
         yield return WaitForVoiceOver();
 
         PlayAudio(appearVO);
-        //Bauxite Appear Coad
-
+        yield return StartCoroutine(MoveBauxiteThroughPath());
         yield return WaitForVoiceOver();
 
-        PlayAudio(aridSoilAppearVO);
-        yield return MoveCamera(generatorCameraPoint.position, generatorCameraPoint.rotation, cameraMoveDuration);
-        yield return WaitForVoiceOver();
+        PlayAudio(BauxiteVO);
 
-        PlayAudio(miniExplanationVO);
+        if (moveCameraToGenerator && m_camera != null && generatorCameraPoint != null)
+            yield return MoveCamera(generatorCameraPoint.position, generatorCameraPoint.rotation, cameraMoveDuration);
+
         yield return WaitForVoiceOver();
 
         if (hasSavedCameraPose && m_camera != null)
         {
             yield return MoveCamera(savedCameraPosition, savedCameraRotation, cameraReturnDuration);
-
             hasSavedCameraPose = false;
         }
 
@@ -133,6 +151,134 @@ public class BauxiteController : MonoBehaviour
         yield return WaitForVoiceOver();
 
         activityCoroutine = null;
+    }
+
+    private IEnumerator MoveBauxiteThroughPath()
+    {
+        if (bauxite == null || bauxiteTargetPoint == null)
+            yield break;
+
+        List<Vector3> path = new List<Vector3>();
+
+        path.Add(bauxiteStartPosition);
+
+        if (bauxitePathPoints != null)
+        {
+            for (int i = 0; i < bauxitePathPoints.Length; i++)
+            {
+                if (bauxitePathPoints[i] != null)
+                    path.Add(bauxitePathPoints[i].position);
+            }
+        }
+
+        path.Add(bauxiteTargetPoint.position);
+
+        Quaternion startRotation = bauxiteStartRotation;
+        Quaternion targetRotation = bauxiteTargetPoint.rotation;
+
+        Vector3 startScale = bauxiteAppearStartScale;
+        Vector3 targetScale = bauxiteTargetPoint.localScale;
+
+        Vector3 rotationAxis = bauxiteRotationAxis;
+
+        if (rotationAxis.sqrMagnitude <= 0.001f)
+            rotationAxis = Vector3.up;
+
+        rotationAxis.Normalize();
+
+        bauxite.position = bauxiteStartPosition;
+        bauxite.rotation = startRotation;
+        bauxite.localScale = startScale;
+
+        float elapsed = 0f;
+        float duration = Mathf.Max(0.1f, bauxiteMoveDuration);
+
+        while (elapsed < duration)
+        {
+            if (isPaused)
+            {
+                yield return null;
+                continue;
+            }
+
+            elapsed += Time.deltaTime;
+
+            float t = Mathf.Clamp01(elapsed / duration);
+            float smoothT = Mathf.SmoothStep(0f, 1f, t);
+
+            bauxite.position = GetSmoothPathPosition(path, smoothT);
+
+            bauxite.localScale = Vector3.Lerp(
+                startScale,
+                targetScale,
+                smoothT
+            );
+
+            Quaternion targetBlend = Quaternion.Slerp(
+                startRotation,
+                targetRotation,
+                smoothT
+            );
+
+            float spinAngle = 360f * bauxiteRotationTurns * smoothT;
+
+            Quaternion spinRotation = Quaternion.AngleAxis(
+                spinAngle,
+                rotationAxis
+            );
+
+            bauxite.rotation = targetBlend * spinRotation;
+
+            yield return null;
+        }
+
+        bauxite.position = bauxiteTargetPoint.position;
+        bauxite.rotation = bauxiteTargetPoint.rotation;
+        bauxite.localScale = bauxiteTargetPoint.localScale;
+    }
+
+    private Vector3 GetSmoothPathPosition(List<Vector3> points, float t)
+    {
+        if (points == null || points.Count == 0)
+            return bauxiteStartPosition;
+
+        if (points.Count == 1)
+            return points[0];
+
+        if (points.Count == 2)
+            return Vector3.Lerp(points[0], points[1], t);
+
+        int segmentCount = points.Count - 1;
+
+        float scaledT = t * segmentCount;
+
+        int segment = Mathf.FloorToInt(scaledT);
+
+        if (segment >= segmentCount)
+            segment = segmentCount - 1;
+
+        float localT = scaledT - segment;
+
+        Vector3 p0 = points[Mathf.Max(segment - 1, 0)];
+        Vector3 p1 = points[segment];
+        Vector3 p2 = points[Mathf.Min(segment + 1, points.Count - 1)];
+        Vector3 p3 = points[Mathf.Min(segment + 2, points.Count - 1)];
+
+        return CatmullRom(p0, p1, p2, p3, localT);
+    }
+
+    private Vector3 CatmullRom(Vector3 p0, Vector3 p1, Vector3 p2, Vector3 p3, float t)
+    {
+        float t2 = t * t;
+        float t3 = t2 * t;
+
+        return 0.5f *
+        (
+            (2f * p1) +
+            (-p0 + p2) * t +
+            (2f * p0 - 5f * p1 + 4f * p2 - p3) * t2 +
+            (-p0 + 3f * p1 - 3f * p2 + p3) * t3
+        );
     }
 
     private void OnButtonClicked(int index)
@@ -251,13 +397,7 @@ public class BauxiteController : MonoBehaviour
         while (isPaused || (audioSource != null && audioSource.isPlaying))
             yield return null;
 
-        if (audioSource != null && finalVO != null)
-        {
-            audioSource.Stop();
-            audioSource.loop = false;
-            audioSource.clip = finalVO;
-            audioSource.Play();
-        }
+        PlayAudio(finalVO);
     }
 
     private void ResetButtons()
@@ -266,9 +406,7 @@ public class BauxiteController : MonoBehaviour
             return;
 
         foreach (ButtonVO item in buttons)
-        {
             item.isClicked = false;
-        }
     }
 
     private IEnumerator MoveCamera(Vector3 targetPosition, Quaternion targetRotation, float duration)
@@ -282,7 +420,6 @@ public class BauxiteController : MonoBehaviour
         if (duration <= 0f)
         {
             m_camera.SetPositionAndRotation(targetPosition, targetRotation);
-
             yield break;
         }
 
@@ -302,17 +439,18 @@ public class BauxiteController : MonoBehaviour
             elapsed += Time.deltaTime;
 
             float t = Mathf.Clamp01(elapsed / duration);
-
             t = Mathf.SmoothStep(0f, 1f, t);
 
-            m_camera.SetPositionAndRotation(Vector3.Lerp(startPosition, targetPosition, t), Quaternion.Slerp(startRotation, targetRotation, t));
+            m_camera.SetPositionAndRotation(
+                Vector3.Lerp(startPosition, targetPosition, t),
+                Quaternion.Slerp(startRotation, targetRotation, t)
+            );
 
             yield return null;
         }
 
         m_camera.SetPositionAndRotation(targetPosition, targetRotation);
     }
-
 
     public void ShowLabels()
     {
@@ -375,8 +513,12 @@ public class BauxiteController : MonoBehaviour
 
         isPaused = false;
 
-        if (audioSource != null && audioSource.isActiveAndEnabled && audioSource.clip != null)
+        if (audioSource != null &&
+            audioSource.isActiveAndEnabled &&
+            audioSource.clip != null)
+        {
             audioSource.UnPause();
+        }
     }
 
     private void OnDisable()
