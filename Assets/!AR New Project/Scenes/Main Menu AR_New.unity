@@ -1265,6 +1265,8 @@ MonoBehaviour:
       topicLogo: {fileID: 0}
     - topicName: Knowledge Symbol
       topicLogo: {fileID: 0}
+    - topicName: Egyption Civilisation
+      topicLogo: {fileID: 0}
   - subjectName: Civics
     topics:
     - topicName: EVM
@@ -1272,6 +1274,10 @@ MonoBehaviour:
     - topicName: Three States of Government
       topicLogo: {fileID: 0}
     - topicName: Election Comission
+      topicLogo: {fileID: 0}
+    - topicName: Constitution Of India
+      topicLogo: {fileID: 0}
+    - topicName: Fundamental Rights
       topicLogo: {fileID: 0}
   - subjectName: Geography
     topics:

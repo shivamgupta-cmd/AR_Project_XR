@@ -5945,7 +5945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackedImageManager: {fileID: 1870067134}
-  sceneImageLibrary: {fileID: 11400000, guid: 74f1e0523aa14f54c89fb5612b2b66e0, type: 2}
+  sceneImageLibrary: {fileID: 11400000, guid: a1ce42253ed037344ad2aff394e92869, type: 2}
   initializationTimeout: 10
 --- !u!1 &2049259117
 GameObject:
