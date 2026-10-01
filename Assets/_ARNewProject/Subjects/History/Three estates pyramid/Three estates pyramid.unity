@@ -1998,16 +1998,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 7970589158703615920}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f63c62c7685c2054ba6bba0380bd1d0c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f63c62c7685c2054ba6bba0380bd1d0c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f63c62c7685c2054ba6bba0380bd1d0c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f63c62c7685c2054ba6bba0380bd1d0c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.017
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f63c62c7685c2054ba6bba0380bd1d0c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.3382
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f63c62c7685c2054ba6bba0380bd1d0c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.0284004
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f63c62c7685c2054ba6bba0380bd1d0c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2036,6 +2048,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f63c62c7685c2054ba6bba0380bd1d0c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f63c62c7685c2054ba6bba0380bd1d0c, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f63c62c7685c2054ba6bba0380bd1d0c, type: 3}
       propertyPath: m_Name
@@ -4527,7 +4543,7 @@ MonoBehaviour:
   positionOffset: {x: 0, y: 0, z: 0}
   rotationOffset: {x: 0, y: 0, z: 0}
   voiceSource: {fileID: 1582698851164859230}
-  modelActiveVO: {fileID: 8300000, guid: a11d5d60262dc5d4b93c58ac1b529003, type: 3}
+  modelActiveVO: {fileID: 8300000, guid: fbd96e1a3934535418a80489a429bf22, type: 3}
   onModelActivated:
     m_PersistentCalls:
       m_Calls: []
@@ -4543,7 +4559,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dea56a9eaadd1c439095de4f9a371cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SerializedLibrary: {fileID: 11400000, guid: 62f71592df0419f4c8022aa10fdddfd1, type: 2}
+  m_SerializedLibrary: {fileID: 11400000, guid: 4f0da9f24354a38489a4fae643b85a7e, type: 2}
   m_MaxNumberOfMovingImages: 1
   m_TrackedImagePrefab: {fileID: 0}
 --- !u!114 &1870067135
@@ -5238,7 +5254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackedImageManager: {fileID: 1870067134}
-  sceneImageLibrary: {fileID: 11400000, guid: 62f71592df0419f4c8022aa10fdddfd1, type: 2}
+  sceneImageLibrary: {fileID: 11400000, guid: 4f0da9f24354a38489a4fae643b85a7e, type: 2}
   initializationTimeout: 10
 --- !u!1 &2052683400
 GameObject:
@@ -5547,7 +5563,7 @@ MonoBehaviour:
   on3DMode:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 181811433}
+      - m_Target: {fileID: 257350494}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -5559,7 +5575,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 181811433}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -5577,7 +5593,7 @@ MonoBehaviour:
   onARMode:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 181811433}
+      - m_Target: {fileID: 257350494}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -5589,7 +5605,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 181811433}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
