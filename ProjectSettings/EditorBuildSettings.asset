@@ -161,6 +161,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_ARNewProject/Subjects/History/EGYPTIAN CIVILISATION/Egyption Civilisation.unity
     guid: 17cb40d0a4f96234e9b094bfdc599f26
+  - enabled: 1
+    path: Assets/_ARNewProject/Subjects/Civics/Legislature/Legislature.unity
+    guid: 2599232c5f8bc3d4faf27151528e2db7
   m_configObjects:
     : {fileID: 0}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 6ee72d15cf39dd748a13eac57397b9af, type: 2}
