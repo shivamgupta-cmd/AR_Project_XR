@@ -70,6 +70,9 @@ EditorBuildSettings:
       Reaction.unity
     guid: d6a67a98fd452274db59fb9c83e72e47
   - enabled: 1
+    path: Assets/_ARNewProject/Subjects/Civics/Pareamble/Preambles.unity
+    guid: 1deb3654574f2354cb94c772b686ceec
+  - enabled: 1
     path: Assets/_ARNewProject/Subjects/Chemistry/Decomposition Reaction/Decomposition
       Reaction.unity
     guid: 6dc293ba194537a46a51e14ecc334e1c
