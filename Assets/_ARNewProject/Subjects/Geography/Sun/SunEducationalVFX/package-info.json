@@ -1,0 +1,25 @@
+{
+  "name": "Educational Sun VFX - FBX and True 3D Cutaway",
+  "version": "2.0.0",
+  "unity": "2022.3",
+  "renderPipeline": "Universal Render Pipeline",
+  "sourceModel": "Models/Sun_01.fbx",
+  "completePrefabBuilder": "Tools/Educational Sun/Build Complete FBX + 3D Cutaway Package",
+  "generatedPrefab": "Prefabs/EducationalSun_3D_Cutaway.prefab",
+  "physicalLayers": [
+    "Solid Fusion Core",
+    "Thick Radiative Zone",
+    "Thick Convective Zone",
+    "Thick Photosphere"
+  ],
+  "videoMatchedEffects": [
+    "Boiling photosphere",
+    "Sunspots",
+    "Limb glow",
+    "Corona",
+    "Prominence loops",
+    "Surface plasma sparks",
+    "Solar flare",
+    "Coronal mass ejection"
+  ]
+}
