@@ -1539,7 +1539,7 @@ LineRenderer:
   - {x: -4.7561666e-10, y: 0.015387832, z: -4.7561666e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -1963,7 +1963,7 @@ LineRenderer:
   - {x: -0.0000000012349061, y: 0.00614202, z: -0.014125679}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -7217,7 +7217,7 @@ LineRenderer:
   - {x: -0.0000000011650181, y: 0.007693916, z: -0.013326254}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -7990,7 +7990,7 @@ LineRenderer:
   - {x: -4.7561666e-10, y: 0.015387832, z: 4.7561666e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -8999,7 +8999,7 @@ LineRenderer:
   - {x: -3.3631178e-10, y: 0.015387832, z: 5.8250904e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -9666,7 +9666,7 @@ LineRenderer:
   - {x: -5.369524e-10, y: -0.014125679, z: -0.00614202}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -10487,7 +10487,7 @@ LineRenderer:
   - {x: 6.497044e-10, y: 0.015387832, z: -1.740878e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -11032,7 +11032,7 @@ LineRenderer:
   - {x: -9.512333e-10, y: -0.01088084, z: -0.01088084}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -11489,7 +11489,7 @@ LineRenderer:
   - {x: -6.497044e-10, y: 0.015387832, z: -1.740878e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -12105,7 +12105,7 @@ LineRenderer:
   - {x: -1.7408784e-10, y: 0.015387832, z: 6.497044e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -13008,7 +13008,7 @@ LineRenderer:
   - {x: 3.3631176e-10, y: 0.015387832, z: -5.8250904e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -13248,7 +13248,7 @@ LineRenderer:
   - {x: -6.7262346e-10, y: 0.013326255, z: -0.0076939156}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -13548,7 +13548,7 @@ LineRenderer:
   - {x: -5.8802615e-17, y: 0.015387832, z: 6.726235e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -15234,7 +15234,7 @@ LineRenderer:
   - {x: -3.481756e-10, y: -0.014863504, z: -0.0039826646}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -15550,7 +15550,7 @@ LineRenderer:
   - {x: -0.0000000013479375, y: 0, z: -0.015418608}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 100
+    widthMultiplier: 30
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -16946,7 +16946,7 @@ LineRenderer:
   - {x: -0.0000000011650181, y: -0.007693916, z: -0.013326254}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -17306,7 +17306,7 @@ LineRenderer:
   - {x: -9.512333e-10, y: 0.01088084, z: -0.01088084}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -17546,7 +17546,7 @@ LineRenderer:
   - {x: 4.7561666e-10, y: 0.015387832, z: 4.7561666e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -17786,7 +17786,7 @@ LineRenderer:
   - {x: -1.7408777e-10, y: 0.015387832, z: -6.497044e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -18153,7 +18153,7 @@ LineRenderer:
   - {x: 3.3631178e-10, y: 0.015387832, z: 5.8250904e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -18527,7 +18527,7 @@ LineRenderer:
   - {x: 5.8250904e-10, y: 0.015387832, z: -3.3631173e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -20195,7 +20195,7 @@ LineRenderer:
   - {x: -3.481756e-10, y: 0.014863504, z: -0.0039826646}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -21047,7 +21047,7 @@ LineRenderer:
   - {x: -0.0000000012994088, y: 0.003982664, z: -0.014863504}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -22076,7 +22076,7 @@ LineRenderer:
   - {x: -6.726235e-10, y: 0.015387832, z: 2.9401308e-17}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -22441,7 +22441,7 @@ LineRenderer:
   - {x: -5.8250904e-10, y: 0.015387832, z: -3.3631173e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -23528,7 +23528,7 @@ LineRenderer:
   - {x: -6.7262346e-10, y: -0.013326255, z: -0.0076939156}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -24161,7 +24161,7 @@ LineRenderer:
   - {x: 1.7408777e-10, y: 0.015387832, z: -6.497044e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -24401,7 +24401,7 @@ LineRenderer:
   - {x: -0.0000000012994088, y: -0.003982664, z: -0.014863504}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -30806,7 +30806,7 @@ LineRenderer:
   - {x: 6.497044e-10, y: 0.015387832, z: 1.7408777e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -31706,7 +31706,7 @@ LineRenderer:
   - {x: 0, y: 0.015433996, z: -6.746414e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 100
+    widthMultiplier: 30
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -31946,7 +31946,7 @@ LineRenderer:
   - {x: -5.8250904e-10, y: 0.015387832, z: 3.3631178e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -32186,7 +32186,7 @@ LineRenderer:
   - {x: -6.497044e-10, y: 0.015387832, z: 1.7408777e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -33009,7 +33009,7 @@ LineRenderer:
   - {x: -5.369524e-10, y: 0.014125679, z: -0.00614202}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -33593,7 +33593,7 @@ LineRenderer:
   - {x: 4.7561666e-10, y: 0.015387832, z: -4.7561666e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -33833,7 +33833,7 @@ LineRenderer:
   - {x: 6.726235e-10, y: 0.015387832, z: 2.9401308e-17}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -34417,7 +34417,7 @@ LineRenderer:
   - {x: 5.8250904e-10, y: 0.015387832, z: 3.3631178e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -34700,7 +34700,7 @@ LineRenderer:
   - {x: -0.0000000012349061, y: -0.00614202, z: -0.014125679}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -34940,7 +34940,7 @@ LineRenderer:
   - {x: -3.3631176e-10, y: 0.015387832, z: -5.8250904e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -35417,7 +35417,7 @@ LineRenderer:
   - {x: 1.7408784e-10, y: 0.015387832, z: 6.497044e-10}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 150
+    widthMultiplier: 50
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -42548,6 +42548,18 @@ MonoBehaviour:
         - m_Target: {fileID: 1320770628}
           m_TargetAssemblyTypeName: LineRendererDistanceReveal, Assembly-CSharp
           m_MethodName: PlayReveal
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1946239419}
+          m_TargetAssemblyTypeName: LineRendererDistanceReveal, Assembly-CSharp
+          m_MethodName: HideLines
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
