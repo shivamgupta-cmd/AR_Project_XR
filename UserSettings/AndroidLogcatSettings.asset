@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "R9ZX80DB9VW",
+    "m_SelectedDeviceId": "R9ZWB097GMZ",
     "m_SelectedProcess": {
-        "deviceId": "R9ZX80DB9VW",
+        "deviceId": "R9ZWB097GMZ",
         "name": "com.unity.template.ar_mobile",
-        "processId": 17246,
+        "processId": 27296,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -54,6 +54,30 @@
             "deviceId": "R9ZY60N41MF",
             "name": "com.unity.template.ar_mobile",
             "processId": 18250,
+            "exited": false
+        },
+        {
+            "deviceId": "R9ZY60N41MF",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 16861,
+            "exited": false
+        },
+        {
+            "deviceId": "R9ZY60N41MF",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 17594,
+            "exited": false
+        },
+        {
+            "deviceId": "R9ZWB097GMZ",
+            "name": "com.sec.android.app.launcher",
+            "processId": 3404,
+            "exited": false
+        },
+        {
+            "deviceId": "R9ZWB097GMZ",
+            "name": "com.unity.template.ar_mobile",
+            "processId": 27296,
             "exited": false
         }
     ],

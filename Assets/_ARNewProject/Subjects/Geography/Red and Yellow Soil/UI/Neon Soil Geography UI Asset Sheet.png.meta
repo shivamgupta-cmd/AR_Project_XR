@@ -1,0 +1,677 @@
+fileFormatVersion: 2
+guid: a147198df6f85014f84bf38ba258e06b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 709.6
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 240cd40d908bc044ea4d42f02012bb62
+      internalID: 293630407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 709.6
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad831f8ad7341e4589c572a47ca9603
+      internalID: -499335368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 709.6
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4137b68d778131b45bc3de16051af90c
+      internalID: 2108875562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 709.6
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cfe31fcad25fa24b83b9a35b297e294
+      internalID: 291849106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 709.6
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c689d40d7c42b4d8c2151593cb633a
+      internalID: -241386761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 532.6
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd437554184241149a42737672916705
+      internalID: 796859930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 532.6
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d13374380d0a5043a51d71e0bd8550f
+      internalID: 2050481970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 532.6
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa67e4b994064d428ed7bf66c12af62
+      internalID: 1652532672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 532.6
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b632f93e8a01ac40b7ed5f8341a1ff8
+      internalID: 374262997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 532.6
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc6a741ad1d09c45b861e5af5ad066e
+      internalID: 62136863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 355.6
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ccb54ffae8a3a4790564be810f8c61
+      internalID: -1354797906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 355.6
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2293f05f631b5c2419fca92308f9465f
+      internalID: -701845719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 355.6
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658525aa8539ea248ab98e2fd89048d6
+      internalID: 996774179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 355.6
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31339fa4b2a1e8a45941bec15f1f8ec2
+      internalID: 1387690384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 355.6
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50028d87ec392ad4b9655ffdb359abd3
+      internalID: 220742339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 178.6
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88971b08d6903ec49b7da3c51e40284f
+      internalID: -522222727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 178.6
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d158c98bc5a234c87d94137c0d3769
+      internalID: -1716105791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 178.6
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4137860d3be0ffd4e9ef703280e60d1d
+      internalID: -1691548967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 178.6
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7eee163a8681042a6718c8cd9fb456
+      internalID: 1692841705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 178.6
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74664d56ca7d0643b4e03af184bbcbf
+      internalID: -1143927044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.6000061
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb5ff72ef9f3de429f0c2b684564723
+      internalID: 1580724164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 1.6000061
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77278dbd506b0a4aad01a4823779b3b
+      internalID: 1920122494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1.6000061
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10bd856d57d52f14c97a10a8bfa4fdf3
+      internalID: 1673078479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 1.6000061
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c6fc772781976a4f891524f4adf81d0
+      internalID: 1969778966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Neon Soil Geography UI Asset Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 1.6000061
+        width: 354.8
+        height: 177.4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d3a6e7d4691f94d9804df7edd35178
+      internalID: -2026158090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 10c92c1e5a0c5cb44b29eebf42a2779c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Neon Soil Geography UI Asset Sheet_0: 293630407
+      Neon Soil Geography UI Asset Sheet_1: -499335368
+      Neon Soil Geography UI Asset Sheet_10: -1354797906
+      Neon Soil Geography UI Asset Sheet_11: -701845719
+      Neon Soil Geography UI Asset Sheet_12: 996774179
+      Neon Soil Geography UI Asset Sheet_13: 1387690384
+      Neon Soil Geography UI Asset Sheet_14: 220742339
+      Neon Soil Geography UI Asset Sheet_15: -522222727
+      Neon Soil Geography UI Asset Sheet_16: -1716105791
+      Neon Soil Geography UI Asset Sheet_17: -1691548967
+      Neon Soil Geography UI Asset Sheet_18: 1692841705
+      Neon Soil Geography UI Asset Sheet_19: -1143927044
+      Neon Soil Geography UI Asset Sheet_2: 2108875562
+      Neon Soil Geography UI Asset Sheet_20: 1580724164
+      Neon Soil Geography UI Asset Sheet_21: 1920122494
+      Neon Soil Geography UI Asset Sheet_22: 1673078479
+      Neon Soil Geography UI Asset Sheet_23: 1969778966
+      Neon Soil Geography UI Asset Sheet_24: -2026158090
+      Neon Soil Geography UI Asset Sheet_3: 291849106
+      Neon Soil Geography UI Asset Sheet_4: -241386761
+      Neon Soil Geography UI Asset Sheet_5: 796859930
+      Neon Soil Geography UI Asset Sheet_6: 2050481970
+      Neon Soil Geography UI Asset Sheet_7: 1652532672
+      Neon Soil Geography UI Asset Sheet_8: 374262997
+      Neon Soil Geography UI Asset Sheet_9: 62136863
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
