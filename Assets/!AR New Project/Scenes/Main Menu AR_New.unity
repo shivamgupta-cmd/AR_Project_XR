@@ -1265,6 +1265,8 @@ MonoBehaviour:
       topicLogo: {fileID: 0}
     - topicName: Knowledge Symbol
       topicLogo: {fileID: 0}
+    - topicName: Egyption Civilisation
+      topicLogo: {fileID: 0}
   - subjectName: Civics
     topics:
     - topicName: EVM

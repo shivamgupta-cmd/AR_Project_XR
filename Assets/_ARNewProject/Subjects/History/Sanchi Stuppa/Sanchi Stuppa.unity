@@ -2105,6 +2105,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+--- !u!1 &444634416 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3308231594632836744, guid: 5f23b70bba652ac49a5ff17fc688bb6f, type: 3}
+  m_PrefabInstance: {fileID: 444634415}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &452625819
 GameObject:
   m_ObjectHideFlags: 0
@@ -2321,7 +2326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackedImageManager: {fileID: 2129108398}
-  sceneImageLibrary: {fileID: 11400000, guid: cba29dda0d03cbb488e8fea4f15096f1, type: 2}
+  sceneImageLibrary: {fileID: 11400000, guid: 8ef32bb589889cd4ba65300ca63fe30e, type: 2}
   initializationTimeout: 10
 --- !u!1 &484415410
 GameObject:
@@ -11214,43 +11219,43 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5edb91f4a12faf14992ddca850eeb473, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.4999999
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5edb91f4a12faf14992ddca850eeb473, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.5
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5edb91f4a12faf14992ddca850eeb473, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.4999999
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5edb91f4a12faf14992ddca850eeb473, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.29200003
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5edb91f4a12faf14992ddca850eeb473, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.2202
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5edb91f4a12faf14992ddca850eeb473, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 68.3184
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5edb91f4a12faf14992ddca850eeb473, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.059499037
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5edb91f4a12faf14992ddca850eeb473, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5edb91f4a12faf14992ddca850eeb473, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.9982284
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5edb91f4a12faf14992ddca850eeb473, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5edb91f4a12faf14992ddca850eeb473, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -11258,7 +11263,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5edb91f4a12faf14992ddca850eeb473, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -173.178
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5edb91f4a12faf14992ddca850eeb473, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -12904,7 +12909,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2051735370
 Transform:
   m_ObjectHideFlags: 0
@@ -13760,7 +13765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dea56a9eaadd1c439095de4f9a371cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_SerializedLibrary: {fileID: 11400000, guid: cba29dda0d03cbb488e8fea4f15096f1, type: 2}
+  m_SerializedLibrary: {fileID: 11400000, guid: 8ef32bb589889cd4ba65300ca63fe30e, type: 2}
   m_MaxNumberOfMovingImages: 1
   m_TrackedImagePrefab: {fileID: 0}
 --- !u!95 &2129108407
@@ -13829,7 +13834,7 @@ MonoBehaviour:
   on3DMode:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1285651352}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -13841,7 +13846,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 444634416}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -13859,7 +13864,7 @@ MonoBehaviour:
   onARMode:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1285651352}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -13871,7 +13876,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 444634416}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
